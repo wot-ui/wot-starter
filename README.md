@@ -4,10 +4,10 @@ Wot-Demo
 
 <p align="center">基于<a href="[vitesse-uni-app](https://github.com/uni-helper/vitesse-uni-app)">vitesse-uni-app</a>的Wot Design Uni 组件库快速起手项目</p>
 
-<!-- <p align="center">
-  <a href="https://vitesse-uni-app.netlify.app/">📱 在线预览</a>
-  <a href="https://vitesse-docs.netlify.app/">📖vitesse-uni-app 文档</a>
-</p> -->
+<p align="center">
+  <a href="https://wot-demo.netlify.app/">📱 在线预览</a>
+  <a href="https://vitesse-docs.netlify.app/">📖 vitesse-uni-app 文档</a>
+</p>
 
 ## 特性
 
