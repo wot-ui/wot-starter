@@ -2,23 +2,41 @@
   "pages": [
     {
       "path": "pages/index",
-      "type": "home"
+      "type": "home",
+      "layout": "tabbar",
+      "name": "home",
+      "style": {
+        "navigationBarTitleText": "home"
+      }
     },
     {
       "path": "pages/hi",
       "type": "page",
-      "layout": "home"
+      "layout": "tabbar",
+      "name": "hi",
+      "style": {
+        "navigationBarTitleText": "hi"
+      }
     }
   ],
   "globalStyle": {
-    "backgroundColor": "@bgColor",
-    "backgroundColorBottom": "@bgColorBottom",
-    "backgroundColorTop": "@bgColorTop",
-    "backgroundTextStyle": "@bgTxtStyle",
-    "navigationBarBackgroundColor": "#000000",
-    "navigationBarTextStyle": "@navTxtStyle",
-    "navigationBarTitleText": "Vitesse-Uni",
+    "navigationBarTitleText": "Wot-Demo",
+    "navigationBarTextStyle": "white",
     "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "custom": true,
+    "height": "0",
+    "color": "#bfbfbf",
+    "selectedColor": "#0165FF",
+    "list": [
+      {
+        "pagePath": "pages/index"
+      },
+      {
+        "pagePath": "pages/hi"
+      }
+    ]
   },
   "subPackages": []
 }

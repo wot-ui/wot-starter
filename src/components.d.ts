@@ -7,9 +7,15 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    AppFooter: typeof import('./components/AppFooter.vue')['default']
-    AppLogos: typeof import('./components/AppLogos.vue')['default']
-    HiCounter: typeof import('./components/HiCounter.vue')['default']
-    InputEntry: typeof import('./components/InputEntry.vue')['default']
+    PrivacyPopup: typeof import('./components/PrivacyPopup.vue')['default']
+    WdConfigProvider: typeof import('wot-design-uni/components/wd-config-provider/wd-config-provider.vue')['default']
+    WdMessageBox: typeof import('wot-design-uni/components/wd-message-box/wd-message-box.vue')['default']
+    WdNavbar: typeof import('wot-design-uni/components/wd-navbar/wd-navbar.vue')['default']
+    WdNotify: typeof import('wot-design-uni/components/wd-notify/wd-notify.vue')['default']
+    WdPopup: typeof import('wot-design-uni/components/wd-popup/wd-popup.vue')['default']
+    WdTabbar: typeof import('wot-design-uni/components/wd-tabbar/wd-tabbar.vue')['default']
+    WdTabbarItem: typeof import('wot-design-uni/components/wd-tabbar-item/wd-tabbar-item.vue')['default']
+    WdText: typeof import('wot-design-uni/components/wd-text/wd-text.vue')['default']
+    WdToast: typeof import('wot-design-uni/components/wd-toast/wd-toast.vue')['default']
   }
 }
