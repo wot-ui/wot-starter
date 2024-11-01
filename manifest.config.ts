@@ -1,7 +1,7 @@
 import { defineManifestConfig } from '@uni-helper/vite-plugin-uni-manifest'
 
 export default defineManifestConfig({
-  'name': 'vitesse-uni-app',
+  'name': 'wot-demo',
   'appid': '',
   'description': '',
   'versionName': '1.0.0',
