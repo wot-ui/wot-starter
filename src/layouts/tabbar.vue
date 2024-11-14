@@ -1,7 +1,7 @@
 <!--
  * @Author: weisheng
  * @Date: 2024-11-01 12:31:47
- * @LastEditTime: 2024-11-01 14:26:57
+ * @LastEditTime: 2024-11-14 19:02:06
  * @LastEditors: weisheng
  * @Description:
  * @FilePath: \wot-demo\src\layouts\tabbar.vue
@@ -25,10 +25,12 @@ function handleTabbarChange({ value }: { value: string }) {
   router.pushTab({ name: value })
 }
 
-onLoad(() => {
-  if (route.name && route.name !== activeTabbar.value.name) {
-    setTabbarItemActive(route.name)
-  }
+onMounted(() => {
+  nextTick(() => {
+    if (route.name && route.name !== activeTabbar.value.name) {
+      setTabbarItemActive(route.name)
+    }
+  })
 })
 
 onShow(() => {
