@@ -17,6 +17,15 @@
       "style": {
         "navigationBarTitleText": "hi"
       }
+    },
+    {
+      "path": "pages/setting",
+      "type": "page",
+      "layout": "tabbar",
+      "name": "hi",
+      "style": {
+        "navigationBarTitleText": "hi"
+      }
     }
   ],
   "globalStyle": {
@@ -35,6 +44,9 @@
       },
       {
         "pagePath": "pages/hi"
+      },
+      {
+        "pagePath": "pages/seting"
       }
     ]
   },

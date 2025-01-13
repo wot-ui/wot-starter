@@ -1,10 +1,10 @@
 /*
  * @Author: weisheng
  * @Date: 2024-10-29 22:12:54
- * @LastEditTime: 2024-10-30 13:16:24
- * @LastEditors: weisheng
+ * @LastEditTime: 2025-01-13 16:45:28
+ * @LastEditors: 810505339
  * @Description:
- * @FilePath: \salary-calculator\src\composables\useTabbar.ts
+ * @FilePath: \wot-demo\src\composables\useTabbar.ts
  * 记得注释
  */
 export interface TabbarItem {
@@ -18,6 +18,7 @@ export interface TabbarItem {
 const tabbarItems = ref<TabbarItem[]>([
   { name: 'home', value: null, active: true, title: 'home', icon: 'home' },
   { name: 'hi', value: null, active: false, title: 'hi', icon: 'app' },
+  { name: 'setting', value: null, active: false, title: 'setting', icon: 'setting' },
 ])
 
 export function useTabbar() {
