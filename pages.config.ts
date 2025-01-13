@@ -1,8 +1,8 @@
 /*
  * @Author: weisheng
  * @Date: 2024-11-01 11:44:38
- * @LastEditTime: 2024-11-01 13:06:45
- * @LastEditors: weisheng
+ * @LastEditTime: 2025-01-13 17:00:24
+ * @LastEditors: 810505339
  * @Description:
  * @FilePath: \wot-demo\pages.config.ts
  * 记得注释
@@ -25,6 +25,8 @@ export default defineUniPages({
       pagePath: 'pages/index',
     }, {
       pagePath: 'pages/hi',
+    }, {
+      pagePath: 'pages/setting',
     }],
   },
 })
