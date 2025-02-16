@@ -67,7 +67,7 @@
     "@vueuse/core": "^11.0.3",
     "vue": "~3.4.38",
     "vue-i18n": "^9.14.0",
-    "wot-design-uni": "^1.6.1"
+    "wot-design-uni": "^1.7.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
