@@ -8,15 +8,14 @@
  * 记得注释
 -->
 <script lang="ts" setup>
-import type { ConfigProviderThemeVars } from 'wot-design-uni'
 import { useTabbar } from '@/composables/useTabbar'
+import { useTheme } from '@/composables/theme/theme'
 
 const router = useRouter()
 
 const route = useRoute()
 
-const themeVars = reactive<ConfigProviderThemeVars>({
-})
+const { themeVars, theme } = useTheme()
 
 const { activeTabbar, getTabbarItemValue, setTabbarItemActive, tabbarList } = useTabbar()
 
@@ -51,7 +50,7 @@ export default {
 </script>
 
 <template>
-  <wd-config-provider :theme-vars="themeVars" custom-style="min-height: 100vh">
+  <wd-config-provider :theme-vars="themeVars" custom-style="min-height: 100vh" :theme="theme">
     <wd-navbar :title="activeTabbar.title" safe-area-inset-top placeholder fixed :bordered="false" />
 
     <slot />
