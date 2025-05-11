@@ -33,9 +33,9 @@ function change() {
 <route lang="json">
 {
   "layout": "tabbar",
-  "name": "hi",
+  "name": "setting",
   "style": {
-    "navigationBarTitleText": "hi"
+    "navigationBarTitleText": "setting"
   }
 }
 </route>

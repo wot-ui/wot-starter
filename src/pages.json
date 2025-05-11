@@ -22,9 +22,9 @@
       "path": "pages/setting",
       "type": "page",
       "layout": "tabbar",
-      "name": "hi",
+      "name": "setting",
       "style": {
-        "navigationBarTitleText": "hi"
+        "navigationBarTitleText": "setting"
       }
     }
   ],
