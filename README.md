@@ -2,7 +2,7 @@
 Wot-Demo
 </h2>
 
-<p align="center">基于<a href="[vitesse-uni-app](https://github.com/uni-helper/vitesse-uni-app)">vitesse-uni-app</a>的Wot Design Uni 组件库快速起手项目</p>
+<p align="center">基于<a href="[vitesse-uni-app](https://github.com/uni-helper/vitesse-uni-app)">vitesse-uni-app</a>的深度整合 Wot UI 组件库的快速起手项目</p>
 
 <p align="center">
   <a href="https://wot-demo.netlify.app/">📱 在线预览</a>
@@ -11,8 +11,6 @@ Wot-Demo
 
 ## 特性
 
-- 🐂 [Wot Design Uni](https://github.com/Moonofweisheng/wot-design-uni) - 基于Vue3+TS开发的uni-app组件库，提供70+高质量组件，支持暗黑模式、国际化和自定义主题。
-- 🎉 [Uni Mini Router](https://github.com/Moonofweisheng/uni-mini-router) - 适用于uni-app&vue3的轻量级路由库。
 - ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - 就是快！
 
 - 🗂 [基于文件的路由](./src/pages)
@@ -30,6 +28,14 @@ Wot-Demo
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 
 - 🦾 [TypeScript](https://www.typescriptlang.org/) & [ESLint](https://eslint.org/) - 保证代码质量
+
+- 🐂 [Wot UI](https://github.com/Moonofweisheng/wot-design-uni) - 基于Vue3+TS开发的uni-app组件库，提供70+高质量组件，支持暗黑模式、国际化和自定义主题
+
+- 🎉 [Uni Mini Router](https://github.com/Moonofweisheng/uni-mini-router) - 适用于uni-app&vue3的轻量级路由库
+
+- 🎉 [Uni Mini CI](https://github.com/Moonofweisheng/uni-mini-ci) - 一个小程序端持续集成的插件
+
+- 🎉 [Alova](https://alova.js.org/zh-CN/) - 极致高效的请求工具集
 
 ## 鸣谢
 

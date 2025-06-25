@@ -5,6 +5,7 @@ export default uni(
     unocss: true,
     rules: {
       'no-console': 'off',
+      'eslint-comments/no-unlimited-disable': 'off',
     },
   },
 )

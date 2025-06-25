@@ -27,6 +27,21 @@ export default defineConfig({
       // },
     }),
   ],
+  variants: [
+    // 匹配dark，替换为wot-theme-dark
+    (matcher) => {
+      if (matcher.startsWith('dark')) {
+        console.log(matcher, '23')
+        return {
+          matcher: matcher.slice(5), // 移除 'dark:' 前缀
+          selector: (s) => {
+            console.log(s, '23')
+            return `.wot-theme-dark ${s}`
+          },
+        }
+      }
+    },
+  ],
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),

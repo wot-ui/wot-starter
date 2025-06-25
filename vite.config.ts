@@ -1,10 +1,10 @@
 /*
  * @Author: weisheng
  * @Date: 2024-11-01 11:44:38
- * @LastEditTime: 2024-11-01 11:50:45
+ * @LastEditTime: 2025-06-15 20:44:40
  * @LastEditors: weisheng
  * @Description:
- * @FilePath: \wot-demo\vite.config.ts
+ * @FilePath: /wot-demo/vite.config.ts
  * 记得注释
  */
 import { defineConfig } from 'vite'
@@ -34,17 +34,24 @@ export default async () => {
       UniHelperComponents({
         resolvers: [WotResolver()],
         dts: 'src/components.d.ts',
+        dirs: ['src/components', 'src/business'],
         directoryAsNamespace: true,
       }),
       Uni(),
       // https://github.com/antfu/unplugin-auto-import
       AutoImport({
-        imports: ['vue', '@vueuse/core', 'uni-app', {
+        imports: ['vue', '@vueuse/core', 'pinia', 'uni-app', {
           from: 'uni-mini-router',
           imports: ['createRouter', 'useRouter', 'useRoute'],
+        }, {
+          from: 'wot-design-uni',
+          imports: ['useToast', 'useMessage', 'useNotify', 'CommonUtil'],
+        }, {
+          from: 'alova/client',
+          imports: ['usePagination', 'useRequest'],
         }],
         dts: 'src/auto-imports.d.ts',
-        dirs: ['src/composables', 'src/stores', 'src/utils'],
+        dirs: ['src/composables', 'src/store', 'src/utils'],
         vueTemplate: true,
       }),
       // https://github.com/antfu/unocss

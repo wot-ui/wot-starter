@@ -1,11 +1,5 @@
 <script lang="ts" setup>
-import type { ConfigProviderThemeVars } from 'wot-design-uni'
-
-const themeVars = reactive<ConfigProviderThemeVars>({
-  colorTheme: '#FF5454',
-  tabsNavLineBgColor: 'red',
-  navbarColor: '#ffffff',
-})
+const { themeVars, theme } = useTheme()
 </script>
 
 <script lang="ts">
@@ -19,11 +13,30 @@ export default {
 </script>
 
 <template>
-  <wd-config-provider :theme-vars="themeVars" custom-style="background-color: #f5f5f5;min-height: 100vh">
+  <wd-config-provider :theme-vars="themeVars" :theme="theme" :custom-class="`page-wraper ${theme}`">
     <slot />
     <wd-notify />
-    <wd-toast />
     <wd-message-box />
+    <wd-toast />
+    <global-loading />
+    <global-toast />
+    <global-message />
+    <!-- #ifdef MP-WEIXIN -->
     <privacy-popup />
+    <!-- #endif -->
   </wd-config-provider>
 </template>
+
+<style lang="scss" scoped>
+.page-wraper {
+  min-height: calc(100vh - var(--window-top));
+  box-sizing: border-box;
+  background: #f9f9f9;
+}
+
+.wot-theme-dark {
+  .page-wraper {
+    background: #222;
+  }
+}
+</style>

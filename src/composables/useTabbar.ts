@@ -1,10 +1,10 @@
 /*
  * @Author: weisheng
  * @Date: 2024-10-29 22:12:54
- * @LastEditTime: 2025-01-13 16:45:28
- * @LastEditors: 810505339
+ * @LastEditTime: 2025-06-25 13:33:39
+ * @LastEditors: weisheng
  * @Description:
- * @FilePath: \wot-demo\src\composables\useTabbar.ts
+ * @FilePath: /wot-demo/src/composables/useTabbar.ts
  * 记得注释
  */
 export interface TabbarItem {
@@ -16,9 +16,8 @@ export interface TabbarItem {
 }
 
 const tabbarItems = ref<TabbarItem[]>([
-  { name: 'home', value: null, active: true, title: 'home', icon: 'home' },
-  { name: 'hi', value: null, active: false, title: 'hi', icon: 'app' },
-  { name: 'setting', value: null, active: false, title: 'setting', icon: 'setting' },
+  { name: 'home', value: null, active: true, title: '首页', icon: 'home' },
+  { name: 'about', value: null, active: false, title: '关于', icon: 'user' },
 ])
 
 export function useTabbar() {

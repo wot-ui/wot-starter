@@ -1,52 +1,170 @@
 {
   "pages": [
     {
-      "path": "pages/index",
+      "path": "pages/index/index",
       "type": "home",
-      "layout": "tabbar",
       "name": "home",
+      "layout": "tabbar",
       "style": {
-        "navigationBarTitleText": "home"
+        "navigationBarTitleText": "首页"
       }
     },
     {
-      "path": "pages/hi",
+      "path": "pages/about/index",
       "type": "page",
+      "name": "about",
       "layout": "tabbar",
-      "name": "hi",
       "style": {
-        "navigationBarTitleText": "hi"
+        "navigationBarTitleText": "关于"
       }
     },
     {
-      "path": "pages/setting",
+      "path": "pages/ci/index",
       "type": "page",
-      "layout": "tabbar",
-      "name": "hi",
+      "name": "ci",
       "style": {
-        "navigationBarTitleText": "hi"
+        "navigationBarTitleText": "CI 持续集成"
+      }
+    },
+    {
+      "path": "pages/create-uni/index",
+      "type": "page",
+      "name": "create-uni",
+      "style": {
+        "navigationBarTitleText": "CreateUni 脚手架"
+      }
+    },
+    {
+      "path": "pages/feedback/index",
+      "type": "page",
+      "name": "feedback",
+      "style": {
+        "navigationBarTitleText": "全局反馈"
+      }
+    },
+    {
+      "path": "pages/icon/index",
+      "type": "page",
+      "name": "icon",
+      "style": {
+        "navigationBarTitleText": "图标演示"
+      }
+    },
+    {
+      "path": "pages/pinia/index",
+      "type": "page",
+      "name": "pinia",
+      "style": {
+        "navigationBarTitleText": "Pinia 演示"
+      }
+    },
+    {
+      "path": "pages/request/index",
+      "type": "page",
+      "name": "request",
+      "style": {
+        "navigationBarTitleText": "网络请求"
+      }
+    },
+    {
+      "path": "pages/router/demo-aftereach",
+      "type": "page",
+      "name": "demo-aftereach",
+      "style": {
+        "navigationBarTitleText": "afterEach 钩子演示"
+      }
+    },
+    {
+      "path": "pages/router/demo-guard",
+      "type": "page",
+      "name": "demo-guard",
+      "style": {
+        "navigationBarTitleText": "导航守卫演示"
+      }
+    },
+    {
+      "path": "pages/router/demo-object",
+      "type": "page",
+      "name": "demo-object",
+      "style": {
+        "navigationBarTitleText": "对象路径跳转"
+      }
+    },
+    {
+      "path": "pages/router/demo-params",
+      "type": "page",
+      "name": "demo-params",
+      "style": {
+        "navigationBarTitleText": "参数接收演示"
+      }
+    },
+    {
+      "path": "pages/router/demo-protected",
+      "type": "page",
+      "name": "demo-protected",
+      "style": {
+        "navigationBarTitleText": "受保护页面"
+      }
+    },
+    {
+      "path": "pages/router/demo-query",
+      "type": "page",
+      "name": "demo-query",
+      "style": {
+        "navigationBarTitleText": "查询参数接收演示"
+      }
+    },
+    {
+      "path": "pages/router/demo-string",
+      "type": "page",
+      "name": "demo-string",
+      "style": {
+        "navigationBarTitleText": "字符串路径跳转"
+      }
+    },
+    {
+      "path": "pages/router/index",
+      "type": "page",
+      "name": "router",
+      "style": {
+        "navigationBarTitleText": "路由管理"
+      }
+    },
+    {
+      "path": "pages/styles/index",
+      "type": "page",
+      "name": "styles",
+      "style": {
+        "navigationBarTitleText": "UnoCSS 演示"
       }
     }
   ],
   "globalStyle": {
+    "navigationBarBackgroundColor": "@navBgColor",
+    "navigationBarTextStyle": "@navTxtStyle",
     "navigationBarTitleText": "Wot-Demo",
-    "navigationBarTextStyle": "white",
-    "navigationStyle": "custom"
+    "backgroundColor": "@bgColor",
+    "backgroundTextStyle": "@bgTxtStyle",
+    "backgroundColorTop": "@bgColorTop",
+    "backgroundColorBottom": "@bgColorBottom",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 50,
+    "animationType": "pop-in",
+    "animationDuration": 300
   },
   "tabBar": {
     "custom": true,
     "height": "0",
-    "color": "#bfbfbf",
-    "selectedColor": "#0165FF",
+    "color": "@tabColor",
+    "selectedColor": "@tabSelectedColor",
+    "backgroundColor": "@tabBgColor",
+    "borderStyle": "@tabBorderStyle",
     "list": [
       {
-        "pagePath": "pages/index"
+        "pagePath": "pages/index/index"
       },
       {
-        "pagePath": "pages/hi"
-      },
-      {
-        "pagePath": "pages/setting"
+        "pagePath": "pages/about/index"
       }
     ]
   },

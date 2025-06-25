@@ -1,16 +1,4 @@
-<!--
- * @Author: weisheng
- * @Date: 2024-11-01 12:31:47
- * @LastEditTime: 2024-11-14 19:02:06
- * @LastEditors: weisheng
- * @Description:
- * @FilePath: \wot-demo\src\layouts\tabbar.vue
- * 记得注释
--->
 <script lang="ts" setup>
-import { useTabbar } from '@/composables/useTabbar'
-import { useTheme } from '@/composables/theme/theme'
-
 const router = useRouter()
 
 const route = useRoute()
@@ -50,16 +38,31 @@ export default {
 </script>
 
 <template>
-  <wd-config-provider :theme-vars="themeVars" custom-style="min-height: 100vh" :theme="theme">
-    <wd-navbar :title="activeTabbar.title" safe-area-inset-top placeholder fixed :bordered="false" />
-
+  <wd-config-provider :theme-vars="themeVars" :custom-class="`page-wraper ${theme}`" :theme="theme">
     <slot />
     <wd-tabbar :model-value="activeTabbar.name" placeholder bordered safe-area-inset-bottom fixed @change="handleTabbarChange">
       <wd-tabbar-item v-for="(item, index) in tabbarList" :key="index" :name="item.name" :value="getTabbarItemValue(item.name)" :title="item.title" :icon="item.icon" />
     </wd-tabbar>
-    <wd-notify />
-    <wd-toast />
-    <wd-message-box />
+    <!-- #ifdef MP-WEIXIN -->
     <privacy-popup />
+    <!-- #endif -->
+    <wd-notify />
+    <wd-message-box />
+    <wd-toast />
+    <global-loading />
+    <global-toast />
+    <global-message />
   </wd-config-provider>
 </template>
+
+<style lang="scss" scoped>
+.page-wraper {
+  min-height: calc(100vh - var(--window-top));
+  box-sizing: border-box;
+  background: #f9f9f9;
+}
+
+.wot-theme-dark.page-wraper {
+  background: #222;
+}
+</style>
