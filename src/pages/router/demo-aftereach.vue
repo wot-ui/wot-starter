@@ -30,8 +30,8 @@ function goBack() {
           🎉 恭喜！
         </view>
         <view class="text-3.5 text-green-600 leading-relaxed dark:text-green-200">
-          如果你能看到这个页面，说明 afterEach 钩子已经触发了！<br>
-          打开浏览器控制台（F12 → Console）可以看到相关的日志输出。<br>
+          如果你能看到这个页面，说明 afterEach 钩子已经触发了！\n
+          打开浏览器控制台（F12 → Console）可以看到相关的日志输出。\n
           afterEach 钩子常用于页面统计、埋点上报等导航后处理。
         </view>
       </view>

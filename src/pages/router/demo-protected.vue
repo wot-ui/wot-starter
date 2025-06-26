@@ -30,8 +30,8 @@ function goBack() {
           🎉 恭喜！
         </view>
         <view class="text-3.5 text-green-600 leading-relaxed dark:text-green-200">
-          如果你能看到这个页面，说明路由守卫验证通过了！<br>
-          但实际上，这个页面被配置为需要登录才能访问，<br>
+          如果你能看到这个页面，说明路由守卫验证通过了！\n
+          但实际上，这个页面被配置为需要登录才能访问，\n
           守卫应该会拦截并重定向你到首页。
         </view>
       </view>

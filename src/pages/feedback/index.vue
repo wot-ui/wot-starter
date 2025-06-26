@@ -172,6 +172,61 @@ function demoComplex() {
   }, 1000)
 }
 
+// 代码示例常量
+const codeExamples = {
+  basicToast: `const { success, error, warning, info } = useGlobalToast()
+
+// 使用方法
+success({ msg: '操作成功！' })
+error({ msg: '操作失败！' })
+warning({ msg: '警告提示！' })
+info({ msg: '信息提示！' })`,
+
+  customToast: `const { show } = useGlobalToast()
+
+show({
+  msg: '自定义消息',
+  duration: 3000,
+  position: 'middle' // 'top' | 'middle' | 'bottom'
+})`,
+
+  basicLoading: `const { loading, close } = useGlobalLoading()
+
+// 基础用法
+loading('加载中...')
+
+// 手动关闭
+close()`,
+
+  customLoading: `loading({
+  msg: '正在处理中...',
+  cover: true // 是否显示遮罩
+})`,
+
+  basicMessage: `const { confirm, alert, prompt } = useGlobalMessage()
+
+// 确认弹窗
+confirm({
+  title: '确认操作',
+  msg: '您确定要执行此操作吗？',
+  success: (res) => {
+    if (res.action === 'confirm') {
+      // 用户确认
+    }
+  }
+})`,
+
+  customMessage: `confirm({
+  title: '自定义确认',
+  msg: '自定义的确认弹窗',
+  confirmButtonText: '好的',
+  cancelButtonText: '算了',
+  success: (res) => {
+    // res.action: 'confirm' | 'cancel'
+  }
+})`,
+}
+
 // 复制代码到剪贴板
 function copyCode(code: string) {
   uni.setClipboardData({
@@ -244,20 +299,15 @@ function handleNavigate(url: string) {
           </view>
 
           <view
-            class="rounded bg-gray-100 p-3 dark:bg-[var(--wot-dark-background3)]" @click="copyCode(`const { success, error, warning, info } = useGlobalToast()
-
-// 使用方法
-success({ msg: '操作成功！' })
-error({ msg: '操作失败！' })
-warning({ msg: '警告提示！' })
-info({ msg: '信息提示！' })`)"
+            class="rounded bg-gray-100 p-3 dark:bg-[var(--wot-dark-background3)]" @click="copyCode(codeExamples.basicToast)"
           >
             <view class="mb-2 text-3 text-gray-700 font-bold dark:text-[var(--wot-dark-color)]">
               代码示例:
             </view>
-            <view class="text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
-              const { success, error, warning, info } = useGlobalToast()<br><br>
-              success({ msg: '操作成功！' })<br>
+            <view class="whitespace-pre-line text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
+              const { success, error, warning, info } = useGlobalToast()
+
+              success({ msg: '操作成功！' })
               error({ msg: '操作失败！' })
             </view>
           </view>
@@ -287,22 +337,16 @@ info({ msg: '信息提示！' })`)"
           </view>
 
           <view
-            class="rounded bg-gray-100 p-3 dark:bg-[var(--wot-dark-background3)]" @click="copyCode(`const { show } = useGlobalToast()
-
-show({
-  msg: '自定义消息',
-  duration: 3000,
-  position: 'middle' // 'top' | 'middle' | 'bottom'
-})`)"
+            class="rounded bg-gray-100 p-3 dark:bg-[var(--wot-dark-background3)]" @click="copyCode(codeExamples.customToast)"
           >
             <view class="mb-2 text-3 text-gray-700 font-bold dark:text-[var(--wot-dark-color)]">
               自定义配置:
             </view>
-            <view class="text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
-              show({<br>
-              &nbsp;&nbsp;msg: '自定义消息',<br>
-              &nbsp;&nbsp;duration: 3000,<br>
-              &nbsp;&nbsp;position: 'middle'<br>
+            <view class="whitespace-pre-line text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
+              show({
+              msg: '自定义消息',
+              duration: 3000,
+              position: 'middle'
               })
             </view>
           </view>
@@ -334,20 +378,15 @@ show({
           </view>
 
           <view
-            class="rounded bg-gray-100 p-3 dark:bg-[var(--wot-dark-background3)]" @click="copyCode(`const { loading, close } = useGlobalLoading()
-
-// 基础用法
-loading('加载中...')
-
-// 手动关闭
-close()`)"
+            class="rounded bg-gray-100 p-3 dark:bg-[var(--wot-dark-background3)]" @click="copyCode(codeExamples.basicLoading)"
           >
             <view class="mb-2 text-3 text-gray-700 font-bold dark:text-[var(--wot-dark-color)]">
               代码示例:
             </view>
-            <view class="text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
-              const { loading, close } = useGlobalLoading()<br><br>
-              loading('加载中...')<br>
+            <view class="whitespace-pre-line text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
+              const { loading, close } = useGlobalLoading()
+
+              loading('加载中...')
               close()
             </view>
           </view>
@@ -368,18 +407,15 @@ close()`)"
           </view>
 
           <view
-            class="rounded bg-gray-100 p-3 dark:bg-[var(--wot-dark-background3)]" @click="copyCode(`loading({
-  msg: '正在处理中...',
-  cover: true // 是否显示遮罩
-})`)"
+            class="rounded bg-gray-100 p-3 dark:bg-[var(--wot-dark-background3)]" @click="copyCode(codeExamples.customLoading)"
           >
             <view class="mb-2 text-3 text-gray-700 font-bold dark:text-[var(--wot-dark-color)]">
               自定义配置:
             </view>
-            <view class="text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
-              loading({<br>
-              &nbsp;&nbsp;msg: '正在处理中...',<br>
-              &nbsp;&nbsp;cover: true // 是否显示遮罩<br>
+            <view class="whitespace-pre-line text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
+              loading({
+              msg: '正在处理中...',
+              cover: true // 是否显示遮罩
               })
             </view>
           </view>
@@ -408,27 +444,16 @@ close()`)"
           </view>
 
           <view
-            class="rounded bg-gray-100 p-3 dark:bg-[var(--wot-dark-background3)]" @click="copyCode(`const { confirm, alert, prompt } = useGlobalMessage()
-
-// 确认弹窗
-confirm({
-  title: '确认操作',
-  msg: '您确定要执行此操作吗？',
-  success: (res) => {
-    if (res.action === 'confirm') {
-      // 用户确认
-    }
-  }
-})`)"
+            class="rounded bg-gray-100 p-3 dark:bg-[var(--wot-dark-background3)]" @click="copyCode(codeExamples.basicMessage)"
           >
             <view class="mb-2 text-3 text-gray-700 font-bold dark:text-[var(--wot-dark-color)]">
               代码示例:
             </view>
-            <view class="text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
-              confirm({<br>
-              &nbsp;&nbsp;title: '确认操作',<br>
-              &nbsp;&nbsp;msg: '您确定要执行此操作吗？',<br>
-              &nbsp;&nbsp;success: (res) => { /* 处理结果 */ }<br>
+            <view class="whitespace-pre-line text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
+              confirm({
+              title: '确认操作',
+              msg: '您确定要执行此操作吗？',
+              success: (res) => { /* 处理结果 */ }
               })
             </view>
           </view>
@@ -446,23 +471,15 @@ confirm({
           </view>
 
           <view
-            class="rounded bg-gray-100 p-3 dark:bg-[var(--wot-dark-background3)]" @click="copyCode(`confirm({
-  title: '自定义确认',
-  msg: '自定义的确认弹窗',
-  confirmButtonText: '好的',
-  cancelButtonText: '算了',
-  success: (res) => {
-    // res.action: 'confirm' | 'cancel'
-  }
-})`)"
+            class="rounded bg-gray-100 p-3 dark:bg-[var(--wot-dark-background3)]" @click="copyCode(codeExamples.customMessage)"
           >
             <view class="mb-2 text-3 text-gray-700 font-bold dark:text-[var(--wot-dark-color)]">
               自定义按钮:
             </view>
-            <view class="text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
-              confirm({<br>
-              &nbsp;&nbsp;confirmButtonText: '好的',<br>
-              &nbsp;&nbsp;cancelButtonText: '算了'<br>
+            <view class="whitespace-pre-line text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
+              confirm({
+              confirmButtonText: '好的',
+              cancelButtonText: '算了'
               })
             </view>
           </view>

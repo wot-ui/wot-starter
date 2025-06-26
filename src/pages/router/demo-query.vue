@@ -132,9 +132,9 @@ function pushToGuard() {
               Query 写法 (当前演示)
             </view>
             <view class="text-3 text-blue-600 leading-relaxed dark:text-blue-200">
-              • 使用 path + query 组合<br>
-              • 参数以查询字符串形式出现<br>
-              • 写法: router.push({ path: '/page', query: { key: 'value' } })<br>
+              • 使用 path + query 组合\n
+              • 参数以查询字符串形式出现\n
+              • 写法: router.push({ path: '/page', query: { key: 'value' } })\n
               • 结果: /page?key=value
             </view>
           </view>
@@ -143,9 +143,9 @@ function pushToGuard() {
               Params 写法
             </view>
             <view class="text-3 text-green-600 leading-relaxed dark:text-green-200">
-              • 使用 name + params 组合<br>
-              • 参数同样以查询字符串形式出现<br>
-              • 写法: router.push({ name: 'page', params: { key: 'value' } })<br>
+              • 使用 name + params 组合\n
+              • 参数同样以查询字符串形式出现\n
+              • 写法: router.push({ name: 'page', params: { key: 'value' } })\n
               • 结果: /page?key=value (效果相同)
             </view>
           </view>

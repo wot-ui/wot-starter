@@ -7,7 +7,7 @@
  * @FilePath: /wot-demo/src/api/mock/modules/store.ts
  */
 import { defineMock } from '@alova/mock'
-import { generateMockData } from '../utils'
+import { generateMockData } from '../utils/generators'
 
 // 订单状态枚举
 const ORDER_STATUS = ['placed', 'approved', 'delivered'] as const

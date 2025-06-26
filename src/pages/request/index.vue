@@ -203,9 +203,9 @@ function handleNavigate(url: string) {
               代码示例:
             </view>
             <view class="text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
-              const { data, loading, send } = useRequest(<br>
-              &nbsp;&nbsp;(status) => Apis.pet.findPetsByStatus({ params: { status } }),<br>
-              &nbsp;&nbsp;{ immediate: false }<br>
+              const { data, loading, send } = useRequest(\n
+              &nbsp;&nbsp;(status) => Apis.pet.findPetsByStatus({ params: { status } }),\n
+              &nbsp;&nbsp;{ immediate: false }\n
               ).onError((error) => { ... })
             </view>
           </view>
@@ -256,11 +256,11 @@ function handleNavigate(url: string) {
               代码示例:
             </view>
             <view class="text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
-              const { data, loading, send } = useRequest(<br>
-              &nbsp;&nbsp;(username, password) => Apis.user.loginUser({<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;params: { username, password }<br>
-              &nbsp;&nbsp;}),<br>
-              &nbsp;&nbsp;{ immediate: false }<br>
+              const { data, loading, send } = useRequest(\n
+              &nbsp;&nbsp;(username, password) => Apis.user.loginUser({\n
+              &nbsp;&nbsp;&nbsp;&nbsp;params: { username, password }\n
+              &nbsp;&nbsp;}),\n
+              &nbsp;&nbsp;{ immediate: false }\n
               ).onError((error) => { ... })
             </view>
           </view>

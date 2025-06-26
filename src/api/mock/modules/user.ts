@@ -1,13 +1,13 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-15 14:35:00
- * @LastEditTime: 2025-06-15 14:35:00
+ * @LastEditTime: 2025-06-26 22:16:26
  * @LastEditors: weisheng
  * @Description: Pet Store - User相关接口的mock数据
  * @FilePath: /wot-demo/src/api/mock/modules/user.ts
  */
 import { defineMock } from '@alova/mock'
-import { generateMockData } from '../utils'
+import { generateMockData } from '../utils/generators'
 
 // 用户状态枚举
 const USER_STATUS = [0, 1, 2] as const // 0: 离线, 1: 在线, 2: 忙碌

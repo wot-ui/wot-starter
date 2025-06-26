@@ -383,7 +383,7 @@ function handleNavigate(url: string) {
             </view>
           </view>
           <view class="mt-3 rounded bg-gray-100 p-2 text-2.5 text-gray-700 leading-relaxed font-mono dark:bg-[var(--wot-dark-background3)] dark:text-[var(--wot-dark-color2)]" @click="copyCode('transition-all duration-500 ease-in-out transform rotate-12 scale-110')">
-            transition-all duration-500 ease-in-out<br>
+            transition-all duration-500 ease-in-out\n
             transform rotate-12 scale-110
           </view>
         </view>
@@ -414,7 +414,7 @@ function handleNavigate(url: string) {
           </view>
         </view>
         <view class="mt-4 rounded bg-gray-100 p-2 text-2.5 text-gray-700 leading-relaxed font-mono dark:bg-[var(--wot-dark-background3)] dark:text-[var(--wot-dark-color2)]" @click="copyCode('grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4')">
-          grid-cols-1 sm:grid-cols-2<br>
+          grid-cols-1 sm:grid-cols-2\n
           md:grid-cols-3 lg:grid-cols-4
         </view>
       </view>

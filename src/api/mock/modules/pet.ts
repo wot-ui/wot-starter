@@ -1,13 +1,13 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-15 14:25:00
- * @LastEditTime: 2025-06-15 18:23:08
+ * @LastEditTime: 2025-06-26 21:59:38
  * @LastEditors: weisheng
  * @Description: Pet Store - Pet相关接口的mock数据
  * @FilePath: /wot-demo/src/api/mock/modules/pet.ts
  */
 import { defineMock } from '@alova/mock'
-import { generateMockData } from '../utils'
+import { generateMockData } from '../utils/generators'
 
 // 宠物状态枚举
 const PET_STATUS = ['available', 'pending', 'sold'] as const

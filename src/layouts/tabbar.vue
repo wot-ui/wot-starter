@@ -40,8 +40,14 @@ export default {
 <template>
   <wd-config-provider :theme-vars="themeVars" :custom-class="`page-wraper ${theme}`" :theme="theme">
     <slot />
-    <wd-tabbar :model-value="activeTabbar.name" placeholder bordered safe-area-inset-bottom fixed @change="handleTabbarChange">
-      <wd-tabbar-item v-for="(item, index) in tabbarList" :key="index" :name="item.name" :value="getTabbarItemValue(item.name)" :title="item.title" :icon="item.icon" />
+    <wd-tabbar
+      :model-value="activeTabbar.name" placeholder bordered safe-area-inset-bottom fixed
+      @change="handleTabbarChange"
+    >
+      <wd-tabbar-item
+        v-for="(item, index) in tabbarList" :key="index" :name="item.name"
+        :value="getTabbarItemValue(item.name)" :title="item.title" :icon="item.icon"
+      />
     </wd-tabbar>
     <!-- #ifdef MP-WEIXIN -->
     <privacy-popup />
@@ -55,7 +61,7 @@ export default {
   </wd-config-provider>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .page-wraper {
   min-height: calc(100vh - var(--window-top));
   box-sizing: border-box;

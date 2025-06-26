@@ -230,11 +230,11 @@ function handleNavigate(url: string) {
   return { count, doubleCount, increment }
 })`)"
             >
-              const useCounterStore = defineStore('counter', () => {<br>
-              &nbsp;&nbsp;const count = ref(0)<br>
-              &nbsp;&nbsp;const doubleCount = computed(() => count.value * 2)<br>
-              &nbsp;&nbsp;function increment() { count.value++ }<br>
-              &nbsp;&nbsp;return { count, doubleCount, increment }<br>
+              const useCounterStore = defineStore('counter', () => {\n
+              &nbsp;&nbsp;const count = ref(0)\n
+              &nbsp;&nbsp;const doubleCount = computed(() => count.value * 2)\n
+              &nbsp;&nbsp;function increment() { count.value++ }\n
+              &nbsp;&nbsp;return { count, doubleCount, increment }\n
               })
             </view>
           </view>
@@ -250,8 +250,8 @@ counterStore.increment()
 // 响应式访问
 console.log(counterStore.count)`)"
             >
-              const counterStore = useCounterStore()<br>
-              counterStore.increment() // 调用方法<br>
+              const counterStore = useCounterStore()\n
+              counterStore.increment() // 调用方法\n
               console.log(counterStore.count) // 访问状态
             </view>
           </view>
@@ -407,15 +407,15 @@ console.log(counterStore.count)`)"
               核心实现:
             </view>
             <view class="text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
-              function persist({ store }, excludedIds) {<br>
-              &nbsp;&nbsp;// 检查是否需要排除<br>
-              &nbsp;&nbsp;if (excludedIds.includes(store.$id)) return<br>
-              &nbsp;&nbsp;// 从本地存储读取数据<br>
-              &nbsp;&nbsp;const storageState = uni.getStorageSync(store.$id)<br>
-              &nbsp;&nbsp;// 监听状态变化并保存<br>
-              &nbsp;&nbsp;store.$subscribe(() => {<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;uni.setStorageSync(store.$id, store.$state)<br>
-              &nbsp;&nbsp;})<br>
+              function persist({ store }, excludedIds) {\n
+              &nbsp;&nbsp;// 检查是否需要排除\n
+              &nbsp;&nbsp;if (excludedIds.includes(store.$id)) return\n
+              &nbsp;&nbsp;// 从本地存储读取数据\n
+              &nbsp;&nbsp;const storageState = uni.getStorageSync(store.$id)\n
+              &nbsp;&nbsp;// 监听状态变化并保存\n
+              &nbsp;&nbsp;store.$subscribe(() => {\n
+              &nbsp;&nbsp;&nbsp;&nbsp;uni.setStorageSync(store.$id, store.$state)\n
+              &nbsp;&nbsp;})\n
               }
             </view>
           </view>
@@ -434,7 +434,7 @@ console.log(counterStore.count)`)"
 persist(context, ['global-register', 'temp'])`)"
           >
             <view class="text-2.5 text-gray-600 leading-relaxed font-mono dark:text-[var(--wot-dark-color2)]">
-              // 当前排除的 Store ID:<br>
+              // 当前排除的 Store ID:\n
               ['global-register', 'temp']
             </view>
           </view>
