@@ -141,7 +141,7 @@ function handleNavigate(url: string) {
           uni-mini-ci
         </view>
         <view class="mb-2 text-3.5 text-gray-600 leading-relaxed dark:text-[var(--wot-dark-color2)]">
-          小程序端构建后支持 CI（持续集成）的插件
+          小程序持续集成的插件
         </view>
         <view class="text-3 text-gray-500 dark:text-[var(--wot-dark-color2)]">
           支持上传微信、企业微信、钉钉、支付宝平台的小程序
