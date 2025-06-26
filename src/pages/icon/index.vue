@@ -35,6 +35,7 @@ function copyIconCode(iconName: string, isCarbon = false) {
     data: code,
     showToast: false,
     success: () => {
+      uni.hideToast()
       showSuccess({ msg: '代码已复制到剪贴板' })
     },
   })
@@ -50,6 +51,7 @@ function handleNavigate(url: string) {
     data: url,
     showToast: false,
     success: () => {
+      uni.hideToast()
       showSuccess({ msg: `${url} 已复制到剪贴板` })
     },
   })

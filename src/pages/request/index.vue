@@ -103,6 +103,7 @@ function handleNavigate(url: string) {
     data: url,
     showToast: false,
     success: () => {
+      uni.hideToast()
       GlobalToast.success(`${url} 已复制到剪贴板`)
     },
   })

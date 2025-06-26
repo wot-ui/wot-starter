@@ -87,6 +87,7 @@ function copyCommand(command: string) {
     data: command,
     showToast: false,
     success: () => {
+      uni.hideToast()
       showSuccess({
         msg: `${command}已成功复制到剪贴板`,
       })
