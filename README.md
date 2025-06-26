@@ -6,7 +6,7 @@ Wot-Demo
 
 <p align="center">
   <a href="https://wot-demo.netlify.app/">📱 在线预览</a>
-  <a href="https://vitesse-docs.netlify.app/">📖 vitesse-uni-app 文档</a>
+  <a href="https://wot-demo-docs.netlify.app/">📖 在线文档</a>
 </p>
 
 ## 特性
