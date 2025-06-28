@@ -13,17 +13,14 @@ function handleTabbarChange({ value }: { value: string }) {
 }
 
 onMounted(() => {
+  // #ifdef APP-PLUS
+  uni.hideTabBar()
+  // #endif
   nextTick(() => {
     if (route.name && route.name !== activeTabbar.value.name) {
       setTabbarItemActive(route.name)
     }
   })
-})
-
-onShow(() => {
-  // #ifdef APP-PLUS
-  uni.hideTabBar()
-  // #endif
 })
 </script>
 

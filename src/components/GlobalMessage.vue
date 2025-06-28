@@ -6,6 +6,14 @@ const { messageOptions, currentPage } = storeToRefs(useGlobalMessage())
 const messageBox = useMessage('globalMessage')
 const currentPath = getCurrentPath()
 
+// #ifdef MP-ALIPAY
+const hackAlipayVisible = ref(false)
+
+nextTick(() => {
+  hackAlipayVisible.value = true
+})
+// #endif
+
 watch(() => messageOptions.value, (newVal) => {
   if (newVal) {
     if (currentPage.value === currentPath) {
@@ -38,5 +46,10 @@ export default {
 </script>
 
 <template>
+  <!-- #ifdef MP-ALIPAY -->
+  <wd-message-box v-if="hackAlipayVisible" selector="globalMessage" />
+  <!-- #endif -->
+  <!-- #ifndef MP-ALIPAY -->
   <wd-message-box selector="globalMessage" />
+  <!-- #endif -->
 </template>

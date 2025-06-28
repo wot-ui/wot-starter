@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2025-06-15 14:35:00
- * @LastEditTime: 2025-06-26 22:16:26
+ * @LastEditTime: 2025-06-27 09:43:25
  * @LastEditors: weisheng
  * @Description: Pet Store - User相关接口的mock数据
  * @FilePath: /wot-demo/src/api/mock/modules/user.ts
@@ -10,7 +10,7 @@ import { defineMock } from '@alova/mock'
 import { generateMockData } from '../utils/generators'
 
 // 用户状态枚举
-const USER_STATUS = [0, 1, 2] as const // 0: 离线, 1: 在线, 2: 忙碌
+const USER_STATUS = [0, 1, 2] // 0: 离线, 1: 在线, 2: 忙碌
 type UserStatus = typeof USER_STATUS[number]
 
 // 生成用户对象
@@ -25,7 +25,7 @@ function generateUser(username?: string, status?: UserStatus) {
     email: `${baseUsername}@example.com`,
     password: 'password123', // 在实际应用中不应该返回密码
     phone: `1${generateMockData.number(1000000000, 9999999999)}`,
-    userStatus: status ?? USER_STATUS[generateMockData.number(0, USER_STATUS.length - 1)],
+    userStatus: CommonUtil.isDef(status) ? status : USER_STATUS[generateMockData.number(0, USER_STATUS.length - 1)],
   }
 }
 

@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2024-11-01 11:44:38
- * @LastEditTime: 2025-06-15 20:44:40
+ * @LastEditTime: 2025-06-27 10:40:04
  * @LastEditors: weisheng
  * @Description:
  * @FilePath: /wot-demo/vite.config.ts
@@ -51,7 +51,7 @@ export default async () => {
           imports: ['usePagination', 'useRequest'],
         }],
         dts: 'src/auto-imports.d.ts',
-        dirs: ['src/composables', 'src/store', 'src/utils'],
+        dirs: ['src/composables', 'src/store', 'src/utils', 'src/api'],
         vueTemplate: true,
       }),
       // https://github.com/antfu/unocss

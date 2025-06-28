@@ -161,16 +161,19 @@ export function useTheme() {
 
   onBeforeMount(() => {
     initTheme()
-  })
-
-  uni.onThemeChange((res) => {
-    toggleTheme(res.theme)
+    if (CommonUtil.isFunction(uni.onThemeChange)) {
+      uni.onThemeChange((res) => {
+        toggleTheme(res.theme)
+      })
+    }
   })
 
   onUnmounted(() => {
-    uni.offThemeChange((res) => {
-      toggleTheme(res.theme)
-    })
+    if (CommonUtil.isFunction(uni.offThemeChange)) {
+      uni.offThemeChange((res) => {
+        toggleTheme(res.theme)
+      })
+    }
   })
 
   return {

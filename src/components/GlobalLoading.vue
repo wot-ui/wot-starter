@@ -6,6 +6,14 @@ const { close: closeGlobalLoading } = useGlobalLoading()
 const loading = useToast('globalLoading')
 const currentPath = getCurrentPath()
 
+// #ifdef MP-ALIPAY
+const hackAlipayVisible = ref(false)
+
+nextTick(() => {
+  hackAlipayVisible.value = true
+})
+// #endif
+
 watch(() => loadingOptions.value, (newVal) => {
   if (newVal && newVal.show) {
     if (currentPage.value === currentPath) {
@@ -29,5 +37,10 @@ export default {
 </script>
 
 <template>
+  <!-- #ifdef MP-ALIPAY -->
+  <wd-toast v-if="hackAlipayVisible" selector="globalLoading" :closed="closeGlobalLoading" />
+  <!-- #endif -->
+  <!-- #ifndef MP-ALIPAY -->
   <wd-toast selector="globalLoading" :closed="closeGlobalLoading" />
+  <!-- #endif -->
 </template>

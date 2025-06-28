@@ -436,7 +436,7 @@ function handleNavigate(url: string) {
               </text>
               <wd-icon name="copy" size="16px" color="#666" />
             </view>
-            <view class="flex items-center justify-between border border-gray-200 rounded-2 bg-gray-50 p-3 dark:border-[var(--wot-dark-border)] dark:bg-[var(--wot-dark-background3)]" @click="copyCode('router.afterEach((to, from) => { console.log(to) })')">
+            <view class="flex items-center justify-between border border-gray-200 rounded-2 bg-gray-50 p-3 dark:border-[var(--wot-dark-border)] dark:bg-[var(--wot-dark-background3)]" @click="copyCode('router.afterEach((to, from) => {  })')">
               <text class="flex-1 text-3 text-gray-700 font-mono dark:text-[var(--wot-dark-color)]">
                 router.afterEach((to, from) => { console.log(to) })
               </text>

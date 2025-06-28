@@ -8,16 +8,11 @@ import { createApis, withConfigType } from './createApis'
 export { alovaInstance }
 
 // Configure method options for specific APIs
-export const $$userConfigMap = withConfigType({
-  // Example: Configure caching and transformation for specific APIs
-  // 'general.infoUsingPOST': {
-  //   // Transform the response
-  //   transform: (data: any) => data?.member || data,
-  // },
-})
+export const $$userConfigMap = withConfigType({})
 
 // Create the global Apis object
 const Apis = createApis(alovaInstance, $$userConfigMap)
 
-// Export default Apis for global usage
+// Export both default and named export for AutoImport
 export default Apis
+export { Apis }

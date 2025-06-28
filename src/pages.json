@@ -154,6 +154,8 @@
   },
   "tabBar": {
     "custom": true,
+    "customize": true,
+    "overlay": true,
     "height": "0",
     "color": "@tabColor",
     "selectedColor": "@tabSelectedColor",

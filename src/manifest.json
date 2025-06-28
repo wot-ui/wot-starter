@@ -51,7 +51,11 @@
     "themeLocation": "theme.json"
   },
   "mp-alipay": {
-    "usingComponents": true
+    "usingComponents": true,
+    "compileOptions": {
+      "globalObjectMode": "enable",
+      "treeShaking": true
+    }
   },
   "mp-baidu": {
     "usingComponents": true

@@ -62,6 +62,10 @@ export default defineManifestConfig({
   },
   'mp-alipay': {
     usingComponents: true,
+    compileOptions: {
+      globalObjectMode: 'enable',
+      treeShaking: true,
+    },
   },
   'mp-baidu': {
     usingComponents: true,
