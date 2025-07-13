@@ -129,14 +129,6 @@
       "style": {
         "navigationBarTitleText": "路由管理"
       }
-    },
-    {
-      "path": "pages/styles/index",
-      "type": "page",
-      "name": "styles",
-      "style": {
-        "navigationBarTitleText": "UnoCSS 演示"
-      }
     }
   ],
   "globalStyle": {
@@ -170,5 +162,19 @@
       }
     ]
   },
-  "subPackages": []
+  "subPackages": [
+    {
+      "root": "subPages",
+      "pages": [
+        {
+          "path": "styles/index",
+          "type": "page",
+          "name": "styles",
+          "style": {
+            "navigationBarTitleText": "UnoCSS 演示"
+          }
+        }
+      ]
+    }
+  ]
 }

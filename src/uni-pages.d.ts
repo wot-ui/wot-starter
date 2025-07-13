@@ -20,7 +20,7 @@ interface NavigateToOptions {
        "/pages/router/demo-query" |
        "/pages/router/demo-string" |
        "/pages/router/index" |
-       "/pages/styles/index";
+       "/subPages/styles/index";
 }
 interface RedirectToOptions extends NavigateToOptions {}
 

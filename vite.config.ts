@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2024-11-01 11:44:38
- * @LastEditTime: 2025-06-27 10:40:04
+ * @LastEditTime: 2025-07-13 16:34:27
  * @LastEditors: weisheng
  * @Description:
  * @FilePath: /wot-demo/vite.config.ts
@@ -27,6 +27,9 @@ export default async () => {
       // https://github.com/uni-helper/vite-plugin-uni-pages
       UniHelperPages({
         dts: 'src/uni-pages.d.ts',
+        subPackages: [
+          'src/subPages',
+        ],
       }),
       // https://github.com/uni-helper/vite-plugin-uni-layouts
       UniHelperLayouts(),
