@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2024-11-01 11:44:38
- * @LastEditTime: 2025-07-13 16:34:27
+ * @LastEditTime: 2025-07-20 23:18:48
  * @LastEditors: weisheng
  * @Description:
  * @FilePath: /wot-demo/vite.config.ts
@@ -30,6 +30,11 @@ export default async () => {
         subPackages: [
           'src/subPages',
         ],
+        /**
+         * 排除的页面，相对于 dir 和 subPackages
+         * @default []
+         */
+        exclude: ['**/components/**/*.*'],
       }),
       // https://github.com/uni-helper/vite-plugin-uni-layouts
       UniHelperLayouts(),
