@@ -3,7 +3,7 @@ const router = useRouter()
 
 const route = useRoute()
 
-const { themeVars, theme } = useTheme()
+const { themeVars, theme } = useManualTheme()
 
 const { activeTabbar, getTabbarItemValue, setTabbarItemActive, tabbarList } = useTabbar()
 
@@ -38,7 +38,7 @@ export default {
   <wd-config-provider :theme-vars="themeVars" :custom-class="`page-wraper ${theme}`" :theme="theme">
     <slot />
     <wd-tabbar
-      :model-value="activeTabbar.name" placeholder bordered safe-area-inset-bottom fixed
+      :model-value="activeTabbar.name" bordered safe-area-inset-bottom placeholder fixed
       @change="handleTabbarChange"
     >
       <wd-tabbar-item

@@ -1,12 +1,3 @@
-/*
- * @Author: weisheng
- * @Date: 2024-10-29 22:12:54
- * @LastEditTime: 2025-06-25 13:33:39
- * @LastEditors: weisheng
- * @Description:
- * @FilePath: /wot-demo/src/composables/useTabbar.ts
- * 记得注释
- */
 export interface TabbarItem {
   name: string
   value: number | null

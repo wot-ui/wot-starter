@@ -9,7 +9,7 @@ const {
   openThemeColorPicker,
   closeThemeColorPicker,
   selectThemeColor,
-} = useTheme()
+} = useManualTheme()
 
 const isDark = computed({
   get() {

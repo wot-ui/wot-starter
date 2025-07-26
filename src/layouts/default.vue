@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { themeVars, theme } = useTheme()
+const { themeVars, theme } = useManualTheme()
 </script>
 
 <script lang="ts">

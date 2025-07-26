@@ -75,7 +75,7 @@
     "pinia": "^2.3.1",
     "vue": "~3.4.38",
     "vue-i18n": "^9.14.0",
-    "wot-design-uni": "^1.11.0"
+    "wot-design-uni": "^1.11.1"
   },
   "devDependencies": {
     "@alova/wormhole": "^1.0.6",
