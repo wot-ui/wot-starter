@@ -51,9 +51,9 @@
     "alova-gen": "alova gen -f"
   },
   "dependencies": {
-    "@alova/adapter-uniapp": "^2.0.13",
-    "@alova/mock": "^2.0.16",
-    "@alova/shared": "^1.3.0",
+    "@alova/adapter-uniapp": "^2.0.14",
+    "@alova/mock": "^2.0.17",
+    "@alova/shared": "^1.3.1",
     "@dcloudio/uni-app": "3.0.0-4060620250520001",
     "@dcloudio/uni-app-harmony": "3.0.0-4060620250520001",
     "@dcloudio/uni-app-plus": "3.0.0-4060620250520001",
@@ -71,14 +71,14 @@
     "@dcloudio/uni-mp-xhs": "3.0.0-4060620250520001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-4060620250520001",
     "@vueuse/core": "^11.0.3",
-    "alova": "^3.3.2",
+    "alova": "^3.3.4",
     "pinia": "^2.3.1",
     "vue": "~3.4.38",
     "vue-i18n": "^9.14.0",
     "wot-design-uni": "^1.11.1"
   },
   "devDependencies": {
-    "@alova/wormhole": "^1.0.6",
+    "@alova/wormhole": "^1.1.2",
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "@dcloudio/types": "^3.4.12",

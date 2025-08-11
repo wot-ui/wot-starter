@@ -1,7 +1,7 @@
 /* tslint:disable */
 /* eslint-disable */
 /**
- * Swagger Petstore - OpenAPI 3.0 - version 1.0.26
+ * Swagger Petstore - OpenAPI 3.0 - version 1.0.27
  *
  * This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
 Swagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we&#x27;ve switched to the design first approach!
@@ -96,37 +96,26 @@ type Alova2Method<
       >
     : never;
 
-export type Category = {
+export interface Category {
   id?: number;
   name?: string;
-};
-export type Tag = {
+}
+export interface Tag {
   id?: number;
   name?: string;
-};
-export type Pet = {
+}
+export interface Pet {
   id?: number;
-  /**
-   * [required]
-   */
   name: string;
   category?: Category;
-  /**
-   * [required]
-   */
   photoUrls: string[];
   tags?: Tag[];
   /**
    * pet status in the store
    */
   status?: 'available' | 'pending' | 'sold';
-};
-export type ApiResponse = {
-  code?: number;
-  type?: string;
-  message?: string;
-};
-export type Order = {
+}
+export interface Order {
   id?: number;
   petId?: number;
   quantity?: number;
@@ -136,8 +125,8 @@ export type Order = {
    */
   status?: 'placed' | 'approved' | 'delivered';
   complete?: boolean;
-};
-export type User = {
+}
+export interface User {
   id?: number;
   username?: string;
   firstName?: string;
@@ -149,7 +138,12 @@ export type User = {
    * User Status
    */
   userStatus?: number;
-};
+}
+export interface ApiResponse {
+  code?: number;
+  type?: string;
+  message?: string;
+}
 declare global {
   interface Apis {
     pet: {
@@ -166,14 +160,16 @@ declare global {
        * ```ts
        * type RequestBody = {
        *   id?: number
-       *   // [required]
        *   name: string
        *   category?: {
        *     id?: number
        *     name?: string
        *   }
-       *   // [required]
+       *   // [items] start
+       *   // [items] end
        *   photoUrls: string[]
+       *   // [items] start
+       *   // [items] end
        *   tags?: Array<{
        *     id?: number
        *     name?: string
@@ -189,14 +185,16 @@ declare global {
        * ```ts
        * type Response = {
        *   id?: number
-       *   // [required]
        *   name: string
        *   category?: {
        *     id?: number
        *     name?: string
        *   }
-       *   // [required]
+       *   // [items] start
+       *   // [items] end
        *   photoUrls: string[]
+       *   // [items] start
+       *   // [items] end
        *   tags?: Array<{
        *     id?: number
        *     name?: string
@@ -226,14 +224,16 @@ declare global {
        * ```ts
        * type RequestBody = {
        *   id?: number
-       *   // [required]
        *   name: string
        *   category?: {
        *     id?: number
        *     name?: string
        *   }
-       *   // [required]
+       *   // [items] start
+       *   // [items] end
        *   photoUrls: string[]
+       *   // [items] start
+       *   // [items] end
        *   tags?: Array<{
        *     id?: number
        *     name?: string
@@ -249,14 +249,16 @@ declare global {
        * ```ts
        * type Response = {
        *   id?: number
-       *   // [required]
        *   name: string
        *   category?: {
        *     id?: number
        *     name?: string
        *   }
-       *   // [required]
+       *   // [items] start
+       *   // [items] end
        *   photoUrls: string[]
+       *   // [items] start
+       *   // [items] end
        *   tags?: Array<{
        *     id?: number
        *     name?: string
@@ -286,7 +288,7 @@ declare global {
        * ```ts
        * type QueryParameters = {
        *   // Status values that need to be considered for filter
-       *   status?: 'available' | 'pending' | 'sold'
+       *   status: 'available' | 'pending' | 'sold'
        * }
        * ```
        *
@@ -296,14 +298,16 @@ declare global {
        * ```ts
        * type Response = Array<{
        *   id?: number
-       *   // [required]
        *   name: string
        *   category?: {
        *     id?: number
        *     name?: string
        *   }
-       *   // [required]
+       *   // [items] start
+       *   // [items] end
        *   photoUrls: string[]
+       *   // [items] start
+       *   // [items] end
        *   tags?: Array<{
        *     id?: number
        *     name?: string
@@ -319,7 +323,7 @@ declare global {
             /**
              * Status values that need to be considered for filter
              */
-            status?: 'available' | 'pending' | 'sold';
+            status: 'available' | 'pending' | 'sold';
           };
         }
       >(
@@ -338,7 +342,9 @@ declare global {
        * ```ts
        * type QueryParameters = {
        *   // Tags to filter by
-       *   tags?: string[]
+       *   // [items] start
+       *   // [items] end
+       *   tags: string[]
        * }
        * ```
        *
@@ -348,14 +354,16 @@ declare global {
        * ```ts
        * type Response = Array<{
        *   id?: number
-       *   // [required]
        *   name: string
        *   category?: {
        *     id?: number
        *     name?: string
        *   }
-       *   // [required]
+       *   // [items] start
+       *   // [items] end
        *   photoUrls: string[]
+       *   // [items] start
+       *   // [items] end
        *   tags?: Array<{
        *     id?: number
        *     name?: string
@@ -371,7 +379,7 @@ declare global {
             /**
              * Tags to filter by
              */
-            tags?: string[];
+            tags: string[];
           };
         }
       >(
@@ -390,7 +398,6 @@ declare global {
        * ```ts
        * type PathParameters = {
        *   // ID of pet to return
-       *   // [required]
        *   petId: number
        * }
        * ```
@@ -401,14 +408,16 @@ declare global {
        * ```ts
        * type Response = {
        *   id?: number
-       *   // [required]
        *   name: string
        *   category?: {
        *     id?: number
        *     name?: string
        *   }
-       *   // [required]
+       *   // [items] start
+       *   // [items] end
        *   photoUrls: string[]
+       *   // [items] start
+       *   // [items] end
        *   tags?: Array<{
        *     id?: number
        *     name?: string
@@ -423,7 +432,6 @@ declare global {
           pathParams: {
             /**
              * ID of pet to return
-             * [required]
              */
             petId: number;
           };
@@ -444,7 +452,6 @@ declare global {
        * ```ts
        * type PathParameters = {
        *   // ID of pet that needs to be updated
-       *   // [required]
        *   petId: number
        * }
        * ```
@@ -467,14 +474,16 @@ declare global {
        * ```ts
        * type Response = {
        *   id?: number
-       *   // [required]
        *   name: string
        *   category?: {
        *     id?: number
        *     name?: string
        *   }
-       *   // [required]
+       *   // [items] start
+       *   // [items] end
        *   photoUrls: string[]
+       *   // [items] start
+       *   // [items] end
        *   tags?: Array<{
        *     id?: number
        *     name?: string
@@ -489,7 +498,6 @@ declare global {
           pathParams: {
             /**
              * ID of pet that needs to be updated
-             * [required]
              */
             petId: number;
           };
@@ -520,7 +528,6 @@ declare global {
        * ```ts
        * type PathParameters = {
        *   // Pet id to delete
-       *   // [required]
        *   petId: number
        * }
        * ```
@@ -529,22 +536,21 @@ declare global {
        *
        * **Response**
        * ```ts
-       * type Response = unknown
+       * type Response = null
        * ```
        */
       deletePet<
-        Config extends Alova2MethodConfig<unknown> & {
+        Config extends Alova2MethodConfig<null> & {
           pathParams: {
             /**
              * Pet id to delete
-             * [required]
              */
             petId: number;
           };
         }
       >(
         config: Config
-      ): Alova2Method<unknown, 'pet.deletePet', Config>;
+      ): Alova2Method<null, 'pet.deletePet', Config>;
       /**
        * ---
        *
@@ -558,7 +564,6 @@ declare global {
        * ```ts
        * type PathParameters = {
        *   // ID of pet to update
-       *   // [required]
        *   petId: number
        * }
        * ```
@@ -596,7 +601,6 @@ declare global {
           pathParams: {
             /**
              * ID of pet to update
-             * [required]
              */
             petId: number;
           };
@@ -687,7 +691,6 @@ declare global {
        * ```ts
        * type PathParameters = {
        *   // ID of order that needs to be fetched
-       *   // [required]
        *   orderId: number
        * }
        * ```
@@ -712,7 +715,6 @@ declare global {
           pathParams: {
             /**
              * ID of order that needs to be fetched
-             * [required]
              */
             orderId: number;
           };
@@ -733,7 +735,6 @@ declare global {
        * ```ts
        * type PathParameters = {
        *   // ID of the order that needs to be deleted
-       *   // [required]
        *   orderId: number
        * }
        * ```
@@ -742,22 +743,21 @@ declare global {
        *
        * **Response**
        * ```ts
-       * type Response = unknown
+       * type Response = null
        * ```
        */
       deleteOrder<
-        Config extends Alova2MethodConfig<unknown> & {
+        Config extends Alova2MethodConfig<null> & {
           pathParams: {
             /**
              * ID of the order that needs to be deleted
-             * [required]
              */
             orderId: number;
           };
         }
       >(
         config: Config
-      ): Alova2Method<unknown, 'store.deleteOrder', Config>;
+      ): Alova2Method<null, 'store.deleteOrder', Config>;
     };
     user: {
       /**
@@ -909,12 +909,12 @@ declare global {
        *
        * **Response**
        * ```ts
-       * type Response = unknown
+       * type Response = null
        * ```
        */
-      logoutUser<Config extends Alova2MethodConfig<unknown>>(
+      logoutUser<Config extends Alova2MethodConfig<null>>(
         config?: Config
-      ): Alova2Method<unknown, 'user.logoutUser', Config>;
+      ): Alova2Method<null, 'user.logoutUser', Config>;
       /**
        * ---
        *
@@ -928,7 +928,6 @@ declare global {
        * ```ts
        * type PathParameters = {
        *   // The name that needs to be fetched. Use user1 for testing
-       *   // [required]
        *   username: string
        * }
        * ```
@@ -955,7 +954,6 @@ declare global {
           pathParams: {
             /**
              * The name that needs to be fetched. Use user1 for testing
-             * [required]
              */
             username: string;
           };
@@ -976,7 +974,6 @@ declare global {
        * ```ts
        * type PathParameters = {
        *   // name that need to be deleted
-       *   // [required]
        *   username: string
        * }
        * ```
@@ -1002,15 +999,14 @@ declare global {
        *
        * **Response**
        * ```ts
-       * type Response = unknown
+       * type Response = null
        * ```
        */
       updateUser<
-        Config extends Alova2MethodConfig<unknown> & {
+        Config extends Alova2MethodConfig<null> & {
           pathParams: {
             /**
              * name that need to be deleted
-             * [required]
              */
             username: string;
           };
@@ -1018,7 +1014,7 @@ declare global {
         }
       >(
         config: Config
-      ): Alova2Method<unknown, 'user.updateUser', Config>;
+      ): Alova2Method<null, 'user.updateUser', Config>;
       /**
        * ---
        *
@@ -1032,7 +1028,6 @@ declare global {
        * ```ts
        * type PathParameters = {
        *   // The name that needs to be deleted
-       *   // [required]
        *   username: string
        * }
        * ```
@@ -1041,22 +1036,21 @@ declare global {
        *
        * **Response**
        * ```ts
-       * type Response = unknown
+       * type Response = null
        * ```
        */
       deleteUser<
-        Config extends Alova2MethodConfig<unknown> & {
+        Config extends Alova2MethodConfig<null> & {
           pathParams: {
             /**
              * The name that needs to be deleted
-             * [required]
              */
             username: string;
           };
         }
       >(
         config: Config
-      ): Alova2Method<unknown, 'user.deleteUser', Config>;
+      ): Alova2Method<null, 'user.deleteUser', Config>;
     };
   }
 

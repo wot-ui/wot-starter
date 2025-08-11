@@ -2,7 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 /**
- * Swagger Petstore - OpenAPI 3.0 - version 1.0.26
+ * Swagger Petstore - OpenAPI 3.0 - version 1.0.27
  *
  * This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
 Swagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we&#x27;ve switched to the design first approach!

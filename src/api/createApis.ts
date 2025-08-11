@@ -1,7 +1,7 @@
 /* tslint:disable */
 /* eslint-disable */
 /**
- * Swagger Petstore - OpenAPI 3.0 - version 1.0.26
+ * Swagger Petstore - OpenAPI 3.0 - version 1.0.27
  *
  * This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
 Swagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we&#x27;ve switched to the design first approach!
@@ -75,9 +75,11 @@ export const createApis = (alovaInstance: Alova<AlovaGenerics>, configMap: any) 
       return createFunctionalProxy([property], alovaInstance, configMap);
     }
   });
+  return Apis;
+};
+export const mountApis = (Apis: Apis) => {
   // define global variable `Apis`
   (globalThis as any).Apis = Apis;
-  return Apis;
 };
 type MethodConfig<T> = AlovaMethodCreateConfig<
   (typeof import('./index'))['alovaInstance'] extends Alova<infer AG> ? AG : any,
@@ -93,7 +95,7 @@ type APISofParameters<Tag extends string, Url extends string> = Tag extends keyo
   : any;
 type MethodsConfigMap = {
   [P in keyof typeof import('./apiDefinitions').default]?: MethodConfig<
-    P extends `${infer Tag}.${infer Url}` ? Parameters<APISofParameters<Tag, Url>[0]['transform']>[0] : any
+    P extends `${infer Tag}.${infer Url}` ? Parameters<NonNullable<APISofParameters<Tag, Url>[0]>['transform']>[0] : any
   >;
 };
 export const withConfigType = <Config extends MethodsConfigMap>(config: Config) => config;

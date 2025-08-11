@@ -1,7 +1,6 @@
 import { createSSRApp } from 'vue'
 import App from './App.vue'
 import 'uno.css'
-import './api'
 import router from './router'
 
 const pinia = createPinia()
