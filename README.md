@@ -2,7 +2,7 @@
 Wot-Demo
 </h2>
 
-<p align="center">基于<a href="[vitesse-uni-app](https://github.com/uni-helper/vitesse-uni-app)">vitesse-uni-app</a>的深度整合 Wot UI 组件库的快速起手项目</p>
+<p align="center">基于<a href="https://github.com/uni-helper/vitesse-uni-app">vitesse-uni-app</a>的深度整合 Wot UI 组件库的快速起手项目</p>
 
 <p align="center">
   <a href="https://wot-demo.netlify.app/">📱 在线预览</a>
