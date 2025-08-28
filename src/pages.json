@@ -134,7 +134,7 @@
   "globalStyle": {
     "navigationBarBackgroundColor": "@navBgColor",
     "navigationBarTextStyle": "@navTxtStyle",
-    "navigationBarTitleText": "Wot-Demo",
+    "navigationBarTitleText": "Wot Starter",
     "backgroundColor": "@bgColor",
     "backgroundTextStyle": "@bgTxtStyle",
     "backgroundColorTop": "@bgColorTop",
