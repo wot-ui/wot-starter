@@ -1,4 +1,12 @@
 <script setup lang="ts">
+definePage({
+  name: 'home',
+  layout: 'tabbar',
+  style: {
+    navigationBarTitleText: '首页',
+  },
+})
+
 const router = useRouter()
 const {
   theme,
@@ -119,13 +127,3 @@ function openUrl(url: string) {
     </wd-action-sheet>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "home",
-  "layout": "tabbar",
-  "style": {
-    "navigationBarTitleText": "首页"
-  }
-}
-</route>

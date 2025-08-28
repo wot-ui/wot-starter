@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: 'demo-string',
+  style: {
+    navigationBarTitleText: '字符串路径跳转',
+  },
+})
+
 const router = useRouter()
 const route = useRoute()
 
@@ -76,12 +83,3 @@ function pushToObject() {
     </demo-block>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "demo-string",
-  "style": {
-    "navigationBarTitleText": "字符串路径跳转"
-  }
-}
-</route>

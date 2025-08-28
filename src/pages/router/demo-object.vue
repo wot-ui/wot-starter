@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: 'demo-object',
+  style: {
+    navigationBarTitleText: '对象路径跳转',
+  },
+})
+
 const router = useRouter()
 const route = useRoute()
 
@@ -114,12 +121,3 @@ function pushToQuery() {
     </demo-block>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "demo-object",
-  "style": {
-    "navigationBarTitleText": "对象路径跳转"
-  }
-}
-</route>

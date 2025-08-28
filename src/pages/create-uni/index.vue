@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: 'create-uni',
+  style: {
+    navigationBarTitleText: 'CreateUni 脚手架',
+  },
+})
+
 const { success: showSuccess } = useGlobalToast()
 // 核心优势
 const advantages = ref([
@@ -243,12 +250,3 @@ function handleNavigate(url: string) {
     </demo-block>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "create-uni",
-  "style": {
-    "navigationBarTitleText": "CreateUni 脚手架"
-  }
-}
-</route>

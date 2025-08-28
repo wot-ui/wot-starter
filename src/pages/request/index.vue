@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: 'request',
+  style: {
+    navigationBarTitleText: '网络请求',
+  },
+})
+
 const GlobalToast = useGlobalToast()
 
 // Alova 核心特性
@@ -281,12 +288,3 @@ function handleNavigate(url: string) {
     </demo-block>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "request",
-  "style": {
-    "navigationBarTitleText": "网络请求"
-  }
-}
-</route>

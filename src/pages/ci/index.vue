@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: 'ci',
+  style: {
+    navigationBarTitleText: 'CI 持续集成',
+  },
+})
+
 const { success: showSuccess } = useGlobalToast()
 
 // 配置示例数据
@@ -419,12 +426,3 @@ function handleNavigate(url: string) {
     </demo-block>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "ci",
-  "style": {
-    "navigationBarTitleText": "CI 持续集成"
-  }
-}
-</route>

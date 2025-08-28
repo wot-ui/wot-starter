@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: 'icon',
+  style: {
+    navigationBarTitleText: '图标演示',
+  },
+})
+
 const { success: showSuccess } = useGlobalToast()
 
 // WotUI 内置图标列表（精选9个）
@@ -474,12 +481,3 @@ function handleNavigate(url: string) {
     </demo-block>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "icon",
-  "style": {
-    "navigationBarTitleText": "图标演示"
-  }
-}
-</route>

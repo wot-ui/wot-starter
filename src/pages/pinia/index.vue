@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { defineStore } from 'pinia'
 
+definePage({
+  name: 'pinia',
+  style: {
+    navigationBarTitleText: 'Pinia 演示',
+  },
+})
+
 const { success: showSuccess } = useGlobalToast()
 
 // 定义一个基础的计数器store
@@ -538,12 +545,3 @@ persist(context, ['global-register', 'temp'])`)"
     </demo-block>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "pinia",
-  "style": {
-    "navigationBarTitleText": "Pinia 演示"
-  }
-}
-</route>

@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: 'router',
+  style: {
+    navigationBarTitleText: '路由管理',
+  },
+})
+
 const { success: showSuccess } = useGlobalToast()
 const router = useRouter()
 const route = useRoute()
@@ -460,12 +467,3 @@ function handleNavigate(url: string) {
     </demo-block>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "router",
-  "style": {
-    "navigationBarTitleText": "路由管理"
-  }
-}
-</route>

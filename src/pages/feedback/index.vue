@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: 'feedback',
+  style: {
+    navigationBarTitleText: '全局反馈',
+  },
+})
+
 const { success: showSuccess } = useGlobalToast()
 const { show: showToast, success, error, warning, info } = useGlobalToast()
 const { loading, close: closeLoading } = useGlobalLoading()
@@ -572,12 +579,3 @@ function handleNavigate(url: string) {
     </demo-block>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "feedback",
-  "style": {
-    "navigationBarTitleText": "全局反馈"
-  }
-}
-</route>

@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: 'demo-protected',
+  style: {
+    navigationBarTitleText: '受保护页面',
+  },
+})
+
 const router = useRouter()
 
 function goBack() {
@@ -45,12 +52,3 @@ function goBack() {
     </demo-block>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "demo-protected",
-  "style": {
-    "navigationBarTitleText": "受保护页面"
-  }
-}
-</route>

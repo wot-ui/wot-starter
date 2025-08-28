@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: 'demo-guard',
+  style: {
+    navigationBarTitleText: '导航守卫演示',
+  },
+})
+
 const router = useRouter()
 
 function goBack() {
@@ -74,12 +81,3 @@ function demoAfterEachPage() {
     </demo-block>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "demo-guard",
-  "style": {
-    "navigationBarTitleText": "导航守卫演示"
-  }
-}
-</route>

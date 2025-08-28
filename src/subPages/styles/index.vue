@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: 'styles',
+  style: {
+    navigationBarTitleText: 'UnoCSS 演示',
+  },
+})
+
 const { success: showSuccess } = useGlobalToast()
 
 // 演示状态
@@ -484,12 +491,3 @@ function handleNavigate(url: string) {
     </demo-block>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "styles",
-  "style": {
-    "navigationBarTitleText": "UnoCSS 演示"
-  }
-}
-</route>

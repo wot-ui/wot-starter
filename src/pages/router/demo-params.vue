@@ -1,4 +1,11 @@
 <script setup lang="ts">
+definePage({
+  name: 'demo-params',
+  style: {
+    navigationBarTitleText: '参数接收演示',
+  },
+})
+
 const router = useRouter()
 const route = useRoute()
 
@@ -173,12 +180,3 @@ function pushToGuard() {
     </demo-block>
   </view>
 </template>
-
-<route lang="json">
-{
-  "name": "demo-params",
-  "style": {
-    "navigationBarTitleText": "参数接收演示"
-  }
-}
-</route>
