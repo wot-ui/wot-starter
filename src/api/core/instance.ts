@@ -4,7 +4,7 @@
  * @LastEditTime: 2025-06-15 22:41:52
  * @LastEditors: weisheng
  * @Description: Alova instance configuration
- * @FilePath: /wot-demo/src/api/core/instance.ts
+ * @FilePath: /wot-starter/src/api/core/instance.ts
  */
 import { createAlova } from 'alova'
 import vueHook from 'alova/vue'

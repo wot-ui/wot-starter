@@ -3,7 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
-# wot-demo 项目开发指南
+# wot-starter 项目开发指南
 
 ## 项目概述
 这是一个基于 uni-app + Vue 3 + TypeScript 的跨平台应用项目，使用 wot-design-uni 组件库构建现代化的移动应用界面。

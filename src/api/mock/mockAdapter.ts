@@ -4,7 +4,7 @@
  * @LastEditTime: 2025-06-15 22:48:04
  * @LastEditors: weisheng
  * @Description: Mock适配器配置 - 集成所有模块的mock数据
- * @FilePath: /wot-demo/src/api/mock/mockAdapter.ts
+ * @FilePath: /wot-starter/src/api/mock/mockAdapter.ts
  * 记得注释
  */
 import { uniappMockResponse, uniappRequestAdapter } from '@alova/adapter-uniapp'

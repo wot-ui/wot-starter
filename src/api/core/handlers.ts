@@ -4,7 +4,7 @@
  * @LastEditTime: 2025-06-15 21:47:22
  * @LastEditors: weisheng
  * @Description: Alova response and error handlers
- * @FilePath: /wot-demo/src/api/core/handlers.ts
+ * @FilePath: /wot-starter/src/api/core/handlers.ts
  */
 import type { Method } from 'alova'
 import router from '@/router'

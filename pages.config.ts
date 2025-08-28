@@ -4,7 +4,7 @@
  * @LastEditTime: 2025-06-27 13:04:54
  * @LastEditors: weisheng
  * @Description:
- * @FilePath: /wot-demo/pages.config.ts
+ * @FilePath: /wot-starter/pages.config.ts
  * 记得注释
  */
 import { defineUniPages } from '@uni-helper/vite-plugin-uni-pages'

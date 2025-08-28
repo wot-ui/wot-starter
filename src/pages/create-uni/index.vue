@@ -64,7 +64,7 @@ const problems = ref([
 // WotUI 快速创建
 const wotQuickStart = ref({
   title: '快速创建 WotUI 项目',
-  command: 'pnpm create uni@latest -t wot-demo <你的项目名称>',
+  command: 'pnpm create uni@latest -t wot-starter <你的项目名称>',
   desc: '一键创建集成了 WotUI 的完整项目',
   features: [
     '✅ TypeScript 项目',

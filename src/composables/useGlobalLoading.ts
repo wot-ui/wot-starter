@@ -4,7 +4,7 @@
  * @LastEditTime: 2025-06-14 21:24:21
  * @LastEditors: weisheng
  * @Description:
- * @FilePath: /wot-demo/src/composables/useGlobalLoading.ts
+ * @FilePath: /wot-starter/src/composables/useGlobalLoading.ts
  * 记得注释
  */
 import { defineStore } from 'pinia'

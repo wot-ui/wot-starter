@@ -4,7 +4,7 @@
  * @LastEditTime: 2025-06-26 21:59:38
  * @LastEditors: weisheng
  * @Description: Pet Store - Pet相关接口的mock数据
- * @FilePath: /wot-demo/src/api/mock/modules/pet.ts
+ * @FilePath: /wot-starter/src/api/mock/modules/pet.ts
  */
 import { defineMock } from '@alova/mock'
 import { generateMockData } from '../utils/generators'
