@@ -20,6 +20,7 @@ interface NavigateToOptions {
        "/pages/router/demo-query" |
        "/pages/router/demo-string" |
        "/pages/router/index" |
+       "/pages/uni-ku-root/index" |
        "/subPages/styles/index";
 }
 interface RedirectToOptions extends NavigateToOptions {}

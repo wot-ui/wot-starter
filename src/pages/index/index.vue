@@ -87,8 +87,8 @@ function openUrl(url: string) {
         <wd-cell title="🍍 Pinia 持久化" is-link @click="navigateTo('pinia')" />
         <wd-cell title="💬 Fedback 反馈组件" is-link @click="navigateTo('feedback')" />
         <wd-cell title="🌱 CreateUni 脚手架" is-link @click="navigateTo('create-uni') " />
-
         <wd-cell title="🔄 CI/CD 持续集成" is-link @click="navigateTo('ci')" />
+        <wd-cell title="🦾  uni-ku/root" is-link @click="navigateTo('root')" />
       </wd-cell-group>
     </demo-block>
 

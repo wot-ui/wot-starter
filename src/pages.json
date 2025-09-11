@@ -129,6 +129,14 @@
       "style": {
         "navigationBarTitleText": "路由管理"
       }
+    },
+    {
+      "path": "pages/uni-ku-root/index",
+      "type": "page",
+      "name": "root",
+      "style": {
+        "navigationBarTitleText": "uni-ku/root"
+      }
     }
   ],
   "globalStyle": {

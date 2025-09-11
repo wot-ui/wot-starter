@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2024-11-01 11:44:38
- * @LastEditTime: 2025-07-20 23:18:48
+ * @LastEditTime: 2025-09-11 13:18:57
  * @LastEditors: weisheng
  * @Description:
  * @FilePath: /wot-starter/vite.config.ts
@@ -15,7 +15,7 @@ import UniHelperLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import UniHelperComponents from '@uni-helper/vite-plugin-uni-components'
 import AutoImport from 'unplugin-auto-import/vite'
 import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
-
+import UniKuRoot from '@uni-ku/root'
 // https://vitejs.dev/config/
 export default async () => {
   const UnoCSS = (await import('unocss/vite')).default
@@ -45,6 +45,8 @@ export default async () => {
         dirs: ['src/components', 'src/business'],
         directoryAsNamespace: true,
       }),
+      // https://github.com/uni-ku/root
+      UniKuRoot(),
       Uni(),
       // https://github.com/antfu/unplugin-auto-import
       AutoImport({
