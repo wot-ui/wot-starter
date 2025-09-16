@@ -21,7 +21,9 @@ type _LocationUrl =
   "/pages/router/demo-string" |
   "/pages/router/index" |
   "/pages/uni-ku-root/index" |
-  "/subPages/styles/index";
+  "/subPages/styles/index" |
+  "/subEcharts/echarts/index" |
+  "/subAsyncEcharts/asyncEcharts/index";
 
 interface NavigateToOptions {
   url: _LocationUrl;

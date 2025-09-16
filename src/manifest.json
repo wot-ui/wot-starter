@@ -47,6 +47,9 @@
       "urlCheck": false
     },
     "usingComponents": true,
+    "optimization": {
+      "subPackages": true
+    },
     "darkmode": true,
     "themeLocation": "theme.json"
   },

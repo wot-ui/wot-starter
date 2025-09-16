@@ -1,12 +1,13 @@
 /*
  * @Author: weisheng
  * @Date: 2024-11-01 11:44:38
- * @LastEditTime: 2025-09-11 13:18:57
+ * @LastEditTime: 2025-09-16 13:40:59
  * @LastEditors: weisheng
  * @Description:
  * @FilePath: /wot-starter/vite.config.ts
  * 记得注释
  */
+import process from 'node:process'
 import { defineConfig } from 'vite'
 import Uni from '@dcloudio/vite-plugin-uni'
 import UniHelperManifest from '@uni-helper/vite-plugin-uni-manifest'
@@ -16,11 +17,16 @@ import UniHelperComponents from '@uni-helper/vite-plugin-uni-components'
 import AutoImport from 'unplugin-auto-import/vite'
 import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
 import UniKuRoot from '@uni-ku/root'
+import { UniEchartsResolver } from 'uni-echarts/resolver'
+import Optimization from '@uni-ku/bundle-optimizer'
 // https://vitejs.dev/config/
 export default async () => {
   const UnoCSS = (await import('unocss/vite')).default
 
   return defineConfig({
+    optimizeDeps: {
+      exclude: process.env.NODE_ENV === 'development' ? ['wot-design-uni', 'uni-echarts'] : [],
+    },
     plugins: [
       // https://github.com/uni-helper/vite-plugin-uni-manifest
       UniHelperManifest(),
@@ -29,6 +35,8 @@ export default async () => {
         dts: 'src/uni-pages.d.ts',
         subPackages: [
           'src/subPages',
+          'src/subEcharts',
+          'src/subAsyncEcharts',
         ],
         /**
          * 排除的页面，相对于 dir 和 subPackages
@@ -40,7 +48,7 @@ export default async () => {
       UniHelperLayouts(),
       // https://github.com/uni-helper/vite-plugin-uni-components
       UniHelperComponents({
-        resolvers: [WotResolver()],
+        resolvers: [WotResolver(), UniEchartsResolver()],
         dts: 'src/components.d.ts',
         dirs: ['src/components', 'src/business'],
         directoryAsNamespace: true,
@@ -48,6 +56,10 @@ export default async () => {
       // https://github.com/uni-ku/root
       UniKuRoot(),
       Uni(),
+      // https://github.com/uni-ku/bundle-optimizer
+      Optimization({
+        logger: true,
+      }),
       // https://github.com/antfu/unplugin-auto-import
       AutoImport({
         imports: ['vue', '@vueuse/core', 'pinia', 'uni-app', {

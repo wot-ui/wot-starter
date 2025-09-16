@@ -11,7 +11,8 @@
       "@mini-types/alipay",
       "miniprogram-api-typings",
       "@uni-helper/uni-types",
-      "wot-design-uni/global"
+      "wot-design-uni/global",
+      "uni-echarts/global"
     ],
     "sourceMap": true
   },
@@ -23,6 +24,8 @@
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "async-import.d.ts",
+    "async-component.d.ts"
   ]
 }

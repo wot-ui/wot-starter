@@ -183,6 +183,32 @@
           }
         }
       ]
+    },
+    {
+      "root": "subEcharts",
+      "pages": [
+        {
+          "path": "echarts/index",
+          "type": "page",
+          "name": "echarts",
+          "style": {
+            "navigationBarTitleText": "Echarts 演示"
+          }
+        }
+      ]
+    },
+    {
+      "root": "subAsyncEcharts",
+      "pages": [
+        {
+          "path": "asyncEcharts/index",
+          "type": "page",
+          "name": "echartsAsync",
+          "style": {
+            "navigationBarTitleText": "echarts 异步跨包示例"
+          }
+        }
+      ]
     }
   ]
 }

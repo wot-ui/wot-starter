@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2025-08-28 20:59:43
- * @LastEditTime: 2025-08-30 19:33:05
+ * @LastEditTime: 2025-09-15 18:18:28
  * @LastEditors: weisheng
  * @Description:
  * @FilePath: /wot-starter/manifest.config.ts
@@ -61,6 +61,9 @@ export default defineManifestConfig({
   'quickapp': {},
   /* 小程序特有相关 */
   'mp-weixin': {
+    optimization: {
+      subPackages: true,
+    },
     appid: '',
     setting: {
       urlCheck: false,

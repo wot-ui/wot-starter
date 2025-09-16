@@ -89,6 +89,7 @@ function openUrl(url: string) {
         <wd-cell title="🌱 CreateUni 脚手架" is-link @click="navigateTo('create-uni') " />
         <wd-cell title="🔄 CI/CD 持续集成" is-link @click="navigateTo('ci')" />
         <wd-cell title="🦾  uni-ku/root" is-link @click="navigateTo('root')" />
+        <wd-cell title="📊 uni-echarts" is-link @click="navigateTo('echarts')" />
       </wd-cell-group>
     </demo-block>
 
