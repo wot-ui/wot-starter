@@ -3,12 +3,7 @@ import { LineChart } from 'echarts/charts'
 import { GridComponent, TooltipComponent } from 'echarts/components'
 import * as echarts from 'echarts/core'
 import { CanvasRenderer } from 'echarts/renderers'
-import { provideEcharts } from 'uni-echarts/shared'
 
-// 由于尚未明确的原因，目前 npm 插件的编译机制存在问题
-// 小程序端的 npm 插件内部无法正确获取到业务侧的 echarts
-// 所以需要手动将 echarts 提供给插件用于构建图表
-provideEcharts(echarts) // 🚨 注意：npm 方式需要添加这一行代码
 echarts.use([
   GridComponent,
   TooltipComponent,
