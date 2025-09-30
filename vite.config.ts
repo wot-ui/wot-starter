@@ -18,6 +18,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
 import UniKuRoot from '@uni-ku/root'
 import { UniEchartsResolver } from 'uni-echarts/resolver'
+import { UniEcharts } from 'uni-echarts/vite'
 import Optimization from '@uni-ku/bundle-optimizer'
 // https://vitejs.dev/config/
 export default async () => {
@@ -55,6 +56,8 @@ export default async () => {
       }),
       // https://github.com/uni-ku/root
       UniKuRoot(),
+      // https://uni-echarts.xiaohe.ink
+      UniEcharts(),
       Uni(),
       // https://github.com/uni-ku/bundle-optimizer
       Optimization({
