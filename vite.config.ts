@@ -20,6 +20,7 @@ import UniKuRoot from '@uni-ku/root'
 import { UniEchartsResolver } from 'uni-echarts/resolver'
 import { UniEcharts } from 'uni-echarts/vite'
 import Optimization from '@uni-ku/bundle-optimizer'
+import ComponentPlaceholder from '@binbinji/vite-plugin-component-placeholder'
 // https://vitejs.dev/config/
 export default async () => {
   const UnoCSS = (await import('unocss/vite')).default
@@ -63,6 +64,8 @@ export default async () => {
       Optimization({
         logger: true,
       }),
+      // https://github.com/chouchouji/vite-plugin-component-placeholder
+      ComponentPlaceholder(),
       // https://github.com/antfu/unplugin-auto-import
       AutoImport({
         imports: ['vue', '@vueuse/core', 'pinia', 'uni-app', {

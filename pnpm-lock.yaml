@@ -93,6 +93,9 @@ importers:
       '@alova/wormhole':
         specifier: ^1.1.2
         version: 1.1.2
+      '@binbinji/vite-plugin-component-placeholder':
+        specifier: ^0.0.12
+        version: 0.0.12(rollup@4.21.1)
       '@commitlint/cli':
         specifier: ^19.5.0
         version: 19.5.0(@types/node@20.16.2)(typescript@5.5.4)
@@ -977,6 +980,9 @@ packages:
 
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
+
+  '@binbinji/vite-plugin-component-placeholder@0.0.12':
+    resolution: {integrity: sha512-cnxNuo9K39sv3AkGoDZIMheTdXvWPOOVv/qdpTP0l6okak2tI2CVuy4dvnO/ytb2xhT0U29m+bkfrN1No7Io4Q==}
 
   '@clack/core@0.3.5':
     resolution: {integrity: sha512-5cfhQNH+1VQ2xLQlmzXMqUoiaH0lRBq9/CLW9lTyMbuKLC3+xEK01tHVvyut++mLOn5urSHmkm6I0Lg9MaJSTQ==}
@@ -2252,6 +2258,15 @@ packages:
 
   '@rollup/pluginutils@5.1.0':
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+
+  '@rollup/pluginutils@5.3.0':
+    resolution: {integrity: sha512-5EdhGZtnu3V88ces7s53hhfK5KSASnJZv8Lulpc04cWO3REESroJXg73DFsOmgbU2BhwV0E20bu2IDZb3VKW4Q==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
@@ -8280,6 +8295,12 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
+  '@binbinji/vite-plugin-component-placeholder@0.0.12(rollup@4.21.1)':
+    dependencies:
+      '@rollup/pluginutils': 5.3.0(rollup@4.21.1)
+    transitivePeerDependencies:
+      - rollup
+
   '@clack/core@0.3.5':
     dependencies:
       picocolors: 1.1.1
@@ -10209,6 +10230,14 @@ snapshots:
       '@types/estree': 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    optionalDependencies:
+      rollup: 4.21.1
+
+  '@rollup/pluginutils@5.3.0(rollup@4.21.1)':
+    dependencies:
+      '@types/estree': 1.0.8
+      estree-walker: 2.0.2
+      picomatch: 4.0.3
     optionalDependencies:
       rollup: 4.21.1
 

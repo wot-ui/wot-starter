@@ -90,6 +90,7 @@
   },
   "devDependencies": {
     "@alova/wormhole": "^1.1.2",
+    "@binbinji/vite-plugin-component-placeholder": "^0.0.12",
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "@dcloudio/types": "^3.4.12",
