@@ -87,8 +87,8 @@ importers:
         specifier: ^9.14.0
         version: 9.14.0(vue@3.4.38(typescript@5.5.4))
       wot-design-uni:
-        specifier: ^1.11.1
-        version: 1.11.1(vue@3.4.38(typescript@5.5.4))
+        specifier: ^1.13.0
+        version: 1.13.0(vue@3.4.38(typescript@5.5.4))
     devDependencies:
       '@alova/wormhole':
         specifier: ^1.1.2
@@ -7118,8 +7118,8 @@ packages:
   wordwrap@1.0.0:
     resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
 
-  wot-design-uni@1.11.1:
-    resolution: {integrity: sha512-Pjfnz+4v0XDWvVJ/mkgVUzneOpB/WR0H+iD+Wt0hbELopuZhA1DzFvUsRA90cP/7sPsKiwiwKl3aXecG++4SkQ==}
+  wot-design-uni@1.13.0:
+    resolution: {integrity: sha512-U4ezX7n1DfSuecTvHap06UqkN7dGhSLyC5n7OfmddajYSiV6t39bPLtRIds6uTarmRZCEWERrLN8cGSdZJIHWg==}
     engines: {HBuilderX: ^3.8.7}
     peerDependencies:
       vue: '>=3.2.47'
@@ -15769,7 +15769,7 @@ snapshots:
 
   wordwrap@1.0.0: {}
 
-  wot-design-uni@1.11.1(vue@3.4.38(typescript@5.5.4)):
+  wot-design-uni@1.13.0(vue@3.4.38(typescript@5.5.4)):
     dependencies:
       vue: 3.4.38(typescript@5.5.4)
 
