@@ -7,8 +7,9 @@
  * @FilePath: /wot-starter/vite.config.ts
  * 记得注释
  */
+import path from 'node:path'
 import process from 'node:process'
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import Uni from '@dcloudio/vite-plugin-uni'
 import UniHelperManifest from '@uni-helper/vite-plugin-uni-manifest'
 import UniHelperPages from '@uni-helper/vite-plugin-uni-pages'
@@ -21,8 +22,14 @@ import { UniEchartsResolver } from 'uni-echarts/resolver'
 import { UniEcharts } from 'uni-echarts/vite'
 import Optimization from '@uni-ku/bundle-optimizer'
 // https://vitejs.dev/config/
-export default async () => {
+export default async ({ command, mode }) => {
+  // mode: 区分生产环境还是开发环境
+  console.log('command, mode -> ', command, mode)
+
   const UnoCSS = (await import('unocss/vite')).default
+
+  const env = loadEnv(mode, path.resolve(process.cwd(), 'env'))
+  console.log('environment variables -> ', env)
 
   return defineConfig({
     envDir: './env', // custom env directory
