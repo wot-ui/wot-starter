@@ -25,6 +25,7 @@ export default async () => {
   const UnoCSS = (await import('unocss/vite')).default
 
   return defineConfig({
+    envDir: './env', // custom env directory
     optimizeDeps: {
       exclude: process.env.NODE_ENV === 'development' ? ['wot-design-uni', 'uni-echarts'] : [],
     },
