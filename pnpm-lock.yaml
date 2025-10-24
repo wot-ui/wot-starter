@@ -77,6 +77,9 @@ importers:
       pinia:
         specifier: ^2.3.1
         version: 2.3.1(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
+      pinia-plugin-persistedstate:
+        specifier: 3.2.1
+        version: 3.2.1(pinia@2.3.1(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))
       uni-echarts:
         specifier: ^2.0.0
         version: 2.0.0(echarts@6.0.0)(vue@3.4.38(typescript@5.5.4))
@@ -5916,6 +5919,11 @@ packages:
   pify@3.0.0:
     resolution: {integrity: sha512-C3FsVNH1udSEX48gGX1xfvwTWfsYWj5U+8/uK15BGzIGrKoUpghX8hWZwa/OFnakBiiVNmBvemTJR5mcy7iPcg==}
     engines: {node: '>=4'}
+
+  pinia-plugin-persistedstate@3.2.1:
+    resolution: {integrity: sha512-MK++8LRUsGF7r45PjBFES82ISnPzyO6IZx3CH5vyPseFLZCk1g2kgx6l/nW8pEBKxxd4do0P6bJw+mUSZIEZUQ==}
+    peerDependencies:
+      pinia: ^2.0.0
 
   pinia@2.3.1:
     resolution: {integrity: sha512-khUlZSwt9xXCaTbbxFYBKDc/bWAGWJjOgvxETwkTN7KRm66EeT1ZdZj6i2ceh9sP2Pzqsbc704r2yngBrxBVug==}
@@ -14481,6 +14489,10 @@ snapshots:
   pify@2.3.0: {}
 
   pify@3.0.0: {}
+
+  pinia-plugin-persistedstate@3.2.1(pinia@2.3.1(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))):
+    dependencies:
+      pinia: 2.3.1(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
 
   pinia@2.3.1(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)):
     dependencies:
