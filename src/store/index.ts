@@ -12,7 +12,3 @@ store.use(
 )
 
 export default store
-
-// 模块统一导出
-export * from './manualThemeStore'
-export * from './themeStore'
