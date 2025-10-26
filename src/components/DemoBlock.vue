@@ -44,7 +44,7 @@ export default {
     <view v-if="slots.description" class="mx-4">
       <slot name="description" />
     </view>
-    <wd-card :custom-class="`!px-0 overflow-hidden !mb-0 ${customCardClass}`" :custom-content-class="customCardContentClass">
+    <wd-card v-if="slots.default" :custom-class="`!px-0 overflow-hidden !mb-0 ${customCardClass}`" :custom-content-class="customCardContentClass">
       <slot />
     </wd-card>
   </view>
