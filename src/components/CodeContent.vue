@@ -37,7 +37,7 @@ function copy() {
     @click="copy"
   >
     <view class="flex items-center justify-between">
-      <text class="text-3 text-gray-700 dark:text-[var(--wot-dark-color)]">
+      <text class="text-3 text-gray-700 dark:text-[var(--wot-dark-color)]" :class="{ 'font-bold': slots.pre }">
         <slot />
       </text>
       <wd-icon v-if="showIcon" name="file-copy" size="16px" color="#666" />
