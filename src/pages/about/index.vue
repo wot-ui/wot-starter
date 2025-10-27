@@ -66,76 +66,84 @@ function donate() {
 </script>
 
 <template>
-  <view class="min-h-screen bg-gray-100 py-3 dark:bg-[var(--wot-dark-background)]">
+  <view class="min-h-screen flex-col gap-y-3 py-3">
     <!-- 头部介绍 -->
-    <view class="mx-3 mb-3 flex flex-col gap-2">
+    <view class="mx-4 flex-col gap-2">
       <text class="text-6 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
         关于我们
       </text>
-      <text class="text-3.5 text-gray-600 leading-snug dark:text-[var(--wot-dark-color2)]">
+      <text class="text-3.5">
         我是不如摸鱼去，一个前端打工仔，我和我的小伙伴们正在致力于开发轻量、高效的uni-app组件库和高效、易用的uni-app快速开发模板。
       </text>
     </view>
 
     <!-- 核心团队 -->
-    <demo-block title="核心团队" transparent>
-      <view class="grid grid-cols-2 gap-3">
-        <view
-          v-for="member in coreTeam"
-          :key="member.name"
-          class="rounded-2 bg-white p-4 text-center dark:bg-[var(--wot-dark-background2)]"
-          @click="openUrl(member.github)"
-        >
-          <image
-            :src="member.avatar"
-            class="mx-auto mb-2 h-16 w-16 border-2 border-blue-200 rounded-full dark:border-blue-800"
-          />
-          <view class="mb-1 text-3.5 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
-            {{ member.name }}
-          </view>
-          <view class="mb-2 text-2.5 text-blue-600 dark:text-blue-400">
-            {{ member.role }}
-          </view>
-          <view class="text-2.5 text-gray-600 leading-snug dark:text-[var(--wot-dark-color2)]">
-            {{ member.desc }}
-          </view>
+    <demo-block title="核心团队" custom-card-content-class="p-4 flex-col gap-y-3">
+      <template #description>
+        <view class="grid grid-cols-2 gap-3">
+          <wd-card
+            v-for="member in coreTeam"
+            :key="member.name"
+            class="text-center !mx-0 !mb-0"
+            custom-content-class="py-4"
+            @click="openUrl(member.github)"
+          >
+            <image
+              :src="member.avatar"
+              class="mx-auto mb-2 h-16 w-16 border-2 border-blue-200 rounded-full dark:border-blue-800"
+            />
+            <view class="mb-1 text-3.5 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
+              {{ member.name }}
+            </view>
+            <view class="mb-2 text-2.5 text-blue-600 dark:text-blue-400">
+              {{ member.role }}
+            </view>
+            <view class="text-2.5 text-gray-600 leading-snug dark:text-[var(--wot-dark-color2)]">
+              {{ member.desc }}
+            </view>
+          </wd-card>
         </view>
-      </view>
+      </template>
     </demo-block>
 
     <!-- 关于 uni-helper -->
-    <demo-block title="关于 uni-helper 团队" transparent>
-      <view class="rounded-3 bg-white p-5 dark:bg-[var(--wot-dark-background2)]">
-        <text class="mb-3 block text-3.5 text-gray-600 leading-relaxed dark:text-[var(--wot-dark-color2)]">
-          <text class="text-blue-600" @click="openUrl('https://uni-helper.js.org/')">
-            uni-helper
-          </text>
-          是一个旨在增强 uni-app 系列产品的开发体验为爱发电的非官方组织。作为靠爱发电的非官方项目，uni-helper 提供了打包工具插件支持、编辑器扩展支持、NPM 包等并尽力维护它们。
+    <demo-block title="关于 uni-helper 团队" custom-card-content-class="p-4 flex-col gap-y-3">
+      <text class="block text-3.5">
+        <text class="text-blue-600" @click="openUrl('https://uni-helper.js.org/')">
+          uni-helper
         </text>
-        <text class="text-3.5 text-gray-600 leading-relaxed dark:text-[var(--wot-dark-color2)]">
-          在此我们特别向 uni-helper 团队表示感谢，他们为 uni-app 系列产品提供了强大的支持，包括打包工具插件支持、编辑器扩展支持等，这使我们得以站在巨人的巨人的肩膀上完成此项目。
-        </text>
-      </view>
+        是一个旨在增强 uni-app 系列产品的开发体验为爱发电的非官方组织。作为靠爱发电的非官方项目，uni-helper 提供了打包工具插件支持、编辑器扩展支持、NPM 包等并尽力维护它们。
+      </text>
+      <text class="text-3.5">
+        在此我们特别向 uni-helper 团队表示感谢，他们为 uni-app 系列产品提供了强大的支持，包括打包工具插件支持、编辑器扩展支持等，这使我们得以站在巨人的巨人的肩膀上完成此项目。
+      </text>
     </demo-block>
 
     <!-- 更多信息 -->
-    <demo-block title="更多信息" transparent>
-      <wd-cell-group border custom-class="rounded-2! overflow-hidden">
+    <demo-block title="更多信息">
+      <wd-cell-group border>
         <wd-cell
           title="关注公众号"
-          title-width="200px"
           label="uni-app教程、组件库讯息一手掌握！"
           is-link
+          custom-value-class="content-center"
           @click="openWeChat"
         />
         <wd-cell
           title="捐赠"
-          title-width="200px"
           label="每一份捐赠都是对我们莫大的鼓励！"
           is-link
+          custom-value-class="content-center"
           @click="donate"
         />
       </wd-cell-group>
     </demo-block>
   </view>
 </template>
+
+<style lang="scss" scoped>
+:deep() .wd-cell__right {
+  align-self: center;
+  flex: none;
+}
+</style>

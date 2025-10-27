@@ -19,67 +19,44 @@ function pushToObject() {
 </script>
 
 <template>
-  <view class="min-h-screen bg-gray-100 py-3 dark:bg-[var(--wot-dark-background)]">
+  <view class="min-h-screen flex-col gap-3 py-3">
     <!-- 头部 -->
-    <view class="mx-3 mb-3">
-      <view class="rounded-3 bg-white px-5 py-6 text-center dark:bg-[var(--wot-dark-background2)]">
-        <view class="mb-3 text-8">
-          📝
-        </view>
-        <view class="mb-2 text-5 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
-          字符串路径跳转演示
-        </view>
-        <view class="text-3.5 text-gray-600 dark:text-[var(--wot-dark-color2)]">
-          使用 router.push('/path') 进行跳转
-        </view>
+    <wd-card class="text-center !mb-0" custom-content-class="py-4 flex-col gap-y-3">
+      <view class="mb-3 text-8">
+        📝
       </view>
-    </view>
+      <view class="text-5 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
+        字符串路径跳转演示
+      </view>
+      <view class="text-3.5">
+        使用 router.push('/path') 进行跳转
+      </view>
+    </wd-card>
 
     <!-- 跳转信息 -->
-    <demo-block title="跳转信息" transparent>
-      <view class="rounded-3 bg-white p-4 dark:bg-[var(--wot-dark-background2)]">
-        <view class="mb-3 text-4 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
-          当前页面信息
-        </view>
-        <view class="space-y-2">
-          <view class="flex items-center justify-between border-b border-gray-100 py-2 dark:border-[var(--wot-dark-border)]">
-            <text class="text-3.5 text-gray-600 dark:text-[var(--wot-dark-color2)]">
-              路径:
-            </text>
-            <text class="text-3.5 text-gray-800 font-mono dark:text-[var(--wot-dark-color)]">
-              {{ route.path }}
-            </text>
-          </view>
-          <view class="flex items-center justify-between border-b border-gray-100 py-2 dark:border-[var(--wot-dark-border)]">
-            <text class="text-3.5 text-gray-600 dark:text-[var(--wot-dark-color2)]">
-              跳转方式:
-            </text>
-            <text class="text-3.5 text-gray-800 dark:text-[var(--wot-dark-color)]">
-              字符串路径
-            </text>
-          </view>
-          <view class="flex items-center justify-between py-2">
-            <text class="text-3.5 text-gray-600 dark:text-[var(--wot-dark-color2)]">
-              代码:
-            </text>
-            <text class="text-3.5 text-gray-800 font-mono dark:text-[var(--wot-dark-color)]">
-              router.push('/pages/router/demo-string')
-            </text>
-          </view>
-        </view>
+    <demo-block title="跳转信息" custom-card-content-class="py-4 flex-col gap-y-3">
+      <view class="mx-4 text-4 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
+        当前页面信息
       </view>
+      <wd-cell-group class="cell-justify-end">
+        <wd-cell size="small" title="路径:" :value="route.path" />
+        <wd-cell size="small" title="跳转方式:" value="字符串路径" />
+        <wd-cell size="small" title="代码:" value="router.push('/pages/router/demo-string')" />
+      </wd-cell-group>
     </demo-block>
 
     <!-- 操作按钮 -->
-    <demo-block title="继续演示" transparent>
-      <view class="space-y-3">
-        <wd-button type="primary" block @click="pushToObject">
-          跳转到对象路径演示
-        </wd-button>
-        <wd-button type="warning" block @click="goBack">
-          返回上一页
-        </wd-button>
-      </view>
+    <demo-block title="继续演示">
+      <template #description>
+        <view class="flex-col gap-y-3">
+          <wd-button type="primary" block @click="pushToObject">
+            跳转到对象路径演示
+          </wd-button>
+          <wd-button type="warning" block @click="goBack">
+            返回上一页
+          </wd-button>
+        </view>
+      </template>
     </demo-block>
   </view>
 </template>

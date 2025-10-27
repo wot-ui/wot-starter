@@ -28,7 +28,7 @@ function navigateToAsync() {
 </script>
 
 <template>
-  <view class="flex flex-col gap-2 py-5">
+  <view class="flex-col gap-2 py-5">
     <!-- 异步 Echarts 入口 -->
     <wd-card class="shadow-sm" custom-class="!p-0">
       <wd-button block :round="false" @click="navigateToAsync">

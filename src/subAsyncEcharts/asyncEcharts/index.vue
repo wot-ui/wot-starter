@@ -20,7 +20,7 @@ definePage({
 </script>
 
 <template>
-  <view class="flex flex-col gap-2 py-5">
+  <view class="flex-col gap-2 py-5">
     <!-- 饼图 -->
     <wd-card class="shadow-sm" title="饼图示例">
       <PieChart />
