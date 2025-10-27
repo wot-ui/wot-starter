@@ -39,12 +39,12 @@ export default {
 </script>
 
 <template>
-  <view :class="[customClass.split(' ')]" class="flex flex-col gap-3">
+  <view :class="[customClass.split(' ')]" class="flex-col gap-3">
     <wd-text v-if="title" class="mx-4 pt-2 text-26rpx" :text="title" />
     <view v-if="slots.description" class="mx-4">
       <slot name="description" />
     </view>
-    <wd-card v-if="slots.default" :custom-class="`!px-0 overflow-hidden !mb-0 ${customCardClass}`" :custom-content-class="customCardContentClass">
+    <wd-card v-if="slots.default" :custom-class="`!px-0 overflow-hidden !mb-0 ${customCardClass}`" :custom-content-class="`p-4 flex-col gap-3 ${customCardContentClass}`">
       <slot />
     </wd-card>
   </view>
