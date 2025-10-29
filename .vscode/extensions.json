@@ -7,6 +7,7 @@
     "dbaeumer.vscode-eslint",
     "editorConfig.editorConfig",
     "uni-helper.uni-helper-vscode",
-    "alova.alova-vscode-extension"
+    "alova.alova-vscode-extension",
+    "wot-ui.wot-ui-intellisense"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "wot-starter",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@9.9.0",
   "license": "MIT",
@@ -86,7 +86,7 @@
     "uni-echarts": "^2.0.0",
     "vue": "~3.4.38",
     "vue-i18n": "^9.14.0",
-    "wot-design-uni": "^1.11.1"
+    "wot-design-uni": "^1.13.0"
   },
   "devDependencies": {
     "@alova/wormhole": "^1.1.2",
