@@ -11,7 +11,7 @@ function handleTabbarChange({ value }: { value: string }) {
 }
 
 onMounted(() => {
-  // #ifdef APP-PLUS
+  // #ifdef APP
   uni.hideTabBar()
   // #endif
   nextTick(() => {
