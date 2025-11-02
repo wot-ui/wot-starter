@@ -34,8 +34,9 @@ export default {
 
 <template>
   <slot />
+  <wd-gap safe-area-bottom height="var(--wot-tabbar-height, 50px)" />
   <wd-tabbar
-    :model-value="activeTabbar.name" bordered safe-area-inset-bottom placeholder fixed
+    :model-value="activeTabbar.name" bordered safe-area-inset-bottom fixed
     @change="handleTabbarChange"
   >
     <wd-tabbar-item

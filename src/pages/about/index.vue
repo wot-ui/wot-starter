@@ -53,14 +53,14 @@ function openUrl(url: string) {
 // 打开公众号二维码
 function openWeChat() {
   uni.previewImage({
-    urls: ['https://wot-design-uni.cn/wechatPublicAccount.png'],
+    urls: ['https://wot-ui.cn/wechatPublicAccount.png'],
   })
 }
 
 // 打开捐赠二维码
 function donate() {
   uni.previewImage({
-    urls: ['https://wot-design-uni.cn/weixinQrcode.jpg'],
+    urls: ['https://wot-ui.cn/weixinQrcode.jpg'],
   })
 }
 </script>
