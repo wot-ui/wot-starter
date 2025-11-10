@@ -84,7 +84,7 @@ function donate() {
           <wd-card
             v-for="member in coreTeam"
             :key="member.name"
-            class="text-center !mx-0 !mb-0"
+            custom-class="text-center !mx-0 !mb-0"
             custom-content-class="py-4"
             @click="openUrl(member.github)"
           >

@@ -159,7 +159,7 @@ function handleNavigate(url: string) {
         <wd-card
           v-for="advantage in advantages"
           :key="advantage.title"
-          class="!mx-0 !mb-0"
+          custom-class="!mx-0 !mb-0"
           custom-content-class="flex-col items-center py-4 gap-2"
         >
           <view class="text-6">

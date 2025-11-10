@@ -138,7 +138,7 @@ function handleNavigate(url: string) {
           <wd-card
             v-for="icon in wotIcons"
             :key="icon.name"
-            class="transition-all duration-200 !mx-0 !mb-0 active:scale-95 !text-center hover:shadow-md"
+            custom-class="transition-all duration-200 !mx-0 !mb-0 active:scale-95 !text-center hover:shadow-md"
             custom-content-class="py-4 px-0"
             @click="copyIconCode(icon.name)"
           >
@@ -197,7 +197,7 @@ function handleNavigate(url: string) {
         <view class="grid grid-cols-3 mt-3 gap-3 md:grid-cols-6 sm:grid-cols-4">
           <!-- add -->
           <wd-card
-            class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
+            custom-class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
             custom-content-class="py-4 px-0"
             @click="copyIconCode('add', true)"
           >
@@ -214,7 +214,7 @@ function handleNavigate(url: string) {
 
           <!-- close -->
           <wd-card
-            class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
+            custom-class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
             custom-content-class="py-4 px-0"
             @click="copyIconCode('close', true)"
           >
@@ -231,7 +231,7 @@ function handleNavigate(url: string) {
 
           <!-- checkmark -->
           <wd-card
-            class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
+            custom-class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
             custom-content-class="py-4 px-0"
             @click="copyIconCode('checkmark', true)"
           >
@@ -248,7 +248,7 @@ function handleNavigate(url: string) {
 
           <!-- arrow-right -->
           <wd-card
-            class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
+            custom-class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
             custom-content-class="py-4 px-0"
             @click="copyIconCode('arrow-right', true)"
           >
@@ -265,7 +265,7 @@ function handleNavigate(url: string) {
 
           <!-- home -->
           <wd-card
-            class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
+            custom-class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
             custom-content-class="py-4 px-0"
             @click="copyIconCode('home', true)"
           >
@@ -282,7 +282,7 @@ function handleNavigate(url: string) {
 
           <!-- search -->
           <wd-card
-            class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
+            custom-class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
             custom-content-class="py-4 px-0"
             @click="copyIconCode('search', true)"
           >
@@ -299,7 +299,7 @@ function handleNavigate(url: string) {
 
           <!-- star -->
           <wd-card
-            class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
+            custom-class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
             custom-content-class="py-4 px-0"
             @click="copyIconCode('star', true)"
           >
@@ -316,7 +316,7 @@ function handleNavigate(url: string) {
 
           <!-- favorite -->
           <wd-card
-            class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
+            custom-class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
             custom-content-class="py-4 px-0"
             @click="copyIconCode('favorite', true)"
           >
@@ -333,7 +333,7 @@ function handleNavigate(url: string) {
 
           <!-- settings -->
           <wd-card
-            class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
+            custom-class="text-center transition-all duration-200 !mx-0 !mb-0 active:scale-95 hover:shadow-md"
             custom-content-class="py-4 px-0"
             @click="copyIconCode('settings', true)"
           >

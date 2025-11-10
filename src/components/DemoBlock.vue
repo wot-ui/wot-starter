@@ -40,7 +40,7 @@ export default {
 
 <template>
   <view :class="[customClass.split(' ')]" class="flex-col gap-3">
-    <wd-text v-if="title" class="mx-4 pt-2 text-26rpx" :text="title" />
+    <wd-text v-if="title" custom-class="mx-4 pt-2 text-26rpx" :text="title" />
     <view v-if="slots.description" class="mx-4">
       <slot name="description" />
     </view>

@@ -174,7 +174,7 @@ function handleNavigate(url: string) {
           <wd-card
             v-for="feature in unocssFeatures"
             :key="feature.title"
-            class="text-center !m-0"
+            custom-class="text-center !m-0"
             custom-content-class="py-4"
           >
             <view class="mb-2 text-6">

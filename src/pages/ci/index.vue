@@ -151,7 +151,7 @@ function handleNavigate(url: string) {
         <wd-card
           v-for="feature in features"
           :key="feature.title"
-          class="!mx-0 !mb-0"
+          custom-class="!mx-0 !mb-0"
           custom-content-class="py-4 text-center"
         >
           <view class="mb-2 text-6">
