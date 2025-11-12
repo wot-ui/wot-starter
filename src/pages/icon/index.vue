@@ -127,7 +127,7 @@ function handleNavigate(url: string) {
           </view>
           <view class="text-3 text-blue-600 leading-relaxed dark:text-blue-200">
             这里只展示了部分常用图标作为示例。完整的图标列表请查看
-            <text class="text-blue-700 underline dark:text-blue-300" @click="handleNavigate('https://wot-design-uni.cn/component/icon.html')">
+            <text class="text-blue-700 underline dark:text-blue-300" @click="handleNavigate('https://wot-ui.cn/component/icon.html')">
               WotUI 官方文档
             </text>
           </view>
