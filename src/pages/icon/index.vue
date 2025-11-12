@@ -463,7 +463,7 @@ function handleNavigate(url: string) {
     <!-- 相关链接 -->
     <demo-block title="相关链接" custom-card-content-class="!p-0">
       <wd-cell-group border custom-class="rounded-2! overflow-hidden">
-        <wd-cell title="📚 WotUI 图标文档" value="组件库文档" is-link @click="handleNavigate('https://wot-design-uni.cn/component/icon.html')" />
+        <wd-cell title="📚 WotUI 图标文档" value="组件库文档" is-link @click="handleNavigate('https://wot-ui.cn/component/icon.html')" />
         <wd-cell title="🎯 Carbon 图标集" value="IBM设计系统" is-link @click="handleNavigate('https://icones.js.org/collection/carbon')" />
         <wd-cell title="🔧 Iconify 图标集" value="巨量图标合集" is-link @click="handleNavigate('https://iconify.design/')" />
         <wd-cell title="⚡ UnoCSS 图标" value="原子化CSS图标" is-link @click="handleNavigate('https://unocss.dev/presets/icons')" />

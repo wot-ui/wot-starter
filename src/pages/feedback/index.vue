@@ -449,9 +449,9 @@ close()`
     <!-- 相关链接 -->
     <demo-block title="相关链接" custom-card-content-class="!p-0">
       <wd-cell-group border custom-class="rounded-2! overflow-hidden">
-        <wd-cell title="📚 WotUI Toast" value="轻提示组件" is-link @click="handleNavigate('https://wot-design-uni.cn/component/toast.html')" />
-        <wd-cell title="🔄 WotUI Loading" value="加载组件" is-link @click="handleNavigate('https://wot-design-uni.cn/component/loading.html')" />
-        <wd-cell title="💬 WotUI MessageBox" value="弹窗组件" is-link @click="handleNavigate('https://wot-design-uni.cn/component/message-box.html')" />
+        <wd-cell title="📚 WotUI Toast" value="轻提示组件" is-link @click="handleNavigate('https://wot-ui.cn/component/toast.html')" />
+        <wd-cell title="🔄 WotUI Loading" value="加载组件" is-link @click="handleNavigate('https://wot-ui.cn/component/loading.html')" />
+        <wd-cell title="💬 WotUI MessageBox" value="弹窗组件" is-link @click="handleNavigate('https://wot-ui.cn/component/message-box.html')" />
         <wd-cell title="🍍 Pinia 状态管理" value="Vue 状态库" is-link @click="handleNavigate('https://pinia.vuejs.org/zh/')" />
       </wd-cell-group>
     </demo-block>

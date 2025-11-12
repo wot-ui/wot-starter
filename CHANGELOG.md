@@ -1,6 +1,14 @@
 # 更新日志 
 
 
+## [1.1.0](https://github.com/wot-ui/wot-starter/compare/v1.0.0...v1.1.0) (2025-11-12)
+
+
+### ✨ Features | 新功能
+
+* ✨ 添加 uni_modules 插件引入示例 ([8493761](https://github.com/wot-ui/wot-starter/commit/8493761ad6ea4e6478d3b7764b43b813e5178e86))
+* ✨ 支持 harmony next 自定义 tabbar ([f71e8ba](https://github.com/wot-ui/wot-starter/commit/f71e8ba62504a4c0b79d02e61979b52e1f538e59))
+
 ## 1.0.0 (2025-10-28)
 
 

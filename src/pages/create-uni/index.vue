@@ -225,7 +225,7 @@ function handleNavigate(url: string) {
       <wd-cell-group border custom-class="rounded-2! overflow-hidden">
         <wd-cell title="📦 NPM 包" value="create uni" is-link @click="handleNavigate('https://www.npmjs.com/package/create-uni')" />
         <wd-cell title="🐙 GitHub 仓库" value="create uni" is-link @click="handleNavigate('https://github.com/uni-helper/create-uni')" />
-        <wd-cell title="🎨 Wot Design Uni" value="UI 组件库" is-link @click="handleNavigate('https://wot-design-uni.cn/')" />
+        <wd-cell title="🎨 Wot UI" value="UI 组件库" is-link @click="handleNavigate('https://wot-ui.cn/')" />
         <wd-cell title="🛠️ Uni Helper" value="先进工具集合" is-link @click="handleNavigate('https://github.com/uni-helper')" />
         <wd-cell title="💝 赞助CreateUni" value="支持开发者" is-link @click="handleNavigate('https://github.com/uni-helper/create-uni')" />
       </wd-cell-group>
