@@ -83,6 +83,7 @@
     "alova": "^3.3.4",
     "echarts": "^6.0.0",
     "pinia": "^2.3.1",
+    "pinia-plugin-persistedstate": "3.2.1",
     "uni-echarts": "^2.1.0",
     "vue": "~3.4.38",
     "vue-i18n": "^9.14.0",
