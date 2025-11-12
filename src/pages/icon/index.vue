@@ -381,7 +381,7 @@ function handleNavigate(url: string) {
           </view>
           <view class="mb-3 flex justify-center space-x-4">
             <wd-icon name="home" :size="20" color="#3b82f6" />
-            <wd-icon name="search1" :size="20" color="#3b82f6" />
+            <wd-icon name="search" :size="20" color="#3b82f6" />
             <wd-icon name="star" :size="20" color="#3b82f6" />
             <wd-icon name="heart" :size="20" color="#3b82f6" />
           </view>
