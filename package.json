@@ -1,5 +1,6 @@
 {
   "name": "wot-starter",
+  "type": "module",
   "version": "1.1.0",
   "private": true,
   "packageManager": "pnpm@9.9.0",
@@ -51,7 +52,6 @@
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "postinstall": "npx simple-git-hooks",
     "prepare": "husky install",
     "commit": "git-cz",
     "release-major": "standard-version --release-as major",
@@ -101,39 +101,41 @@
     "@iconify-json/carbon": "^1.1.37",
     "@mini-types/alipay": "^3.0.14",
     "@types/node": "^20.16.2",
-    "@uni-helper/eslint-config": "^0.4.0",
-    "@uni-helper/uni-env": "^0.1.7",
-    "@uni-helper/uni-types": "^1.0.0-alpha.6",
+    "@uni-helper/eslint-config": "^0.4.1",
+    "@uni-helper/plugin-uni": "^0.1.0",
+    "@uni-helper/uni-env": "^0.1.8",
+    "@uni-helper/uni-types": "1.0.0-alpha.6",
     "@uni-helper/unocss-preset-uni": "^0.2.11",
-    "@uni-helper/vite-plugin-uni-components": "^0.2.0",
+    "@uni-helper/vite-plugin-uni-components": "^0.2.3",
     "@uni-helper/vite-plugin-uni-layouts": "^0.1.11",
-    "@uni-helper/vite-plugin-uni-manifest": "^0.2.8",
-    "@uni-helper/vite-plugin-uni-pages": "^0.3.11",
-    "@uni-helper/volar-service-uni-pages": "^0.3.11",
-    "@uni-ku/bundle-optimizer": "1.3.15-beta.2",
-    "@uni-ku/root": "^1.3.4",
-    "@unocss/eslint-config": "^0.62.3",
+    "@uni-helper/vite-plugin-uni-manifest": "^0.2.9",
+    "@uni-helper/vite-plugin-uni-pages": "^0.3.21",
+    "@uni-helper/volar-service-uni-pages": "^0.3.21",
+    "@uni-ku/bundle-optimizer": "^1.3.16",
+    "@uni-ku/root": "^1.4.1",
+    "@unocss/eslint-config": "^66.5.6",
     "@vue/runtime-core": "^3.4.38",
     "@vue/tsconfig": "^0.5.1",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.9.1",
     "git-cz": "^4.9.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.3",
     "lint-staged": "^15.2.9",
     "miniprogram-api-typings": "^3.12.3",
     "sass": "1.78.0",
-    "simple-git-hooks": "^2.11.1",
     "standard-version": "^9.5.0",
     "typescript": "~5.5.4",
     "uni-mini-router": "^0.1.6",
-    "unocss": "^0.62.3",
+    "unocss": "66.0.0",
     "unplugin-auto-import": "^0.18.2",
     "vite": "^5.2.8",
-    "vue-tsc": "^2.0.28"
+    "vue-tsc": "^2.0.29"
   },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+  "pnpm": {
+    "overrides": {
+      "unconfig": "7.3.2"
+    }
   },
   "lint-staged": {
     "*": "eslint --fix"
