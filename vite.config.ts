@@ -1,26 +1,17 @@
-/*
- * @Author: weisheng
- * @Date: 2024-11-01 11:44:38
- * @LastEditTime: 2025-11-12 18:45:26
- * @LastEditors: weisheng
- * @Description:
- * @FilePath: /wot-starter/vite.config.ts
- * 记得注释
- */
 import process from 'node:process'
-import { defineConfig } from 'vite'
 import Uni from '@uni-helper/plugin-uni'
+import UniHelperComponents from '@uni-helper/vite-plugin-uni-components'
+import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
+import UniHelperLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import UniHelperManifest from '@uni-helper/vite-plugin-uni-manifest'
 import UniHelperPages from '@uni-helper/vite-plugin-uni-pages'
-import UniHelperLayouts from '@uni-helper/vite-plugin-uni-layouts'
-import UniHelperComponents from '@uni-helper/vite-plugin-uni-components'
-import AutoImport from 'unplugin-auto-import/vite'
-import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
+import Optimization from '@uni-ku/bundle-optimizer'
 import UniKuRoot from '@uni-ku/root'
 import { UniEchartsResolver } from 'uni-echarts/resolver'
 import { UniEcharts } from 'uni-echarts/vite'
-import Optimization from '@uni-ku/bundle-optimizer'
 import UnoCSS from 'unocss/vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import { defineConfig } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   optimizeDeps: {

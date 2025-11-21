@@ -6,7 +6,7 @@
   "packageManager": "pnpm@9.9.0",
   "license": "MIT",
   "engines": {
-    "node": ">=22"
+    "node": ">20.15"
   },
   "scripts": {
     "dev": "uni",
@@ -118,7 +118,7 @@
     "@vue/tsconfig": "^0.5.1",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.9.1",
+    "eslint": "^9.39.1",
     "git-cz": "^4.9.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.9",
