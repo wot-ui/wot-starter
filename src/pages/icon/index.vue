@@ -64,6 +64,13 @@ function handleNavigate(url: string) {
   })
   // #endif
 }
+
+const codeSet = {
+  base: `<wd-icon name="star" size="20px" color="#f59e0b" />`,
+  custom: `<wd-icon name="home" size="24px" color="var(--wot-color-theme)" />`,
+  unocss: `<div class="i-carbon:star text-xl text-yellow-500"></div>`,
+  customColor: `<div class="i-carbon:home" style="font-size: 24px; color: #3b82f6;"></div>`,
+}
 </script>
 
 <template>
@@ -159,18 +166,8 @@ function handleNavigate(url: string) {
       <view class="text-4 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
         使用示例
       </view>
-      <code-content>
-        基础用法:
-        <template #pre>
-          {{ `<wd-icon name="star" size="20px" color="#f59e0b" />` }}
-        </template>
-      </code-content>
-      <code-content>
-        自定义样式:
-        <template #pre>
-          {{ `<wd-icon name="home" size="24px" color="var(--wot-color-theme)" />` }}
-        </template>
-      </code-content>
+      <code-content code="基础用法:" :code-remark="codeSet.base" />
+      <code-content code="自定义样式:" :code-remark="codeSet.custom" />
     </demo-block>
 
     <!-- Carbon 图标 -->
@@ -355,18 +352,8 @@ function handleNavigate(url: string) {
         使用示例
       </view>
 
-      <code-content>
-        UnoCSS 方式:
-        <template #pre>
-          {{ `<div class="i-carbon:star text-xl text-yellow-500"></div>` }}
-        </template>
-      </code-content>
-      <code-content>
-        自定义大小和颜色:
-        <template #pre>
-          {{ `<div class="i-carbon:home" style="font-size: 24px; color: #3b82f6;"></div>` }}
-        </template>
-      </code-content>
+      <code-content code="UnoCSS 方式:" :code-remark="codeSet.unocss" />
+      <code-content code="自定义大小和颜色:" :code-remark="codeSet.customColor" />
     </demo-block>
 
     <!-- 对比演示 -->

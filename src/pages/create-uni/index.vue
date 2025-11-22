@@ -188,9 +188,7 @@ function handleNavigate(url: string) {
       <view class="mb-3 text-3.5 leading-relaxed">
         {{ wotQuickStart.desc }}
       </view>
-      <code-content class="mb-3">
-        {{ wotQuickStart.command }}
-      </code-content>
+      <code-content :code="wotQuickStart.command" class="mb-3" />
       <view>
         <view class="mb-2 text-3.5 font-bold">
           这个命令会：
@@ -214,9 +212,7 @@ function handleNavigate(url: string) {
         <view class="mb-2 text-3.5">
           {{ method.desc }}
         </view>
-        <code-content>
-          {{ method.command }}
-        </code-content>
+        <code-content :code="method.command" />
       </view>
     </demo-block>
 

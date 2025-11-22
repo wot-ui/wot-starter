@@ -174,9 +174,7 @@ function handleNavigate(url: string) {
       <view class="text-4 text-gray-800 font-bold font-bold dark:text-[var(--wot-dark-color)]">
         基础用法
       </view>
-      <code-content>
-        router.push('/user')
-      </code-content>
+      <code-content code="router.push('/user')" />
       <view class="grid grid-cols-1 gap-2">
         <wd-button type="primary" size="small" @click="pushByString">
           字符串路径跳转
@@ -198,9 +196,7 @@ function handleNavigate(url: string) {
       <view class="text-3.5 text-gray-600 leading-relaxed dark:text-[var(--wot-dark-color2)]">
         保留当前页面，跳转到应用内的某个页面，相当于 uni.navigateTo()
       </view>
-      <code-content>
-        router.push(target)
-      </code-content>
+      <code-content code="router.push(target)" />
       <wd-button type="primary" block @click="demoPush">
         演示 push 方法
       </wd-button>
@@ -211,9 +207,7 @@ function handleNavigate(url: string) {
       <view class="text-3.5 text-gray-600 leading-relaxed dark:text-[var(--wot-dark-color2)]">
         跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面，相当于 uni.switchTab()
       </view>
-      <code-content>
-        router.pushTab(target)
-      </code-content>
+      <code-content code="router.pushTab(target)" />
       <wd-button type="success" block @click="demoPushTab">
         演示 pushTab 方法
       </wd-button>
@@ -224,9 +218,7 @@ function handleNavigate(url: string) {
       <view class="mb-3 text-3.5 text-gray-600 leading-relaxed dark:text-[var(--wot-dark-color2)]">
         关闭当前页面，跳转到应用内的某个页面，相当于 uni.redirectTo()
       </view>
-      <code-content>
-        router.replace(target)
-      </code-content>
+      <code-content code="router.replace(target)" />
       <wd-button type="warning" block @click="demoReplace">
         演示 replace 方法
       </wd-button>
@@ -237,9 +229,7 @@ function handleNavigate(url: string) {
       <view class="text-3.5 text-gray-600 leading-relaxed dark:text-[var(--wot-dark-color2)]">
         关闭所有页面，打开到应用内的某个页面，相当于 uni.reLaunch()
       </view>
-      <code-content>
-        router.replaceAll(target)
-      </code-content>
+      <code-content code="router.replaceAll(target)" />
       <wd-button type="error" block @click="demoReplaceAll">
         演示 replaceAll 方法
       </wd-button>
@@ -250,12 +240,8 @@ function handleNavigate(url: string) {
       <view class="text-3.5 text-gray-600 leading-relaxed dark:text-[var(--wot-dark-color2)]">
         关闭当前页面，返回上一页面或多级页面，相当于 uni.navigateBack()
       </view>
-      <code-content>
-        router.back()
-      </code-content>
-      <code-content>
-        router.back({ delta: 2 })
-      </code-content>
+      <code-content code="router.back()" />
+      <code-content code="router.back({ delta: 2 })" />
       <wd-button type="info" block @click="demoBack">
         返回上一页
       </wd-button>
@@ -281,9 +267,7 @@ function handleNavigate(url: string) {
         注意：name 和 params 搭配使用，与 query 效果相同
       </view>
       <wd-input v-model="userId" placeholder="请输入用户名" />
-      <code-content>
-        router.push({ name: 'user', params: { username: 'eduardo' } })
-      </code-content>
+      <code-content code="router.push({ name: 'user', params: { username: 'eduardo' } })" />
       <wd-button type="primary" block @click="pushWithParams">
         传递 params 参数
       </wd-button>
@@ -295,9 +279,7 @@ function handleNavigate(url: string) {
         注意：path 可以与 query 一起使用，与 params 效果相同
       </view>
       <wd-input v-model="searchKeyword" placeholder="请输入搜索关键词" />
-      <code-content>
-        router.push({ path: '/user', query: { username: 'eduardo' } })
-      </code-content>
+      <code-content code="router.push({ path: '/user', query: { username: 'eduardo' } })" />
       <wd-button type="success" block @click="pushWithQuery">
         传递 query 参数
       </wd-button>
@@ -341,12 +323,8 @@ function handleNavigate(url: string) {
       <view class="text-3.5 text-gray-600 leading-relaxed dark:text-[var(--wot-dark-color2)]">
         beforeEach 和 afterEach 是最常用的导航守卫
       </view>
-      <code-content>
-        router.beforeEach((to, from, next) => { next() })
-      </code-content>
-      <code-content>
-        router.afterEach((to, from) => { console.log(to) })
-      </code-content>
+      <code-content code="router.beforeEach((to, from, next) => { next() })" />
+      <code-content code="router.afterEach((to, from) => { console.log(to) })" />
       <wd-button type="primary" block @click="demoNavigationGuards">
         🛡️ 进入完整守卫演示
       </wd-button>
