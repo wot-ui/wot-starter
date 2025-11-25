@@ -1,7 +1,7 @@
 /*
  * @Author: weisheng
  * @Date: 2025-08-28 20:59:43
- * @LastEditTime: 2025-09-15 18:18:28
+ * @LastEditTime: 2025-11-17 14:28:09
  * @LastEditors: weisheng
  * @Description:
  * @FilePath: /wot-starter/manifest.config.ts
@@ -72,6 +72,8 @@ export default defineManifestConfig({
     darkmode: true,
     themeLocation: 'theme.json',
   },
+  'app-harmony': {},
+  'mp-harmony': {},
   'mp-alipay': {
     usingComponents: true,
     compileOptions: {

@@ -7,6 +7,6 @@
  * @FilePath: \salary-calculator\commitlint.config.js
  * 记得注释
  */
-module.exports = {
+export default {
   extends: ['@commitlint/config-conventional'],
 }
