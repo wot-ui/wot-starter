@@ -200,15 +200,13 @@ function handleNavigate(url: string) {
       </view>
 
       <!-- 代码示例 -->
-      <code-content>
-        代码示例:
-        <template #pre>
-          {{ `const { data, loading, send } = useRequest(
+      <code-content
+        code="代码示例:"
+        code-remark="const { data, loading, send } = useRequest(
   (status) => Apis.pet.findPetsByStatus({ params: { status } }),
   { immediate: false }
-).onError((error) => { ... })` }}
-        </template>
-      </code-content>
+).onError((error) => { ... })"
+      />
 
       <!-- 用户登录请求 -->
       <view class="mt-5 flex items-center">
@@ -247,17 +245,15 @@ function handleNavigate(url: string) {
       </view>
 
       <!-- 代码示例 -->
-      <code-content>
-        代码示例:
-        <template #pre>
-          {{ `const { data, loading, send } = useRequest(
+      <code-content
+        code="代码示例:"
+        code-remark="const { data, loading, send } = useRequest(
   (username, password) => Apis.user.loginUser({
     params: { username, password }
   }),
   { immediate: false }
-).onError((error) => { ... })` }}
-        </template>
-      </code-content>
+).onError((error) => { ... })"
+      />
     </demo-block>
 
     <!-- 相关链接 -->

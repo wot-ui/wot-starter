@@ -207,26 +207,22 @@ function handleNavigate(url: string) {
       </view>
 
       <!-- 代码示例 -->
-      <code-content>
-        定义 Store:
-        <template #pre>
-          {{ `const useCounterStore = defineStore('counter', () => {
+      <code-content
+        code="定义 Store:"
+        code-remark="const useCounterStore = defineStore('counter', () => {
   const count = ref(0)
   const doubleCount = computed(() => count.value * 2)
   function increment() { count.value++ }
   return { count, doubleCount, increment }
-})` }}
-        </template>
-      </code-content>
+})"
+      />
 
-      <code-content>
-        使用 Store:
-        <template #pre>
-          {{ `const counterStore = useCounterStore()
+      <code-content
+        code="使用 Store:"
+        code-remark="const counterStore = useCounterStore()
 counterStore.increment() // 调用方法
-console.log(counterStore.count) // 访问状态` }}
-        </template>
-      </code-content>
+console.log(counterStore.count) // 访问状态"
+      />
     </demo-block>
 
     <!-- 用户信息演示（持久化） -->
@@ -354,10 +350,9 @@ console.log(counterStore.count) // 访问状态` }}
           src/store/persist.ts
         </text>
       </view>
-      <code-content>
-        核心实现:
-        <template #pre>
-          {{ `function persist({ store }, excludedIds) {
+      <code-content
+        code="核心实现:"
+        code-remark="function persist({ store }, excludedIds) {
   // 检查是否需要排除
   if (excludedIds.includes(store.$id)) return
 
@@ -371,9 +366,8 @@ console.log(counterStore.count) // 访问状态` }}
   store.$subscribe(() => {
     uni.setStorageSync(store.$id, store.$state)
   })
-}` }}
-        </template>
-      </code-content>
+}"
+      />
 
       <view class="text-4 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
         排除列表
@@ -381,10 +375,10 @@ console.log(counterStore.count) // 访问状态` }}
       <view class="text-3">
         可以通过排除列表控制哪些 Store 不需要持久化
       </view>
-      <code-content>
-        {{ `// 在 persist.ts 中配置排除列表
-persist(context, ['global-register', 'temp'])` }}
-      </code-content>
+      <code-content
+        code="// 在 persist.ts 中配置排除列表
+persist(context, ['global-register', 'temp'])"
+      />
 
       <view class="text-4 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
         使用说明

@@ -235,16 +235,12 @@ function handleNavigate(url: string) {
         </wd-button>
       </view>
 
-      <code-content>
-        代码示例:
-        <template #pre>
-          {{
-            `const { success, error, warning, info } = useGlobalToast()
+      <code-content
+        code="代码示例:"
+        code-remark="const { success, error, warning, info } = useGlobalToast()
 success({ msg: '操作成功！' })
-error({ msg: '操作失败！' })`
-          }}
-        </template>
-      </code-content>
+error({ msg: '操作失败！' })"
+      />
 
       <view class="text-4 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
         自定义配置
@@ -264,18 +260,14 @@ error({ msg: '操作失败！' })`
           底部显示
         </wd-button>
       </view>
-      <code-content>
-        自定义配置:
-        <template #pre>
-          {{
-            `show({
+      <code-content
+        code="自定义配置:"
+        code-remark="show({
   msg: '自定义消息',
   duration: 3000,
   position: 'middle'
-})`
-          }}
-        </template>
-      </code-content>
+})"
+      />
     </demo-block>
 
     <!-- GlobalLoading 演示 -->
@@ -298,16 +290,12 @@ error({ msg: '操作失败！' })`
         </wd-button>
       </view>
 
-      <code-content>
-        代码示例:
-        <template #pre>
-          {{
-            `const { loading, close } = useGlobalLoading()
+      <code-content
+        code="代码示例:"
+        code-remark="const { loading, close } = useGlobalLoading()
 loading('加载中...')
-close()`
-          }}
-        </template>
-      </code-content>
+close()"
+      />
 
       <!-- 自定义用法 -->
       <view class="text-4 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
@@ -318,17 +306,13 @@ close()`
         自定义加载文本
       </wd-button>
 
-      <code-content>
-        自定义配置:
-        <template #pre>
-          {{
-            `loading({
+      <code-content
+        code="自定义配置:"
+        code-remark="loading({
   msg: '正在处理中...',
   cover: true // 是否显示遮罩
-})`
-          }}
-        </template>
-      </code-content>
+})"
+      />
     </demo-block>
 
     <!-- GlobalMessage 演示 -->
@@ -348,18 +332,14 @@ close()`
         </wd-button>
       </view>
 
-      <code-content>
-        代码示例:
-        <template #pre>
-          {{
-            `confirm({
+      <code-content
+        code="代码示例:"
+        code-remark="confirm({
   title: '确认操作',
   msg: '您确定要执行此操作吗？',
   success: (res) => { /* 处理结果 */ }
-})`
-          }}
-        </template>
-      </code-content>
+})"
+      />
 
       <view class="text-4 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
         自定义配置
@@ -369,17 +349,13 @@ close()`
       </wd-button>
 
       <!-- 自定义用法 -->
-      <code-content>
-        自定义按钮:
-        <template #pre>
-          {{
-            `confirm({
+      <code-content
+        code="自定义按钮:"
+        code-remark="confirm({
   confirmButtonText: '好的',
   cancelButtonText: '算了'
-})`
-          }}
-        </template>
-      </code-content>
+})"
+      />
     </demo-block>
 
     <!-- 组件特性 -->

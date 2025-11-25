@@ -236,9 +236,7 @@ function handleNavigate(url: string) {
           <view class="text-4 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
             {{ example.title }}
           </view>
-          <view class="rounded bg-gray-100 px-2 py-1 text-2.5 text-gray-700 font-mono dark:bg-[var(--wot-dark-background3)] dark:text-[var(--wot-dark-color2)]" @click="copyCode(example.code)">
-            {{ example.code }}
-          </view>
+          <code-content :code="example.code" :show-icon="false" custom-class="!px-2 !py-1" custom-code-class="!text-2.5" />
         </view>
         <view v-if="example.title === 'Flex 居中'" :class="example.class">
           <text class="text-3.5">
@@ -356,9 +354,7 @@ function handleNavigate(url: string) {
             </text>
           </view>
         </view>
-        <view class="mt-3 rounded bg-gray-100 p-2 text-2.5 text-gray-700 font-mono dark:bg-[var(--wot-dark-background3)] dark:text-[var(--wot-dark-color2)]" @click="copyCode('hover:bg-blue-200 hover:scale-105 transition-all duration-300')">
-          hover:bg-blue-200 hover:scale-105 transition-all duration-300
-        </view>
+        <code-content code="hover:bg-blue-200 hover:scale-105 transition-all duration-300" custom-class="mt-3" custom-code-class="!text-2.5" />
       </view>
 
       <!-- 动画效果 -->
@@ -383,10 +379,7 @@ function handleNavigate(url: string) {
             </text>
           </view>
         </view>
-        <view class="mt-3 rounded bg-gray-100 p-2 text-2.5 text-gray-700 leading-relaxed font-mono dark:bg-[var(--wot-dark-background3)] dark:text-[var(--wot-dark-color2)]" @click="copyCode('transition-all duration-500 ease-in-out transform rotate-12 scale-110')">
-          transition-all duration-500 ease-in-out\n
-          transform rotate-12 scale-110
-        </view>
+        <code-content code="transition-all duration-500 ease-in-out transform rotate-12 scale-110" custom-class="mt-3" custom-code-class="!text-2.5" />
       </view>
     </demo-block>
 
@@ -412,10 +405,7 @@ function handleNavigate(url: string) {
           项目 {{ n }}
         </view>
       </view>
-      <view class="rounded bg-gray-100 p-2 text-2.5 text-gray-700 leading-relaxed font-mono dark:bg-[var(--wot-dark-background3)] dark:text-[var(--wot-dark-color2)]" @click="copyCode('grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4')">
-        grid-cols-1 sm:grid-cols-2\n
-        md:grid-cols-3 lg:grid-cols-4
-      </view>
+      <code-content code="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4" custom-code-class="!text-2.5" />
     </demo-block>
 
     <!-- 实用工具类 -->
@@ -436,9 +426,7 @@ function handleNavigate(url: string) {
             弹性 (flex)
           </view>
         </view>
-        <view class="rounded bg-gray-100 p-2 text-2.5 text-gray-700 font-mono dark:bg-[var(--wot-dark-background3)] dark:text-[var(--wot-dark-color2)]" @click="copyCode('block inline flex hidden')">
-          block inline flex hidden
-        </view>
+        <code-content code="block inline flex hidden" custom-code-class="!text-2.5" />
       </view>
 
       <!-- 定位 -->
@@ -460,9 +448,7 @@ function handleNavigate(url: string) {
             bottom-2 right-2
           </view>
         </view>
-        <view class="mt-3 rounded bg-gray-100 p-2 text-2.5 text-gray-700 font-mono dark:bg-[var(--wot-dark-background3)] dark:text-[var(--wot-dark-color2)]" @click="copyCode('absolute relative top-2 left-2 right-2 bottom-2')">
-          absolute relative top-2 left-2 right-2 bottom-2
-        </view>
+        <code-content code="absolute relative top-2 left-2 right-2 bottom-2" custom-class="mt-3" custom-code-class="!text-2.5" />
       </view>
     </demo-block>
 

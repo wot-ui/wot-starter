@@ -176,9 +176,7 @@ function handleNavigate(url: string) {
       <view class="text-3 text-gray-600 dark:text-[var(--wot-dark-color2)]">
         推荐在开发环境中全局安装，方便在任何项目中使用
       </view>
-      <code-content>
-        npm i uni-mini-ci -g
-      </code-content>
+      <code-content code="npm i uni-mini-ci -g" />
 
       <view />
 
@@ -189,12 +187,8 @@ function handleNavigate(url: string) {
       <view class="text-3 text-gray-600 dark:text-[var(--wot-dark-color2)]">
         在项目中作为开发依赖安装，适合团队协作
       </view>
-      <code-content>
-        npm i uni-mini-ci --save-dev
-      </code-content>
-      <code-content>
-        pnpm add uni-mini-ci -D
-      </code-content>
+      <code-content code="npm i uni-mini-ci --save-dev" />
+      <code-content code="yarn add uni-mini-ci -D" />
     </demo-block>
 
     <!-- 配置文件 -->
@@ -208,12 +202,7 @@ function handleNavigate(url: string) {
         </text> 文件，配置各平台的上传参数
       </view>
 
-      <code-content class="">
-        配置示例:
-        <template #pre>
-          {{ configExample }}
-        </template>
-      </code-content>
+      <code-content code="配置示例:" :code-remark="configExample" />
 
       <wd-notice-bar
         background-color="#7c2d1233"
@@ -253,9 +242,7 @@ function handleNavigate(url: string) {
             {{ feature }}
           </view>
         </view>
-        <code-content>
-          minici --platform {{ platform.name }}
-        </code-content>
+        <code-content :code="`minici --platform ${platform.name}`" />
       </view>
     </demo-block>
 
@@ -268,22 +255,13 @@ function handleNavigate(url: string) {
         在 package.json 中添加上传脚本，支持单独上传和打包上传组合
       </view>
 
-      <code-content>
-        脚本配置:
-        <template #pre>
-          {{ packageScripts }}
-        </template>
-      </code-content>
+      <code-content code="脚本配置:" :code-remark="packageScripts" />
 
       <view class="text-3.5 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
         使用命令:
       </view>
-      <code-content>
-        pnpm upload:weixin
-      </code-content>
-      <code-content>
-        pnpm upload:mp-weixin
-      </code-content>
+      <code-content code="pnpm upload:weixin" />
+      <code-content code="pnpm upload:mp-weixin" />
     </demo-block>
 
     <!-- 使用步骤 -->
