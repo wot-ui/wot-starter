@@ -4,7 +4,7 @@ defineOptions({ name: 'CodeContent', inheritAttrs: true })
 const props = withDefaults(defineProps<Props>(), { showIcon: true })
 interface Props {
   /** 是否显示图标 */
-  showIcon: boolean
+  showIcon?: boolean
   /** 代码内容 */
   code?: string
   /** 代码备注 */
