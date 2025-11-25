@@ -20,93 +20,60 @@ definePage({
 </script>
 
 <template>
-  <view class="bg-gray-50 p-5">
+  <view class="flex-col gap-2 py-5">
     <!-- 饼图 -->
-    <view class="mb-5 rounded-3 bg-white p-5 shadow-sm">
-      <view class="mb-5 text-center text-base text-gray-800 font-medium">
-        饼图示例
-      </view>
+    <wd-card class="shadow-sm" title="饼图示例">
       <PieChart />
-    </view>
+    </wd-card>
 
     <!-- 柱状图 -->
-    <view class="mb-5 rounded-3 bg-white p-5 shadow-sm">
-      <view class="mb-5 text-center text-base text-gray-800 font-medium">
-        柱状图示例
-      </view>
+    <wd-card class="shadow-sm" title="柱状图示例">
       <BarChart />
-    </view>
+    </wd-card>
 
     <!-- 折线图 -->
-    <view class="mb-5 rounded-3 bg-white p-5 shadow-sm">
-      <view class="mb-5 text-center text-base text-gray-800 font-medium">
-        折线图示例
-      </view>
+    <wd-card class="shadow-sm" title="折线图示例">
       <LineChart />
-    </view>
+    </wd-card>
 
     <!-- 雷达图 -->
-    <view class="mb-5 rounded-3 bg-white p-5 shadow-sm">
-      <view class="mb-5 text-center text-base text-gray-800 font-medium">
-        雷达图示例
-      </view>
+    <wd-card class="shadow-sm" title="雷达图示例">
       <RadarChart />
-    </view>
+    </wd-card>
 
     <!-- 散点图 -->
-    <view class="mb-5 rounded-3 bg-white p-5 shadow-sm">
-      <view class="mb-5 text-center text-base text-gray-800 font-medium">
-        散点图示例
-      </view>
+    <wd-card class="shadow-sm" title="散点图示例">
       <ScatterChart />
-    </view>
+    </wd-card>
 
     <!-- 环形图 -->
-    <view class="mb-5 rounded-3 bg-white p-5 shadow-sm">
-      <view class="mb-5 text-center text-base text-gray-800 font-medium">
-        环形图示例
-      </view>
+    <wd-card class="shadow-sm" title="环形图示例">
       <DonutChart />
-    </view>
+    </wd-card>
 
     <!-- 漏斗图 -->
-    <view class="mb-5 rounded-3 bg-white p-5 shadow-sm">
-      <view class="mb-5 text-center text-base text-gray-800 font-medium">
-        漏斗图示例
-      </view>
+    <wd-card class="shadow-sm" title="漏斗图示例">
       <FunnelChart />
-    </view>
+    </wd-card>
 
     <!-- 仪表盘图 -->
-    <view class="mb-5 rounded-3 bg-white p-5 shadow-sm">
-      <view class="mb-5 text-center text-base text-gray-800 font-medium">
-        仪表盘示例
-      </view>
+    <wd-card class="shadow-sm" title="仪表盘示例">
       <GaugeChart />
-    </view>
+    </wd-card>
 
     <!-- 迷你折线图 -->
-    <view class="mb-5 rounded-3 bg-white p-5 shadow-sm">
-      <view class="mb-5 text-center text-base text-gray-800 font-medium">
-        迷你折线图示例
-      </view>
+    <wd-card class="shadow-sm" title="迷你折线图示例">
       <MiniLineChart />
-    </view>
+    </wd-card>
 
     <!-- 堆叠柱状图 -->
-    <view class="mb-5 rounded-3 bg-white p-5 shadow-sm">
-      <view class="mb-5 text-center text-base text-gray-800 font-medium">
-        堆叠柱状图示例
-      </view>
+    <wd-card class="shadow-sm" title="堆叠柱状图示例">
       <StackedBarChart />
-    </view>
+    </wd-card>
 
     <!-- 水球图 -->
-    <view class="mb-5 rounded-3 bg-white p-5 shadow-sm">
-      <view class="mb-5 text-center text-base text-gray-800 font-medium">
-        水球图示例
-      </view>
+    <wd-card class="shadow-sm" title="水球图示例">
       <LiquidFillChart />
-    </view>
+    </wd-card>
   </view>
 </template>

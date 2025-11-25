@@ -1,0 +1,19 @@
+// Solve the problem of the border color at the top of the tabbar being too heavy in dark mode
+.dark .wd-tabbar--default.is-border::after {
+  opacity: 0.3 !important;
+}
+
+// Let the right side of the cell support minimized width, and the left side can be wider
+.cell-justify-end {
+  .wd-cell .wd-cell__right {
+    flex: none !important;
+  }
+}
+
+// Solve the padding of small-sized cells
+.wd-cell.is-small {
+  .wd-cell__wrapper {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+}
