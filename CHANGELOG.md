@@ -1,6 +1,20 @@
 # 更新日志 
 
 
+## [1.2.0](https://github.com/wot-ui/wot-starter/compare/v1.1.0...v1.2.0) (2025-11-26)
+
+
+### ✨ Features | 新功能
+
+* ✨ 合并模板与文档项目开发便利性优化 ([#41](https://github.com/wot-ui/wot-starter/issues/41)) ([646d215](https://github.com/wot-ui/wot-starter/commit/646d2158c96dcf83518ed22bc27cc8e20f2ed0d2)), closes [#35](https://github.com/wot-ui/wot-starter/issues/35)
+* ✨ 支持 esm 并更新 unocss 和 [@uni-helper](https://github.com/uni-helper) 插件 ([#39](https://github.com/wot-ui/wot-starter/issues/39)) ([f433b49](https://github.com/wot-ui/wot-starter/commit/f433b49023c572488254b18584a4dbca0ba66336))
+
+
+### ✏️ Documentation | 文档
+
+* ✏️  添加 vite base ([b6f5cf8](https://github.com/wot-ui/wot-starter/commit/b6f5cf83084d0cc04bc94c9714722a7a4c9e6327))
+* ✏️  增加更新日志入口 ([7037d8f](https://github.com/wot-ui/wot-starter/commit/7037d8f10a9aa0274d5cc5d7afc8978342f96f1a))
+
 ## [1.1.0](https://github.com/wot-ui/wot-starter/compare/v1.0.0...v1.1.0) (2025-11-12)
 
 
