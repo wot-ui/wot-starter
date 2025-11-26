@@ -21,6 +21,26 @@ function copyDemoPlugin() {
   }
 }
 
+function copyChangelogPlugin() {
+  return {
+    name: 'copy-changelog-to-guide',
+    async configResolved() {
+      const src = fileURLToPath(new URL('../../CHANGELOG.md', import.meta.url))
+      const guideDir = fileURLToPath(new URL('../guide', import.meta.url))
+      const dest = fileURLToPath(new URL('../guide/changelog.md', import.meta.url))
+      await fsp.mkdir(guideDir, { recursive: true })
+      await fsp.copyFile(src, dest)
+    },
+    async buildStart() {
+      const src = fileURLToPath(new URL('../../CHANGELOG.md', import.meta.url))
+      const guideDir = fileURLToPath(new URL('../guide', import.meta.url))
+      const dest = fileURLToPath(new URL('../guide/changelog.md', import.meta.url))
+      await fsp.mkdir(guideDir, { recursive: true })
+      await fsp.copyFile(src, dest)
+    },
+  }
+}
+
 export default defineConfig({
   vite: {
     plugins: [
@@ -36,6 +56,7 @@ export default defineConfig({
         ext: '.gz',
       }),
       copyDemoPlugin(),
+      copyChangelogPlugin(),
     ],
     server: {
       host: '0.0.0.0',
@@ -122,6 +143,7 @@ var _hmt = _hmt || [];
     nav: [
       { text: '首页', link: '/' },
       { text: '快速开始', link: '/guide/installation' },
+      { text: '更新日志', link: '/guide/changelog' },
       { text: 'Wot UI', link: 'https://wot-ui.cn/' },
       { text: '博客', link: 'https://blog.wot-ui.cn/' },
       { text: 'Uni Helper', link: 'https://uni-helper.js.org/' },
@@ -131,7 +153,7 @@ var _hmt = _hmt || [];
         text: '快速开始',
         items: [
           { text: '介绍', link: '/guide/introduction' },
-          { text: '咨询', link: '/guide/consultation' },
+          { text: '更新日志', link: '/guide/changelog' },
           { text: '起步', link: '/guide/installation' },
           { text: '核心库', link: '/guide/uni-helper' },
           { text: '组件库', link: '/guide/wot-ui' },
