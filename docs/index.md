@@ -6,7 +6,7 @@ hero:
   text: "基于 vitesse-uni-app 深度整合 Wot UI 组件库的快速启动模板"
   tagline: 背靠 Uni Helper、Wot UI 团队，告别 HBuilderX ，拥抱现代前端开发工具链
   image:
-    src: /logo.png
+    src: /logo.svg
     alt: Wot UI
   actions:
     - theme: brand
@@ -31,7 +31,7 @@ features:
   - title: Uni Helper 插件
     details: 核心插件库，极大提升了 uni-app 的开发体验
     icon: 📦
-    link: "https://github.com/uni-helper"
+    link: "https://uni-helper.cn/"
     linkText: "查看 Uni Helper 插件"
   - title: Alova
     details: 极致高效的请求工具集
@@ -64,4 +64,3 @@ features:
     link: "https://uni-echarts.xiaohe.ink"
     linkText: "查看 Uni ECharts"
 ---
-

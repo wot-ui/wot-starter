@@ -115,7 +115,7 @@ var _hmt = _hmt || [];
     `],
   ],
   themeConfig: {
-    logo: '/logo.png',
+    logo: '/logo.svg',
     lastUpdated: {
       text: '最后更新',
     },
@@ -146,7 +146,7 @@ var _hmt = _hmt || [];
       { text: '更新日志', link: '/guide/changelog' },
       { text: 'Wot UI', link: 'https://wot-ui.cn/' },
       { text: '博客', link: 'https://blog.wot-ui.cn/' },
-      { text: 'Uni Helper', link: 'https://uni-helper.js.org/' },
+      { text: 'Uni Helper', link: 'https://uni-helper.cn/' },
     ],
     sidebar: [
       {

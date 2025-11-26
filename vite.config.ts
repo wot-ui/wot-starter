@@ -48,7 +48,7 @@ export default defineConfig({
     UniKuRoot(),
     // https://uni-echarts.xiaohe.ink
     UniEcharts(),
-    // https://uni-helper.js.org/plugin-uni
+    // https://uni-helper.cn/plugin-uni
     Uni(),
     // https://github.com/uni-ku/bundle-optimizer
     Optimization({

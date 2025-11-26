@@ -18,7 +18,7 @@ vitesse-uni-app 充分拥抱开放生态，比如 VS Code 和 npm，希望能带
 
 vitess-uni-app 主要由以下开源包组成：
 
-- 核心：[@uni-helper](https://uni-helper.js.org/)
+- 核心：[@uni-helper](https://uni-helper.cn/)
 - 引擎：[uni-app](https://github.com/dcloudio/uni-app)
 - 打包器：[Vite](http://vite.dev/)
 - CSS 样式：[UnoCSS](https://unocss.dev/)

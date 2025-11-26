@@ -107,7 +107,7 @@ function donate() {
     <demo-block title="关于 uni-helper 团队" transparent>
       <view class="rounded-3 bg-white p-5 dark:bg-[var(--wot-dark-background2)]">
         <text class="mb-3 block text-3.5 text-gray-600 leading-relaxed dark:text-[var(--wot-dark-color2)]">
-          <text class="text-blue-600" @click="openUrl('https://uni-helper.js.org/')">
+          <text class="text-blue-600" @click="openUrl('https://uni-helper.cn/')">
             uni-helper
           </text>
           是一个旨在增强 uni-app 系列产品的开发体验为爱发电的非官方组织。作为靠爱发电的非官方项目，uni-helper 提供了打包工具插件支持、编辑器扩展支持、NPM 包等并尽力维护它们。
