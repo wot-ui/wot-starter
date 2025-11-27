@@ -15,6 +15,7 @@ import { defineConfig } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   envDir: './env', // custom env dir
+  base: './',
   optimizeDeps: {
     exclude: process.env.NODE_ENV === 'development' ? ['wot-design-uni', 'uni-echarts'] : [],
   },
@@ -48,7 +49,7 @@ export default defineConfig({
     UniKuRoot(),
     // https://uni-echarts.xiaohe.ink
     UniEcharts(),
-    // https://uni-helper.js.org/plugin-uni
+    // https://uni-helper.cn/plugin-uni
     Uni(),
     // https://github.com/uni-ku/bundle-optimizer
     Optimization({

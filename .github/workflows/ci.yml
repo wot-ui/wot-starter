@@ -42,8 +42,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: Install dependencies (workspace recursive)
+        run: pnpm -r install --frozen-lockfile
 
       - name: Test WeChat Mini Program dev mode
         shell: bash
@@ -108,3 +108,12 @@ jobs:
           echo "✅ H5 build completed" >> $GITHUB_STEP_SUMMARY
           echo "✅ iOS build completed" >> $GITHUB_STEP_SUMMARY
           echo "📦 All artifacts uploaded successfully" >> $GITHUB_STEP_SUMMARY
+      - name: Build Docs (VitePress)
+        run: pnpm -C docs run docs:build
+
+      - name: Upload Docs artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs-build
+          path: docs/.vitepress/dist/
+          retention-days: 7

@@ -1,7 +1,7 @@
 {
   "name": "wot-starter",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "packageManager": "pnpm@9.9.0",
   "license": "MIT",
@@ -52,12 +52,16 @@
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "lint:docs": "eslint docs --ext .js,.ts,.vue,.mts,.cts --ignore-pattern '**/*.md'",
     "prepare": "husky install",
     "commit": "git-cz",
     "release-major": "standard-version --release-as major",
     "release-minor": "standard-version --release-as minor",
     "release-patch": "standard-version --release-as patch",
-    "alova-gen": "alova gen -f"
+    "alova-gen": "alova gen -f",
+    "docs:dev": "pnpm -F docs docs:dev",
+    "docs:build": "pnpm run build:h5 && pnpm -F docs docs:build",
+    "docs:preview": "pnpm -F docs docs:preview"
   },
   "dependencies": {
     "@alova/adapter-uniapp": "^2.0.14",

@@ -1,0 +1,32 @@
+.DS_Store
+coverage/
+node_modules/
+unpackage/
+dist/
+lib/
+website/
+.temp
+.cache
+.vitepress/cache
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.project
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+.history
+tags.json
+attributes.json
+web-types.json
