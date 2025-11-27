@@ -35,11 +35,15 @@ export const useManualThemeStore = defineStore('manualTheme', {
     /**
      * 手动切换主题
      * @param mode 指定主题模式，不传则自动切换
+     * @param isFollw 是否是跟随系统
      */
-    toggleTheme(mode?: ThemeMode) {
+    toggleTheme(mode?: ThemeMode, isFollw: boolean = false) {
       this.theme = mode || (this.theme === 'light' ? 'dark' : 'light')
-      this.hasUserSet = true // 标记用户已手动设置
-      this.followSystem = false // 不再跟随系统
+      if (!isFollw) {
+        // 如果不是跟随系统，是手动切换
+        this.hasUserSet = true // 标记用户已手动设置
+        this.followSystem = false // 不再跟随系统
+      }
       this.setNavigationBarColor()
     },
 
