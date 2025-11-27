@@ -47,7 +47,17 @@ const coreTeam = [
 ]
 
 function openUrl(url: string) {
+  // #ifdef H5
   window.open(url, '_blank')
+  // #endif
+  // #ifndef H5
+  uni.setClipboardData({
+    data: url,
+    success: () => {
+      uni.showToast({ title: '链接已复制', icon: 'success' })
+    },
+  })
+  // #endif
 }
 
 // 打开公众号二维码
