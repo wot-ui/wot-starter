@@ -47,20 +47,17 @@ function openUrl(url: string) {
 </script>
 
 <template>
-  <view class="box-border py-3">
-    <view class="mx-3 box-border rounded-3 bg-white px-4 py-6 text-center dark:bg-[var(--wot-dark-background2)]">
-      <text class="mb-3 block text-left text-5 text-gray-800 font-bold dark:text-gray-200">
-        Wot Starter
-      </text>
-      <text class="mb-3 block text-left text-30rpx text-gray-600 leading-relaxed dark:text-gray-300">
+  <view class="min-h-screen flex-col gap-3 py-3">
+    <wd-card class="!mb-0" title="Wot Starter">
+      <view class="text-30rpx leading-relaxed">
         ⚡️ 基于 vitesse-uni-app 由 vite & uni-app 驱动的、深度整合 Wot UI 组件库的快速启动模板
-      </text>
-      <text class="block text-left text-3 text-gray-400 leading-relaxed dark:text-gray-400">
+      </view>
+      <view class="my-3 text-3 leading-relaxed">
         背靠 Uni Helper、Wot UI 团队，告别 HBuilderX ，拥抱现代前端开发工具链
-      </text>
-    </view>
+      </view>
+    </wd-card>
 
-    <demo-block title="基础设置" transparent>
+    <demo-block title="基础设置" custom-card-content-class="!p-0">
       <wd-cell-group border custom-class="rounded-2! overflow-hidden">
         <wd-cell title="暗黑模式">
           <wd-switch v-model="isDark" size="18px" />
@@ -82,7 +79,7 @@ function openUrl(url: string) {
       </wd-cell-group>
     </demo-block>
 
-    <demo-block title="工具链介绍" transparent>
+    <demo-block title="工具链介绍" custom-card-content-class="!p-0">
       <wd-cell-group border custom-class="rounded-2! overflow-hidden">
         <wd-cell title="🧩 WotUI组件库" is-link @click="openUrl('https://wot-ui.cn/')" />
 
@@ -98,39 +95,39 @@ function openUrl(url: string) {
         <wd-cell title="📊 uni-echarts" is-link @click="navigateTo('echarts')" />
       </wd-cell-group>
     </demo-block>
-
-    <!-- 主题色选择 ActionSheet -->
-    <wd-action-sheet
-      v-model="showThemeColorSheet"
-      title="选择主题色"
-      :close-on-click-action="true"
-      @cancel="closeThemeColorPicker"
-    >
-      <view class="px-4 pb-4">
-        <view
-          v-for="option in themeColorOptions"
-          :key="option.value"
-          class="flex items-center justify-between border-b border-gray-100 py-3 last:border-b-0 dark:border-gray-700"
-          @click="handleThemeColorSelect(option)"
-        >
-          <view class="flex items-center gap-3">
-            <view
-              class="h-6 w-6 border-2 border-gray-200 rounded-full dark:border-gray-600"
-              :style="{ backgroundColor: option.primary }"
-            />
-            <text class="text-4 text-gray-800 dark:text-gray-200">
-              {{ option.name }}
-            </text>
-          </view>
-          <wd-icon
-            v-if="currentThemeColor.value === option.value"
-            name="check"
-            :color="option.primary"
-            size="20px"
-          />
-        </view>
-      </view>
-      <wd-gap :height="50" />
-    </wd-action-sheet>
   </view>
+
+  <!-- 主题色选择 ActionSheet -->
+  <wd-action-sheet
+    v-model="showThemeColorSheet"
+    title="选择主题色"
+    :close-on-click-action="true"
+    @cancel="closeThemeColorPicker"
+  >
+    <view class="px-4 pb-4">
+      <view
+        v-for="option in themeColorOptions"
+        :key="option.value"
+        class="flex items-center justify-between border-b border-gray-100 py-3 last:border-b-0 dark:border-gray-700"
+        @click="handleThemeColorSelect(option)"
+      >
+        <view class="flex items-center gap-3">
+          <view
+            class="h-6 w-6 border-2 border-gray-200 rounded-full dark:border-gray-600"
+            :style="{ backgroundColor: option.primary }"
+          />
+          <text class="text-4 text-gray-800 dark:text-gray-200">
+            {{ option.name }}
+          </text>
+        </view>
+        <wd-icon
+          v-if="currentThemeColor.value === option.value"
+          name="check"
+          :color="option.primary"
+          size="20px"
+        />
+      </view>
+    </view>
+    <wd-gap :height="50" />
+  </wd-action-sheet>
 </template>

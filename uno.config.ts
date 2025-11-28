@@ -29,4 +29,10 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
+  shortcuts: [
+    {
+      'flex-center': 'flex justify-center items-center',
+      'flex-col': 'flex flex-col',
+    },
+  ],
 })
