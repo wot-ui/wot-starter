@@ -152,8 +152,8 @@ function donate() {
 </template>
 
 <style lang="scss" scoped>
-:deep() .wd-cell__right {
-  align-self: center;
-  flex: none;
-}
+:deep(.wd-cell__right) {
+   align-self: center;
+   flex: none;
+ }
 </style>
