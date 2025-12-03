@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Wot Starter"
   text: "基于 vitesse-uni-app 深度整合 Wot UI 组件库的快速启动模板"
-  tagline: 背靠 Uni Helper、Wot UI 团队，告别 HBuilderX ，拥抱现代前端开发工具链
+  tagline: 背靠 Uni Helper、Wot UI 团队，告别 HBuilderX ，拥抱现代前端开发工具链，让你拥有飞一般的开发体验
   image:
     src: /logo.svg
     alt: Wot UI
@@ -13,7 +13,7 @@ hero:
       text: 快速开始
       link: guide/installation
     - theme: brand
-      text: 我的博客
+      text: 作者博客
       link: https://blog.wot-ui.cn/
     - theme: alt
       text: 查看演示
@@ -33,6 +33,16 @@ features:
     icon: 📦
     link: "https://uni-helper.cn/"
     linkText: "查看 Uni Helper 插件"
+  - title: Uni Ku 插件
+    details: 非常酷的 uni-app 插件库
+    icon: 🆒
+    link: "https://uni-ku.js.org/"
+    linkText: "查看 Uni Ku 插件"
+  - title: Uni ECharts
+    details: 适用于 uni-app 的 Apache ECharts 组件
+    icon: 📊
+    link: "https://uni-echarts.xiaohe.ink"
+    linkText: "查看 Uni ECharts"
   - title: Alova
     details: 极致高效的请求工具集
     icon: 🌐
@@ -58,9 +68,4 @@ features:
     icon: 😃
     link: "https://icones.js.org/"
     linkText: "查看 Icones"
-  - title: Uni ECharts
-    details: 适用于 uni-app 的 Apache ECharts 组件
-    icon: 📊
-    link: "https://uni-echarts.xiaohe.ink"
-    linkText: "查看 Uni ECharts"
 ---

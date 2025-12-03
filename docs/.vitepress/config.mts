@@ -144,9 +144,11 @@ var _hmt = _hmt || [];
       { text: '首页', link: '/' },
       { text: '快速开始', link: '/guide/installation' },
       { text: '更新日志', link: '/guide/changelog' },
+      { text: '🥤一杯咖啡', link: 'https://wot-ui.cn/reward/reward' },
       { text: 'Wot UI', link: 'https://wot-ui.cn/' },
-      { text: '博客', link: 'https://blog.wot-ui.cn/' },
+      { text: '作者博客', link: 'https://blog.wot-ui.cn/' },
       { text: 'Uni Helper', link: 'https://uni-helper.cn/' },
+      { text: 'Uni Ku 插件', link: 'https://uni-ku.js.org/' },
     ],
     sidebar: [
       {
