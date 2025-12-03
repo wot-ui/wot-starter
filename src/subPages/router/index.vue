@@ -19,13 +19,13 @@ const userLabel = ref('小熊熊')
 // 基础导航方法
 function pushByString() {
   // 字符串路径
-  router.push('/pages/router/demo-string')
+  router.push('/subPages/router/demo-string')
   showSuccess({ msg: '使用字符串路径跳转' })
 }
 
 function pushByPath() {
   // 带有路径的对象
-  router.push({ path: '/pages/router/demo-object' })
+  router.push({ path: '/subPages/router/demo-object' })
   showSuccess({ msg: '使用path对象跳转' })
 }
 
@@ -58,7 +58,7 @@ function pushWithQuery() {
     return
   }
   // 带查询参数
-  router.push({ path: '/pages/router/demo-query', query: { username: searchKeyword.value } })
+  router.push({ path: '/subPages/router/demo-query', query: { username: searchKeyword.value } })
   showSuccess({ msg: `传递查询参数: ${searchKeyword.value}` })
 }
 
@@ -83,7 +83,7 @@ function pushWithObjectQuery() {
   }
   // path+query传递对象参数
   router.push({
-    path: '/pages/router/demo-query',
+    path: '/subPages/router/demo-query',
     query: { user: encodeURIComponent(JSON.stringify(user)) },
   })
   showSuccess({ msg: '传递对象参数(query)' })
@@ -99,7 +99,7 @@ function demoNavigationGuards() {
 
 // Router方法演示
 function demoPush() {
-  router.push('/pages/router/demo-string')
+  router.push('/subPages/router/demo-string')
   showSuccess({ msg: 'router.push() - 保留当前页面跳转' })
 }
 
@@ -109,7 +109,7 @@ function demoPushTab() {
 }
 
 function demoReplace() {
-  router.replace('/pages/router/demo-object')
+  router.replace('/subPages/router/demo-object')
   showSuccess({ msg: 'router.replace() - 替换当前页面' })
 }
 

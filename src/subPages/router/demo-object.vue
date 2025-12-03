@@ -18,7 +18,7 @@ function pushToParams() {
 }
 
 function pushToQuery() {
-  router.push({ path: '/pages/router/demo-query', query: { keyword: 'vue', type: 'framework' } })
+  router.push({ path: '/subPages/router/demo-query', query: { keyword: 'vue', type: 'framework' } })
 }
 </script>
 
@@ -67,7 +67,7 @@ function pushToQuery() {
               代码:
             </text>
             <text class="text-3.5 text-gray-800 font-mono dark:text-[var(--wot-dark-color)]">
-              router.push({ path: '/pages/router/demo-object' })
+              router.push({ path: '/subPages/router/demo-object' })
             </text>
           </view>
         </view>
