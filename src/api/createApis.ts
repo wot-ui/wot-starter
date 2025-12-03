@@ -61,9 +61,18 @@ const createFunctionalProxy = (array: (string | symbol)[], alovaInstance: Alova<
         let hasBlobData = false;
         const formData = new FormData();
         for (const key in data) {
-          formData.append(key, data[key]);
-          if (data[key] instanceof Blob) {
-            hasBlobData = true;
+          if (Array.isArray(data[key])) {
+            for (const ele of data[key]) {
+              formData.append(key, ele);
+              if (ele instanceof Blob) {
+                hasBlobData = true;
+              }
+            }
+          } else {
+            formData.append(key, data[key]);
+            if (data[key] instanceof Blob) {
+              hasBlobData = true;
+            }
           }
         }
         data = hasBlobData ? formData : data;
