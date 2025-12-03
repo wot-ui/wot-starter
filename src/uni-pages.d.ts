@@ -6,22 +6,22 @@
 type _LocationUrl =
   "/pages/index/index" |
   "/pages/about/index" |
-  "/pages/ci/index" |
-  "/pages/create-uni/index" |
-  "/pages/feedback/index" |
-  "/pages/icon/index" |
-  "/pages/pinia/index" |
-  "/pages/request/index" |
-  "/pages/router/demo-aftereach" |
-  "/pages/router/demo-guard" |
-  "/pages/router/demo-object" |
-  "/pages/router/demo-params" |
-  "/pages/router/demo-protected" |
-  "/pages/router/demo-query" |
-  "/pages/router/demo-string" |
-  "/pages/router/index" |
-  "/pages/uni-ku-root/index" |
+  "/subPages/ci/index" |
+  "/subPages/create-uni/index" |
+  "/subPages/feedback/index" |
+  "/subPages/icon/index" |
+  "/subPages/pinia/index" |
+  "/subPages/request/index" |
+  "/subPages/router/demo-aftereach" |
+  "/subPages/router/demo-guard" |
+  "/subPages/router/demo-object" |
+  "/subPages/router/demo-params" |
+  "/subPages/router/demo-protected" |
+  "/subPages/router/demo-query" |
+  "/subPages/router/demo-string" |
+  "/subPages/router/index" |
   "/subPages/styles/index" |
+  "/subPages/uni-ku-root/index" |
   "/subEcharts/echarts/index" |
   "/subAsyncEcharts/asyncEcharts/index";
 

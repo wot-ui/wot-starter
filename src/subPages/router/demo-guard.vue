@@ -21,7 +21,7 @@ function handleBeforeEach() {
 
 // 跳转到afterEach演示页面
 function demoAfterEachPage() {
-  router.push('/pages/router/demo-aftereach')
+  router.push('/subPages/router/demo-aftereach')
 }
 </script>
 

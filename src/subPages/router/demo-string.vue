@@ -14,7 +14,7 @@ function goBack() {
 }
 
 function pushToObject() {
-  router.push({ path: '/pages/router/demo-object' })
+  router.push({ path: '/subPages/router/demo-object' })
 }
 </script>
 
@@ -63,7 +63,7 @@ function pushToObject() {
               代码:
             </text>
             <text class="text-3.5 text-gray-800 font-mono dark:text-[var(--wot-dark-color)]">
-              router.push('/pages/router/demo-string')
+              router.push('/subPages/router/demo-string')
             </text>
           </view>
         </view>

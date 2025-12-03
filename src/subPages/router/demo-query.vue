@@ -33,7 +33,7 @@ function goBack() {
 }
 
 function pushToGuard() {
-  router.push('/pages/router/demo-guard')
+  router.push('/subPages/router/demo-guard')
 }
 </script>
 

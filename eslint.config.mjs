@@ -11,6 +11,7 @@ export default uni(
       'src/uni_modules/**/*',
       'docs/.vitepress/dist',
       'docs/.vitepress/cache',
+      '**/*.md',
     ],
   },
 )
