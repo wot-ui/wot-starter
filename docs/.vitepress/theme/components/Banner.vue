@@ -268,5 +268,8 @@ button {
   .vt-place {
     display: none;
   }
+  .vt-banner-title {
+    display: none;
+  }
 }
 </style>

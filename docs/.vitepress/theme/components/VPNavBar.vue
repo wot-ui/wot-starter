@@ -11,6 +11,7 @@ import VPNavBarTitle from 'vitepress/dist/client/theme-default/components/VPNavB
 import VPNavBarTranslations from 'vitepress/dist/client/theme-default/components/VPNavBarTranslations.vue'
 import { useSidebar } from 'vitepress/theme'
 import { ref, watchPostEffect } from 'vue'
+import pkg from '../../../../package.json'
 
 const props = defineProps<{
   isScreenOpen: boolean
@@ -25,6 +26,7 @@ const { hasSidebar } = useSidebar()
 const { frontmatter } = useData()
 
 const classes = ref<Record<string, boolean>>({})
+const version = pkg.version
 
 watchPostEffect(() => {
   classes.value = {
@@ -47,6 +49,7 @@ watchPostEffect(() => {
             </template>
             <template #nav-bar-title-after>
               <slot name="nav-bar-title-after" />
+              <span class="version-tag">v{{ version }}</span>
             </template>
           </VPNavBarTitle>
         </div>
@@ -253,5 +256,17 @@ watchPostEffect(() => {
   .VPNavBar:not(.has-sidebar):not(.home.top) .divider {
     background-color: var(--vp-c-gutter);
   }
+}
+
+.version-tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 6px;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 4px;
+  background-color: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-2);
 }
 </style>
