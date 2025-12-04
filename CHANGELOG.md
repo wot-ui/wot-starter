@@ -1,6 +1,28 @@
 # 更新日志 
 
 
+### [1.2.1](https://github.com/wot-ui/wot-starter/compare/v1.2.0...v1.2.1) (2025-12-04)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **manualTheme:** 修复跟随系统自动切换主题失效的问题 ([380c702](https://github.com/wot-ui/wot-starter/commit/380c7026eeb37a12e9a2866b18bd70880efdfecc))
+
+
+### ✨ Features | 新功能
+
+* **index:** 首页设置中新增"跟随系统"按钮 ([d031788](https://github.com/wot-ui/wot-starter/commit/d031788d4c9b31a7d030f17856f69f2d177eb1b8))
+* **logo:** 更新logo ([550caa2](https://github.com/wot-ui/wot-starter/commit/550caa243e423969745d62c3872dfae14976409a))
+
+
+### ✏️ Documentation | 文档
+
+* ✏️  更新 logo ([0e57c45](https://github.com/wot-ui/wot-starter/commit/0e57c45b94284320d5fdc3be6c082faf12ddcbad))
+* ✏️  首页添加 uni-ku 插件入口 ([a5b05c9](https://github.com/wot-ui/wot-starter/commit/a5b05c9091f5396c27c556ed23eed87b7f06fef0))
+* ✏️  文档增加显示版本号 ([10b7078](https://github.com/wot-ui/wot-starter/commit/10b707810529af53bd2a85fca6624807b5b2d9ec))
+* ✏️  移动非主包必需示例页面到分包中 ([#43](https://github.com/wot-ui/wot-starter/issues/43)) ([3d7a076](https://github.com/wot-ui/wot-starter/commit/3d7a07619cf4b84c26a91b5028b2635bcc6d44ff)), closes [#35](https://github.com/wot-ui/wot-starter/issues/35)
+* ✏️  update logo ([6b9e4f9](https://github.com/wot-ui/wot-starter/commit/6b9e4f9e66d7be10b1e678b46472c9e44a270fc3))
+
 ## [1.2.0](https://github.com/wot-ui/wot-starter/compare/v1.1.0...v1.2.0) (2025-11-26)
 
 
