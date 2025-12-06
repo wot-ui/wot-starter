@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "Wot Starter"
-  text: "基于 vitesse-uni-app 深度整合 Wot UI 组件库的快速启动模板"
-  tagline: 背靠 Uni Helper、Wot UI 团队，告别 HBuilderX ，拥抱现代前端开发工具链，让你拥有飞一般的开发体验
+  text: "飞一般开发体验的 \nuni-app 模板"
+  tagline: 基于 vitesse-uni-app 深度整合 Wot UI 组件库，背靠 Uni Helper、Wot UI 团队，告别 HBuilderX ，拥抱现代前端开发工具链，让你拥有飞一般的开发体验
   image:
     src: /logo.svg
     alt: Wot UI
