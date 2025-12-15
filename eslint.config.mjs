@@ -7,5 +7,11 @@ export default uni(
       'no-console': 'off',
       'eslint-comments/no-unlimited-disable': 'off',
     },
+    ignores: [
+      'src/uni_modules/**/*',
+      'docs/.vitepress/dist',
+      'docs/.vitepress/cache',
+      '**/*.md',
+    ],
   },
 )

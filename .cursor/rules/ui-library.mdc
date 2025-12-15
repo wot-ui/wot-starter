@@ -12,7 +12,7 @@ alwaysApply: false
 4. Toast、Loading和MessageBox交互使用 `src/components/` 目录下提供的全局GlobalToast、GlobalLoading、GlobalMessage组件实现
 
 ## wot-design-uni 组件库
-1. 组件库文档:https://wot-design-uni.cn/llms-full.txt
+1. 组件库文档:https://wot-ui.cn/llms-full.txt
 2. 优先使用组件库提供的主题和样式
 3. 遵循组件库的最佳实践和 API 规范
 

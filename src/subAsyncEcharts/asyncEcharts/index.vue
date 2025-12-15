@@ -7,9 +7,9 @@ import LineChart from '@/subEcharts/echarts/components/LineChart.vue?async'
 import LiquidFillChart from '@/subEcharts/echarts/components/LiquidFillChart.vue?async'
 import MiniLineChart from '@/subEcharts/echarts/components/MiniLineChart.vue?async'
 import PieChart from '@/subEcharts/echarts/components/PieChart.vue?async'
+import RadarChart from '@/subEcharts/echarts/components/RadarChart.vue?async'
 import ScatterChart from '@/subEcharts/echarts/components/ScatterChart.vue?async'
 import StackedBarChart from '@/subEcharts/echarts/components/StackedBarChart.vue?async'
-import RadarChart from '@/subEcharts/echarts/components/RadarChart.vue?async'
 
 definePage({
   name: 'echartsAsync',

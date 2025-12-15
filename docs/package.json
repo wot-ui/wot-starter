@@ -1,0 +1,32 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.9.0",
+  "description": "基于vitesse-uni-app的深度整合 Wot UI 组件库的快速起手项目",
+  "author": "",
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@iconify-json/ep": "^1.2.2",
+    "@vueuse/core": "^13.4.0",
+    "axios": "^1.13.1",
+    "element-plus": "^2.12.0",
+    "vite-plugin-compression": "^0.5.1",
+    "vue": "^3.5.17"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.2.10",
+    "@types/node": "^24.0.4",
+    "@unocss/vite": "^66.3.2",
+    "typescript": "^5.8.3",
+    "unocss": "^66.3.2",
+    "vitepress": "^1.6.3",
+    "vitepress-plugin-llms": "^1.9.3"
+  }
+}

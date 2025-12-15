@@ -48,9 +48,10 @@ export function useManualTheme() {
   /**
    * 切换暗黑模式
    * @param mode 指定主题模式，不传则自动切换
+   * @param isFollw 是否跟随系统
    */
-  function toggleTheme(mode?: ThemeMode) {
-    store.toggleTheme(mode)
+  function toggleTheme(mode?: ThemeMode, isFollw: boolean = false) {
+    store.toggleTheme(mode, isFollw)
   }
 
   /**
@@ -91,7 +92,7 @@ export function useManualTheme() {
     if (typeof uni !== 'undefined' && uni.onThemeChange) {
       uni.onThemeChange((res) => {
         if (store.followSystem) {
-          toggleTheme(res.theme as ThemeMode)
+          toggleTheme(res.theme as ThemeMode, true)
         }
       })
     }
@@ -107,7 +108,7 @@ export function useManualTheme() {
     if (typeof uni !== 'undefined' && uni.offThemeChange) {
       uni.offThemeChange((res) => {
         if (store.followSystem) {
-          toggleTheme(res.theme as ThemeMode)
+          toggleTheme(res.theme as ThemeMode, true)
         }
       })
     }
