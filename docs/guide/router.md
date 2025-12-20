@@ -1,7 +1,7 @@
 ---
 title: 路由
 iframe: true
-url: pages/router/index
+url: subPages/router/index
 ---
 
 # 路由管理

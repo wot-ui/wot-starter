@@ -1,7 +1,7 @@
 ---
 title: uni-ku/root
 iframe: true
-url: pages/uni-ku-root/index
+url: subPages/uni-ku-root/index
 ---
 # @uni-ku/root
 

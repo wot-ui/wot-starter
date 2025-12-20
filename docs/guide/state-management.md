@@ -1,7 +1,7 @@
 ---
 title: 状态管理
 iframe: true
-url: pages/pinia/index
+url: subPages/pinia/index
 ---
 
 # 状态管理
