@@ -1,7 +1,7 @@
 ---
 title: 网络请求
 iframe: true
-url: pages/request/index
+url: subPages/request/index
 ---
 
 # 网络请求
