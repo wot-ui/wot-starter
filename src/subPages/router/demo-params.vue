@@ -127,7 +127,7 @@ function pushToGuard() {
             ⚠️ 重要说明
           </view>
           <view class="text-3 text-orange-600 leading-relaxed dark:text-orange-200">
-            在 uni-mini-router 中，params 和 query 参数在实际效果上并无区别，都会以查询字符串形式放在 URL 中。这种 API 设计主要是为了与 vue-router 保持一致。
+            在 @wot-ui/router 中，params 和 query 参数在实际效果上并无区别，都会以查询字符串形式放在 URL 中。这种 API 设计主要是为了与 vue-router 保持一致。
           </view>
         </view>
         <view class="border border-gray-200 rounded-2 bg-gray-50 p-3 dark:border-[var(--wot-dark-border)] dark:bg-[var(--wot-dark-background3)]">

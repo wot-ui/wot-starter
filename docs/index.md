@@ -48,11 +48,11 @@ features:
     icon: 🌐
     link: "https://alova.js.org/zh-CN/"
     linkText: "查看 Alova"
-  - title: uni-mini-router
+  - title: 摸鱼路由库
     details: 轻量级 uni-app 路由库
     icon: 🚦
-    link: "https://github.com/Moonofweisheng/uni-mini-router"
-    linkText: "查看 uni-mini-router"
+    link: "https://my-uni.wot-ui.cn"
+    linkText: "查看 @wot-ui/router"
   - title: uni-mini-ci
     details: 小程序持续集成的插件
     icon: 🔄

@@ -414,7 +414,7 @@ export default async () => {
       }),
       AutoImport({
         imports: ['vue', '@vueuse/core', 'pinia', 'uni-app', {
-          from: 'uni-mini-router',
+          from: '@wot-ui/router',
           imports: ['createRouter', 'useRouter', 'useRoute'],
         }, {
           from: 'wot-design-uni',

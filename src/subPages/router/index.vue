@@ -162,7 +162,7 @@ function handleNavigate(url: string) {
           🚀
         </view>
         <view class="mb-2 text-6 text-gray-800 font-bold dark:text-[var(--wot-dark-color)]">
-          uni-mini-router
+          @wot-ui/router
         </view>
         <view class="mb-2 text-3.5 text-gray-600 leading-relaxed dark:text-[var(--wot-dark-color2)]">
           轻量级路由管理解决方案
@@ -349,7 +349,7 @@ function handleNavigate(url: string) {
           ⚠️ 重要提示
         </view>
         <view class="text-3 text-orange-600 leading-relaxed dark:text-orange-200">
-          在 uni-mini-router 中，params 和 query 参数都会以查询字符串形式放在 URL 中，两者在实际效果上并无区别。这种 API 设计主要是为了与 vue-router 保持一致。
+          在 @wot-ui/router 中，params 和 query 参数都会以查询字符串形式放在 URL 中，两者在实际效果上并无区别。这种 API 设计主要是为了与 vue-router 保持一致。
         </view>
       </view>
       <view class="space-y-3">
@@ -460,8 +460,8 @@ function handleNavigate(url: string) {
     <!-- 相关链接 -->
     <demo-block title="相关链接" transparent>
       <wd-cell-group border custom-class="rounded-2! overflow-hidden">
-        <wd-cell title="📚 uni-mini-router 文档" value="路由管理" is-link @click="handleNavigate('https://moonofweisheng.github.io/uni-mini-router/')" />
-        <wd-cell title="🐙 GitHub 仓库" value="uni-mini-router" is-link @click="handleNavigate('https://github.com/Moonofweisheng/uni-mini-router')" />
+        <wd-cell title="📚 @wot-ui/router 文档" value="路由管理" is-link @click="handleNavigate('https://moonofweisheng.github.io/@wot-ui/router/')" />
+        <wd-cell title="🐙 GitHub 仓库" value="@wot-ui/router" is-link @click="handleNavigate('https://my-uni.wot-ui.cn/')" />
         <wd-cell title="📖 uni-app 路由文档" value="页面路由" is-link @click="handleNavigate('https://uniapp.dcloud.net.cn/tutorial/page.html')" />
       </wd-cell-group>
     </demo-block>

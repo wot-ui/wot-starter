@@ -16,8 +16,8 @@ alwaysApply: false
 
 
 ## 路由跳转
-1. 本项目使用uni-mini-router实现路由跳转。
-2. uni-mini-router 提供2个hooks: `useRouter` 和 `useRoute`。
+1. 本项目使用@wot-ui/router实现路由跳转。
+2. @wot-ui/router 提供2个hooks: `useRouter` 和 `useRoute`。
 3. push方法 `router.push(target:RouteLocationRaw): void` 保留当前页面，跳转到应用内的某个页面，相当于使用 `uni.navigateTo(OBJECT)`。
 4. pushTab方法 `router.pushTab(target:RouteLocationRaw): void` 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面，相当于使用 `uni.switchTab(OBJECT)`。
 5. replace方法 `router.replace(target:RouteLocationRaw): void` 关闭当前页面，跳转到应用内的某个页面，相当于使用 `uni.redirectTo(OBJECT)`。

@@ -12,7 +12,7 @@ alwaysApply: false
 - **框架**: uni-app (Vue 3 + TypeScript)
 - **UI组件库**: wot-design-uni
 - **请求库**: alova
-- **路由**: uni-mini-router + @uni-helper/vite-plugin-uni-pages (文件路由)
+- **路由**: @wot-ui/router + @uni-helper/vite-plugin-uni-pages (文件路由)
 - **状态管理**: pinia
 - **样式**: UnoCSS + @uni-helper/unocss-preset-uni
 - **构建工具**: Vite

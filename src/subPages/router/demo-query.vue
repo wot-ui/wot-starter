@@ -130,7 +130,7 @@ function pushToGuard() {
             ⚠️ 重要说明
           </view>
           <view class="text-3 text-orange-600 leading-relaxed dark:text-orange-200">
-            在 uni-mini-router 中，query 和 params 参数都会放在 URL 中，两者在实际效果上并无区别。这种 API 设计主要是为了与 vue-router 保持一致。
+            在 @wot-ui/router 中，query 和 params 参数都会放在 URL 中，两者在实际效果上并无区别。这种 API 设计主要是为了与 vue-router 保持一致。
           </view>
         </view>
         <view class="space-y-3">
