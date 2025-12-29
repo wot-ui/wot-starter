@@ -1,7 +1,7 @@
 {
   "name": "wot-starter",
   "type": "module",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": true,
   "packageManager": "pnpm@9.9.0",
   "license": "MIT",
