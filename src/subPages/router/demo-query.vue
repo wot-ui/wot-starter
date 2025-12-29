@@ -20,7 +20,7 @@ onLoad((option) => {
   // 如果有user参数，尝试解码对象
   if (option && option.user) {
     try {
-      decodedUser.value = JSON.parse(decodeURIComponent(option.user))
+      decodedUser.value = JSON.parse(decodeURIComponent(decodeURIComponent(option.user)))
     }
     catch (e) {
       console.error('解码user参数失败:', e)
@@ -113,7 +113,7 @@ function pushToGuard() {
             </text>
           </view>
           <view class="mt-3 text-3.5 text-gray-600 dark:text-[var(--wot-dark-color2)]">
-            使用 JSON.parse(decodeURIComponent(option.user)) 解码
+            使用 JSON.parse(decodeURIComponent(decodeURIComponent(option.user))) 解码
           </view>
         </view>
       </view>
