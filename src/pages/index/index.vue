@@ -21,7 +21,7 @@ const {
   setFollowSystem,
 } = useManualTheme()
 
-const useSystemTheme = computed<boolean>({
+const isFollowSystem = computed<boolean>({
   get() {
     return followSystem.value
   },
@@ -74,12 +74,12 @@ function openUrl(url: string) {
       <wd-cell-group border custom-class="rounded-2! overflow-hidden">
         <wd-cell title="跟随系统" center>
           <view class="flex justify-end">
-            <wd-switch v-model="useSystemTheme" size="14px" />
+            <wd-switch v-model="isFollowSystem" size="14px" />
           </view>
         </wd-cell>
         <wd-cell title="暗黑模式">
           <view class="flex justify-end">
-            <wd-switch v-model="isDark" size="14px" :disabled="useSystemTheme" />
+            <wd-switch v-model="isDark" size="14px" :disabled="isFollowSystem" />
           </view>
         </wd-cell>
         <wd-cell title="选择主题色" is-link @click="openThemeColorPicker">
