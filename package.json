@@ -84,7 +84,7 @@
     "@dcloudio/uni-mp-xhs": "3.0.0-4080520251106001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-4080520251106001",
     "@vueuse/core": "^11.0.3",
-    "@wot-ui/router": "^1.1.0",
+    "@wot-ui/router": "^1.1.2",
     "alova": "^3.3.4",
     "echarts": "^6.0.0",
     "pinia": "^2.3.1",

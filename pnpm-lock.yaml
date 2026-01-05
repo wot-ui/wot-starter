@@ -72,8 +72,8 @@ importers:
         specifier: ^11.0.3
         version: 11.0.3(vue@3.4.38(typescript@5.5.4))
       '@wot-ui/router':
-        specifier: ^1.1.0
-        version: 1.1.0(vue@3.4.38(typescript@5.5.4))
+        specifier: ^1.1.2
+        version: 1.1.2(vue@3.4.38(typescript@5.5.4))
       alova:
         specifier: ^3.3.4
         version: 3.3.4
@@ -146,7 +146,7 @@ importers:
         version: 1.0.0-alpha.6(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))(@uni-helper/uni-cloud-types@1.0.0-alpha.6(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))(@uni-helper/uni-ui-types@1.0.0-alpha.6(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4)))(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
       '@uni-helper/unocss-preset-uni':
         specifier: ^0.2.11
-        version: 0.2.11(@unocss/preset-legacy-compat@66.5.6)(@unocss/preset-mini@66.5.12)(@unocss/rule-utils@66.5.10)(@unocss/vite@66.5.9(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6)))(unocss-applet@0.12.2(unocss@66.0.0(postcss@8.5.6)(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))))(unocss@66.0.0(postcss@8.5.6)(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4)))
+        version: 0.2.11(@unocss/preset-legacy-compat@66.5.6)(@unocss/preset-mini@66.5.12)(@unocss/rule-utils@66.5.12)(@unocss/vite@66.5.9(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6)))(unocss-applet@0.12.2(unocss@66.0.0(postcss@8.5.6)(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))))(unocss@66.0.0(postcss@8.5.6)(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4)))
       '@uni-helper/vite-plugin-uni-components':
         specifier: ^0.2.3
         version: 0.2.3(rollup@4.53.2)
@@ -3095,10 +3095,6 @@ packages:
     resolution: {integrity: sha512-UJ51YHbwxYTGyj35ugsPlOT4gaa7tCbXdywZ3m5Nn0JgywwIqGmBFyiN9ZjHBHfJuDxmmPd6lxojoBscih/WMQ==}
     engines: {node: '>=14'}
 
-  '@unocss/rule-utils@66.5.10':
-    resolution: {integrity: sha512-497GPWZpArNG25cto0Yq3/Yw+i0x7/N/ySq1HHeE3lB43sdmCv6+m6QEv14I/9/e5WJhQOmrY5LmHZYXC7xxMw==}
-    engines: {node: '>=14'}
-
   '@unocss/rule-utils@66.5.12':
     resolution: {integrity: sha512-2UQvdjS6nD3QHLEwcXlDhXFNiOUQDuOC+itX4tjqvnjP/hj5A99WEUHemb8WEHAlHAt7khe9591+BkHHo3BX/w==}
     engines: {node: '>=14'}
@@ -3502,8 +3498,8 @@ packages:
   '@vueuse/shared@9.13.0':
     resolution: {integrity: sha512-UrnhU+Cnufu4S6JLCPZnkWh0WwZGUp72ktOF2DFptMlOs3TOdVv8xJN53zhHGARmVOsz5KqOls09+J1NR6sBKw==}
 
-  '@wot-ui/router@1.1.0':
-    resolution: {integrity: sha512-x0noZD+rjBgJvSWxMzDmMyspj0l/IIDoIBMcEs4jpt186uYPNCTmzyeUruWG1nPjWneHtDbY2dg//x6bpzcQ0g==}
+  '@wot-ui/router@1.1.2':
+    resolution: {integrity: sha512-z0+XJgeMl4DRoKQBRwSsYeoDDkyuXSNQ+jpMyxZpisp5db73+ffsP9Ac5imjjlUKfb2t9XZzpMq2kuUIaq3V/w==}
     peerDependencies:
       vue: ~3.4.38
 
@@ -11636,11 +11632,11 @@ snapshots:
       typescript: 5.5.4
       vue: 3.4.38(typescript@5.5.4)
 
-  '@uni-helper/unocss-preset-uni@0.2.11(@unocss/preset-legacy-compat@66.5.6)(@unocss/preset-mini@66.5.12)(@unocss/rule-utils@66.5.10)(@unocss/vite@66.5.9(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6)))(unocss-applet@0.12.2(unocss@66.0.0(postcss@8.5.6)(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))))(unocss@66.0.0(postcss@8.5.6)(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4)))':
+  '@uni-helper/unocss-preset-uni@0.2.11(@unocss/preset-legacy-compat@66.5.6)(@unocss/preset-mini@66.5.12)(@unocss/rule-utils@66.5.12)(@unocss/vite@66.5.9(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6)))(unocss-applet@0.12.2(unocss@66.0.0(postcss@8.5.6)(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))))(unocss@66.0.0(postcss@8.5.6)(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4)))':
     dependencies:
       '@uni-helper/uni-env': 0.1.8
       '@unocss/preset-legacy-compat': 66.5.6
-      '@unocss/rule-utils': 66.5.10
+      '@unocss/rule-utils': 66.5.12
       unocss: 66.0.0(postcss@8.5.6)(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))
       unocss-applet: 0.12.2(unocss@66.0.0(postcss@8.5.6)(vite@5.2.8(@types/node@20.19.25)(sass@1.78.0)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4)))
     optionalDependencies:
@@ -12046,11 +12042,6 @@ snapshots:
   '@unocss/rule-utils@66.0.0':
     dependencies:
       '@unocss/core': 66.5.9
-      magic-string: 0.30.21
-
-  '@unocss/rule-utils@66.5.10':
-    dependencies:
-      '@unocss/core': 66.5.12
       magic-string: 0.30.21
 
   '@unocss/rule-utils@66.5.12':
@@ -12582,7 +12573,7 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@wot-ui/router@1.1.0(vue@3.4.38(typescript@5.5.4))':
+  '@wot-ui/router@1.1.2(vue@3.4.38(typescript@5.5.4))':
     dependencies:
       vue: 3.4.38(typescript@5.5.4)
 
