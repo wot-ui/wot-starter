@@ -1,15 +1,31 @@
 <script setup lang="ts">
-import BarChart from '@/subEcharts/echarts/components/BarChart.vue?async'
-import DonutChart from '@/subEcharts/echarts/components/DonutChart.vue?async'
-import FunnelChart from '@/subEcharts/echarts/components/FunnelChart.vue?async'
-import GaugeChart from '@/subEcharts/echarts/components/GaugeChart.vue?async'
-import LineChart from '@/subEcharts/echarts/components/LineChart.vue?async'
-import LiquidFillChart from '@/subEcharts/echarts/components/LiquidFillChart.vue?async'
-import MiniLineChart from '@/subEcharts/echarts/components/MiniLineChart.vue?async'
-import PieChart from '@/subEcharts/echarts/components/PieChart.vue?async'
-import RadarChart from '@/subEcharts/echarts/components/RadarChart.vue?async'
-import ScatterChart from '@/subEcharts/echarts/components/ScatterChart.vue?async'
-import StackedBarChart from '@/subEcharts/echarts/components/StackedBarChart.vue?async'
+import BarChart from '@/subEcharts/echarts/components/BarChart.vue'
+import DonutChart from '@/subEcharts/echarts/components/DonutChart.vue'
+import FunnelChart from '@/subEcharts/echarts/components/FunnelChart.vue'
+import GaugeChart from '@/subEcharts/echarts/components/GaugeChart.vue'
+import LineChart from '@/subEcharts/echarts/components/LineChart.vue'
+import LiquidFillChart from '@/subEcharts/echarts/components/LiquidFillChart.vue'
+import MiniLineChart from '@/subEcharts/echarts/components/MiniLineChart.vue'
+import PieChart from '@/subEcharts/echarts/components/PieChart.vue'
+import RadarChart from '@/subEcharts/echarts/components/RadarChart.vue'
+import ScatterChart from '@/subEcharts/echarts/components/ScatterChart.vue'
+import StackedBarChart from '@/subEcharts/echarts/components/StackedBarChart.vue'
+
+defineOptions({
+  componentPlaceholder: {
+    BarChart: 'view',
+    DonutChart: 'view',
+    FunnelChart: 'view',
+    GaugeChart: 'view',
+    LineChart: 'view',
+    LiquidFillChart: 'view',
+    MiniLineChart: 'view',
+    PieChart: 'view',
+    RadarChart: 'view',
+    ScatterChart: 'view',
+    StackedBarChart: 'view',
+  },
+})
 
 definePage({
   name: 'echartsAsync',
