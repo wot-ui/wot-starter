@@ -1,6 +1,20 @@
 # 更新日志 
 
 
+### [1.3.1](https://github.com/wot-ui/wot-starter/compare/v1.3.0...v1.3.1) (2026-01-05)
+
+
+### ✨ Features | 新功能
+
+* ✨ 更新 @wot-ui/router 以修复 route 类型问题和 afterEach多次触发的问题 ([fd4f585](https://github.com/wot-ui/wot-starter/commit/fd4f58524bc580a3f3cc249a9447d7c3d0c556d5))
+
+## [1.3.0](https://github.com/wot-ui/wot-starter/compare/v1.2.2...v1.3.0) (2026-01-04)
+
+
+### ✨ Features | 新功能
+
+* ✨ 更新 wot-ui 到 v1.14.0 版本 ([4fd2532](https://github.com/wot-ui/wot-starter/commit/4fd25328ba5c3d3e7ea202919071cd8fb98ffd74))
+
 ### [1.2.2](https://github.com/wot-ui/wot-starter/compare/v1.2.1...v1.2.2) (2025-12-29)
 
 
