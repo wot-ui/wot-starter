@@ -1,6 +1,13 @@
 # 更新日志 
 
 
+### [1.3.2](https://github.com/wot-ui/wot-starter/compare/v1.3.1...v1.3.2) (2026-01-07)
+
+
+### ✨ Features | 新功能
+
+* ✨ 升级 @uni-ku/bundle-optimizer 至 2.0 并处理相关迁移配置 ([e0ab94c](https://github.com/wot-ui/wot-starter/commit/e0ab94cfd7e9971b52c929de5d89e7c5ab11eb3a))
+
 ### [1.3.1](https://github.com/wot-ui/wot-starter/compare/v1.3.0...v1.3.1) (2026-01-05)
 
 

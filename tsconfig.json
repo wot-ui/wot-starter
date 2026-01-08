@@ -24,8 +24,6 @@
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
-    "src/**/*.vue",
-    "async-import.d.ts",
-    "async-component.d.ts"
+    "src/**/*.vue"
   ]
 }
