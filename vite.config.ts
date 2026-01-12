@@ -1,5 +1,6 @@
 import process from 'node:process'
 import Uni from '@uni-helper/plugin-uni'
+import { isMpWeixin } from '@uni-helper/uni-env'
 import UniHelperComponents from '@uni-helper/vite-plugin-uni-components'
 import { WotResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
 import UniHelperLayouts from '@uni-helper/vite-plugin-uni-layouts'
@@ -52,6 +53,7 @@ export default defineConfig({
     Uni(),
     // https://github.com/uni-ku/bundle-optimizer
     Optimization({
+      enable: isMpWeixin,
       logger: false,
     }),
     // https://github.com/antfu/unplugin-auto-import
