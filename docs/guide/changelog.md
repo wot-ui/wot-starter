@@ -1,6 +1,45 @@
 # 更新日志 
 
 
+### [1.3.2](https://github.com/wot-ui/wot-starter/compare/v1.3.1...v1.3.2) (2026-01-07)
+
+
+### ✨ Features | 新功能
+
+* ✨ 升级 @uni-ku/bundle-optimizer 至 2.0 并处理相关迁移配置 ([e0ab94c](https://github.com/wot-ui/wot-starter/commit/e0ab94cfd7e9971b52c929de5d89e7c5ab11eb3a))
+
+### [1.3.1](https://github.com/wot-ui/wot-starter/compare/v1.3.0...v1.3.1) (2026-01-05)
+
+
+### ✨ Features | 新功能
+
+* ✨ 更新 @wot-ui/router 以修复 route 类型问题和 afterEach多次触发的问题 ([fd4f585](https://github.com/wot-ui/wot-starter/commit/fd4f58524bc580a3f3cc249a9447d7c3d0c556d5))
+
+## [1.3.0](https://github.com/wot-ui/wot-starter/compare/v1.2.2...v1.3.0) (2026-01-04)
+
+
+### ✨ Features | 新功能
+
+* ✨ 更新 wot-ui 到 v1.14.0 版本 ([4fd2532](https://github.com/wot-ui/wot-starter/commit/4fd25328ba5c3d3e7ea202919071cd8fb98ffd74))
+
+### [1.2.2](https://github.com/wot-ui/wot-starter/compare/v1.2.1...v1.2.2) (2025-12-29)
+
+
+### ✨ Features | 新功能
+
+* ✨ 替换 uni-mini-router 为 @wot-ui/router ([171f054](https://github.com/wot-ui/wot-starter/commit/171f054ac7bb0976ee26edcbf4028c80cc4387a2))
+
+
+### ✏️ Documentation | 文档
+
+* ✏️  调整路由文档和演示demo ([73a9cf3](https://github.com/wot-ui/wot-starter/commit/73a9cf36b5b770a556e2ea74be9c5c21602ff661))
+* ✏️  更新 readme ([6bf2618](https://github.com/wot-ui/wot-starter/commit/6bf261833a6a8485c749c0123e3e8ba7b306156e))
+* ✏️  更新分包调整后demo的地址 ([5e358ec](https://github.com/wot-ui/wot-starter/commit/5e358ec27997c5437043ec3137cfbd4513154fd4))
+* ✏️  更新文档首页介绍内容 ([3a1a0a4](https://github.com/wot-ui/wot-starter/commit/3a1a0a409effcc730064d1acc1edc64fe58fd7d1))
+* ✏️  添加 PageSpy 远程的教程 ([f29a53c](https://github.com/wot-ui/wot-starter/commit/f29a53cd01cdc80c45e858e409f1564cf7716f73))
+* ✏️  add about me ([046897a](https://github.com/wot-ui/wot-starter/commit/046897a862e402fd8ebbd993cac525de5e830f25))
+* ✏️  add gitee vote 2025 ([14af7a0](https://github.com/wot-ui/wot-starter/commit/14af7a04cf1e26772782f0cad0d426e220dba40a))
+
 ### [1.2.1](https://github.com/wot-ui/wot-starter/compare/v1.2.0...v1.2.1) (2025-12-04)
 
 
