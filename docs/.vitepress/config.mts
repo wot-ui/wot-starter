@@ -172,6 +172,7 @@ var _hmt = _hmt || [];
           { text: '虚拟根组件', link: '/guide/uni-ku-root' },
           { text: 'Echarts 图表', link: '/guide/uni-echarts' },
           { text: '国际化', link: '/guide/i18n' },
+          { text: 'Agent Skills', link: '/guide/skills' },
           { text: '远程调试', link: 'https://blog.wot-ui.cn/uni-app/pagespy.html' },
         ],
       },

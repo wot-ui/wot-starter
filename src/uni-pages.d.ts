@@ -20,6 +20,7 @@ type _LocationUrl =
   "/subPages/router/demo-query" |
   "/subPages/router/demo-string" |
   "/subPages/router/index" |
+  "/subPages/skills/index" |
   "/subPages/styles/index" |
   "/subPages/uni-ku-root/index" |
   "/subEcharts/echarts/index" |

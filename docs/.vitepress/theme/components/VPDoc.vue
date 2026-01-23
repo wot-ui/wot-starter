@@ -23,7 +23,7 @@ const isComponent = computed(() => {
 const expanded = ref(true)
 
 const iframeUrl = computed(() => {
-  const baseUrl = import.meta.env.MODE === 'development' ? 'http://localhost:5173/' : (import.meta.env.VITE_DEMO_BASE_URL || 'https://wot-demo.netlify.app/#/')
+  const baseUrl = import.meta.env.MODE === 'development' ? 'http://localhost:5173/#/' : (import.meta.env.VITE_DEMO_BASE_URL || 'https://wot-demo.netlify.app/#/')
   if (typeof route.data?.frontmatter?.url !== 'undefined') {
     return baseUrl + route.data.frontmatter.url
   }

@@ -165,7 +165,20 @@
           "style": {
             "navigationBarTitleText": "uni-ku/root"
           }
+        },
+        // #ifdef H5
+        {
+          "path": "skills/index",
+          "type": "page",
+          "name": "skills",
+          "layout": "default",
+          "style": {
+            "navigationBarTitleText": "Agent Skills",
+            "navigationBarBackgroundColor": "#f9fafb",
+            "navigationBarTextStyle": "black"
+          }
         }
+        // #endif
       ]
     },
     {
