@@ -1,6 +1,24 @@
 # 更新日志 
 
 
+## [1.4.0](https://github.com/wot-ui/wot-starter/compare/v1.3.2...v1.4.0) (2026-01-25)
+
+
+### ✏️ Documentation | 文档
+
+* ✏️  remove gitee-vote-2025 ([ed32556](https://github.com/wot-ui/wot-starter/commit/ed32556db46d7922cde1a60d1efc32bfb1c87d63))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 🐛 仅在微信小程序端开启 optimization 修复运行到支付宝小程序报错的问题 ([420aff4](https://github.com/wot-ui/wot-starter/commit/420aff484878ff88934b913d9aa84916a36c2de8))
+
+
+### ✨ Features | 新功能
+
+* ✨ 添加基于本项目实际使用场景的 Agent Skills ([f2a58f7](https://github.com/wot-ui/wot-starter/commit/f2a58f748c8758b4a083fa7181862dc1ad97e303))
+* ✨ 新增清理演示页面提供精简模板的 skill starter-cleaner ([8b4c4c4](https://github.com/wot-ui/wot-starter/commit/8b4c4c4d0c9abdee1616484a435444c9ae4ce000))
+
 ### [1.3.2](https://github.com/wot-ui/wot-starter/compare/v1.3.1...v1.3.2) (2026-01-07)
 
 
