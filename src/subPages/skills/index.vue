@@ -50,6 +50,12 @@ const skills = [
     icon: 'location',
     color: '#FF2D55',
   },
+  {
+    name: 'wot-ui',
+    desc: 'wot-ui uni-app 组件库开发指南',
+    icon: 'app',
+    color: '#FE5900',
+  },
 ]
 
 function handleClick(skill: string) {
