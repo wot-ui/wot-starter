@@ -17,7 +17,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   base: './',
   optimizeDeps: {
-    exclude: process.env.NODE_ENV === 'development' ? ['wot-design-uni', 'uni-echarts'] : [],
+    exclude: process.env.NODE_ENV === 'development' ? ['wot-design-uni'] : [],
   },
   plugins: [
     // https://github.com/uni-helper/vite-plugin-uni-manifest
