@@ -27,7 +27,15 @@ watch(() => dialogOptions.value, (newVal) => {
   if (newVal) {
     if (currentPage.value === currentPath) {
       const option = deepClone(newVal)
-      dialog.show(option).then((res) => {
+      const showDialog = option.type === 'confirm'
+        ? dialog.confirm
+        : option.type === 'prompt'
+          ? dialog.prompt
+          : option.type === 'alert'
+            ? dialog.alert
+            : dialog.show
+
+      showDialog(option).then((res) => {
         if (isFunction(option.success)) {
           option.success(res)
         }
