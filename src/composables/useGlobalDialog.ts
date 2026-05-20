@@ -11,6 +11,78 @@ interface GlobalDialog {
   currentPage: string
 }
 
+type DialogType = NonNullable<DialogOptions['type']>
+
+function isButtonPropsObject(value: unknown): value is Record<string, any> {
+  return value !== null && CommonUtil.isObj(value)
+}
+
+function normalizeButtonProps(props: unknown, text?: string) {
+  if (props === null) {
+    return null
+  }
+
+  if (isButtonPropsObject(props)) {
+    return {
+      ...props,
+      ...(text ? { text } : {}),
+      round: false,
+    }
+  }
+
+  if (CommonUtil.isString(props) || text) {
+    return {
+      text: text || props,
+      round: false,
+    }
+  }
+
+  if (props === undefined) {
+    return {
+      round: false,
+    }
+  }
+
+  return props
+}
+
+function withDefaultTypeOptions(option: GlobalDialogOptions, type?: DialogType): GlobalDialogOptions {
+  const next: GlobalDialogOptions = {
+    ...option,
+    ...(type ? { type } : {}),
+  }
+
+  if (next.showCancelButton === undefined) {
+    if (next.type === 'alert') {
+      next.showCancelButton = false
+    }
+    else if (next.type === 'confirm' || next.type === 'prompt') {
+      next.showCancelButton = true
+    }
+  }
+
+  return next
+}
+
+function normalizeDialogOptions(option: GlobalDialogOptions, type?: DialogType): GlobalDialogOptions {
+  const next = withDefaultTypeOptions(option, type)
+
+  next.confirmButtonProps = normalizeButtonProps(next.confirmButtonProps, next.confirmButtonText) as DialogOptions['confirmButtonProps']
+
+  if (next.showCancelButton === false) {
+    next.cancelButtonProps = null
+  }
+  else if (next.showCancelButton === true || next.cancelButtonProps !== undefined || next.cancelButtonText) {
+    next.cancelButtonProps = normalizeButtonProps(next.cancelButtonProps, next.cancelButtonText) as DialogOptions['cancelButtonProps']
+  }
+
+  return next
+}
+
+function normalizeOption(option: GlobalDialogOptions | string, type?: DialogType): GlobalDialogOptions {
+  return normalizeDialogOptions(CommonUtil.isString(option) ? { title: option } : option, type)
+}
+
 export const useGlobalDialog = defineStore('global-Dialog', {
   state: (): GlobalDialog => ({
     dialogOptions: null,
@@ -19,30 +91,19 @@ export const useGlobalDialog = defineStore('global-Dialog', {
   actions: {
     show(option: GlobalDialogOptions | string) {
       this.currentPage = getCurrentPath()
-      this.dialogOptions = {
-        ...(CommonUtil.isString(option) ? { title: option } : option),
-        cancelButtonProps: {
-          round: false,
-        },
-        confirmButtonProps: {
-          round: false,
-        },
-      }
+      this.dialogOptions = normalizeOption(option)
     },
     alert(option: GlobalDialogOptions | string) {
-      const DialogOptions = CommonUtil.deepMerge({ type: 'alert' }, CommonUtil.isString(option) ? { title: option } : option) as DialogOptions
-      DialogOptions.showCancelButton = false
-      this.show(DialogOptions)
+      this.currentPage = getCurrentPath()
+      this.dialogOptions = normalizeOption(option, 'alert')
     },
     confirm(option: GlobalDialogOptions | string) {
-      const DialogOptions = CommonUtil.deepMerge({ type: 'confirm' }, CommonUtil.isString(option) ? { title: option } : option) as DialogOptions
-      DialogOptions.showCancelButton = true
-      this.show(DialogOptions)
+      this.currentPage = getCurrentPath()
+      this.dialogOptions = normalizeOption(option, 'confirm')
     },
     prompt(option: GlobalDialogOptions | string) {
-      const DialogOptions = CommonUtil.deepMerge({ type: 'prompt' }, CommonUtil.isString(option) ? { title: option } : option) as DialogOptions
-      DialogOptions.showCancelButton = true
-      this.show(DialogOptions)
+      this.currentPage = getCurrentPath()
+      this.dialogOptions = normalizeOption(option, 'prompt')
     },
     close() {
       this.dialogOptions = null
