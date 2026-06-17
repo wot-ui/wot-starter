@@ -30,12 +30,12 @@ pnpm install
 
 | 页面 | 说明 | 推荐组件 |
 | --- | --- | --- |
-| 首页 | 展示活动 banner、热门封面、新品封面与分类入口 | `wd-swiper`、`wd-card`、`wd-grid` |
-| 封面列表 | 支持分类、标签、状态筛选与分页加载 | `wd-tabs`、`wd-tag`、`wd-loadmore` |
-| 封面详情 | 展示封面大图、领取说明、剩余数量、有效期和领取入口 | `wd-img`、`wd-cell`、`wd-button` |
-| 领取记录 | 展示用户已领取、已失效、待领取的封面 | `wd-status-tip`、`wd-cell-group` |
-| 运营管理 | 维护封面上下架、库存、领取口令、活动时间 | `wd-form`、`wd-upload`、`wd-datetime-picker` |
-| 关于/规则 | 展示平台说明、领取规则、客服与合规声明 | `wd-notice-bar`、`wd-collapse` |
+| 首页 | 展示活动 banner、热门封面、新品封面与分类入口 | `wd-swiper` / `wd-card` / `wd-grid` |
+| 封面列表 | 支持分类、标签、状态筛选与分页加载 | `wd-tabs` / `wd-tag` / `wd-loadmore` |
+| 封面详情 | 展示封面大图、领取说明、剩余数量、有效期和领取入口 | `wd-img` / `wd-cell` / `wd-button` |
+| 领取记录 | 展示用户已领取、已失效、待领取的封面 | `wd-status-tip` / `wd-cell-group` |
+| 运营管理 | 维护封面上下架、库存、领取口令、活动时间 | `wd-form` / `wd-upload` / `wd-datetime-picker` |
+| 关于/规则 | 展示平台说明、领取规则、客服与合规声明 | `wd-notice-bar` / `wd-collapse` |
 
 ## 数据模型
 
@@ -55,6 +55,8 @@ pnpm install
 src/
   api/cover.ts
   api/campaign.ts
+  api/claim.ts
+  api/admin.ts
   pages/
     index/index.vue
     cover/list.vue
