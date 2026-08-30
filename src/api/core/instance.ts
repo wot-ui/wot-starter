@@ -12,7 +12,7 @@ export const alovaInstance = createAlova({
   statesHook: vueHook,
   beforeRequest: (method) => {
     // Add content type for POST/PUT/PATCH requests
-    if (['POST', 'PUT', 'PATCH'].includes(method.type)) {
+    if (['POST', 'PUT', 'PATCH'].includes(method.type) && method?.config?.requestType !== 'upload') {
       method.config.headers['Content-Type'] = 'application/json'
     }
 
