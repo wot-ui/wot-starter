@@ -111,4 +111,4 @@ Wot Starter
 本项目基于 [MIT](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89) 协议，请自由地享受和参与开源。
 
 
-[![Star History Chart](https://api.star-history.com/svg?repos=wot-ui/wot-starter&type=Date)](https://star-history.com/#wot-ui/wot-starter&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=wot-ui/wot-starter&type=Date)](https://star-history.dera.page/#wot-ui/wot-starter&Date)
